@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Basics of D3.js</title>
+        <script src="https://d3js.org/d3.v3.min.js"></script>
+    </head>
+
+    <body>
+        <h2>Replacing text</h2>
+        <script>
+            d3.select("body")
+                .append("p")
+                .style("color", "blue")
+                .text("What's up?");
+        </script>
+        <br>
+        <h2>Drawing shapes</h2>
+        <script>
+            // We first set a canvas or a place to draw
+            // and layer our objects
+            var canvas = d3
+                .select("body")
+                .append("svg")
+                .attr("width", 500)
+                .attr("height", 500);
+
+            var circle = canvas
+                .append("circle")
+                .attr("cx", 250)
+                .attr("cy", 250)
+                .attr("r", 100)
+                .attr("fill", "red");
+
+            var rect = canvas
+                .append("rect")
+                .attr("width", 250)
+                .attr("height", 150)
+                .attr("fill", "blue");
+            
+            var line = canvas
+                .append("line")
+                .attr("x1", 0)
+                .attr("y1", 100)
+                .attr("x2", 300)
+                .attr("y2", 400)
+                .attr("stroke", "yellow")
+                .attr("stroke-width", 10);
+            
+        </script>
+        <br>
+        <h2>Creating a basic bar plot</h2>
+        <script>
+            var dataArray = [20, 40, 45];
+
+            var cv = [500, 500];
+            var m = Math.max(...dataArray);
+
+            var canvas = d3
+                .select("body")
+                .append("svg")
+                .attr("width", cv[0])
+                .attr("height", cv[1]);
+
+            var bars = canvas
+                .selectAll("rect")
+                // Here's where we load our own data
+                .data(dataArray)
+                // Here's where we pushing each unique datum
+                .enter()
+                    .append("rect")
+                    // I created a manual scale adjustment
+                    // Below we'll use a scale property
+                    .attr("width", function(d){
+                        return d * (cv[0] * 0.9) / m
+                    })
+                    .attr("height", 50)
+                    .attr("y", function(d, i){return i * 70})
+                    .attr("fill", "green");
+        </script>
+        <br>
+        <h2>Using scales</h2>
+        <script>
+            var newData = [50, 150, 250, 350, 400, 450]
+
+            var width = 300;
+            var height = 500;
+
+            // Here's where we'll setup the numeric scale
+            var widthScale = d3.scale.linear()
+                .domain([0, Math.max(...newData)])
+                .range([0, width])
+
+            // Here's where we'll setup the color scale
+            var colScale = d3.scale.linear()
+                .domain([0, Math.max(...newData)])
+                .range(["yellow", "orange"])
+
+            var canvas1 = d3
+                .select("body")
+                .append("svg")
+                .attr("width", width)
+                .attr("height", height);
+
+            var bars = canvas1
+                .selectAll("rect")
+                .data(newData)
+                .enter()
+                    .append("rect")
+                    // Here we call implement the scale
+                    .attr("width", function(d){return widthScale(d)})
+                    .attr("height", 50)
+                    .attr("y", function(d, i){return i * 70})
+                    // Another type of scale using color
+                    .attr("fill", function(d){return colScale(d)});
+        </script>
+    </body>
+</html>
