@@ -213,7 +213,7 @@
 
     </script>
     <br>
-    <h2>Transitions (annimated effect)</h2>
+    <h2>Transitions (animated effect)</h2>
     <script>
         var canvas = d3
             .select("body")
@@ -241,5 +241,19 @@
                 function() {d3.select(this).attr("fill", "red")} // What we want to happen
             );
 
+    </script>
+    <br>
+    <h2>Arrays with D3</h2>
+    <script>
+        var data = [10, 20, 30, 40, 50]
+
+        // Sorting
+         data.sort(d3.descending);
+        // Math: min, max, etc.
+        d3.mean(data);
+        d3.sum(data);
+        d3.min(data);
+        // Shuffle (random order)
+        d3.shuffle(data)
     </script>
 </html>
