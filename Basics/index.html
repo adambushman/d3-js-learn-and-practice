@@ -147,4 +147,70 @@
             .call(axis);
         
     </script>
+    <br>
+    <h2>Enter, Update, Exit Methods</h2>
+    <script>
+        // The selection approaches
+            // We have exactly as many shapes as data points: "enter"
+            // We have shapes > data points: ".attr()" before binding
+            // We have shapes < data points: ".exit()" after binding
+
+        var data = [10];
+        var data1 = [10, 20, 30];
+
+        var canvas = d3
+            .select("body")
+            .append("svg")
+            .attr("width", 500)
+            .attr("height", 500);
+
+        var circle1 = canvas
+            .append("circle")
+            .attr("cx", 200)
+            .attr("cy", 200)
+            .attr("r", 50);
+
+        var circle2 = canvas
+            .append("circle")
+            .attr("cx", 300)
+            .attr("cy", 300)
+            .attr("r", 50);
+        
+        var circle = canvas
+            .selectAll("circle")
+            .data(data1)
+            .attr("fill", "navy") // Update selection
+            .enter() // Enter selection
+                .append("circle")
+                .attr("cx", 100)
+                .attr("cy", 100)
+                .attr("r", 50)
+                .attr("fill", "purple");
+
+        var canvas2 = d3
+            .select("body")
+            .append("svg")
+            .attr("width", 500)
+            .attr("height", 500);
+
+        var circle3 = canvas2
+            .append("circle")
+            .attr("cx", 200)
+            .attr("cy", 200)
+            .attr("r", 50);
+
+        var circle4 = canvas2
+            .append("circle")
+            .attr("cx", 300)
+            .attr("cy", 300)
+            .attr("r", 50);
+        
+        var circle = canvas2
+            .selectAll("circle")
+            .data(data)
+            .exit() // Exit selection
+                .attr("fill", "green")
+
+
+    </script>
 </html>
