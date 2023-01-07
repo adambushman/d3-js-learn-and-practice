@@ -256,4 +256,47 @@
         // Shuffle (random order)
         d3.shuffle(data)
     </script>
+    <br>
+    <h2>Loading external data</h2>
+    <script>
+        // JSON example
+            // CSV works the same way
+            // Just use .csv file and the correct D3 method
+        d3.json(
+            "dataset-2.json", // File name
+            function(data) { // Call back?
+                var canvas = d3
+                    .select("body")
+                    .append("svg")
+                    .attr("width", 500)
+                    .attr("height", 500);
+                
+                canvas.selectAll("rect")
+                    .data(data)
+                    .enter()
+                        .append("rect")
+                        .attr("width", function(d) {
+                            return d.val * 5;
+                        })
+                        .attr("height", 40)
+                        .attr("y", function(d, i) {
+                            return i * 50;
+                        })
+                        .attr("fill", "gray");
+                
+                canvas.selectAll("text")
+                    .data(data)
+                    .enter()
+                        .append("text")
+                        .attr("fill", "white")
+                        .attr("y", function(d, i) {
+                            return (i * 50) + 24;
+                        })
+                        .text(function(d) {
+                            return d.category
+                        });
+            }
+        )
+
+    </script>
 </html>
