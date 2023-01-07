@@ -1,0 +1,11 @@
+[
+	{"category": "a", "val": 10}, 
+	{"category": "a", "val": 20}, 
+	{"category": "a", "val": 30}, 
+	{"category": "b", "val": 50}, 
+	{"category": "b", "val": 60}, 
+	{"category": "b", "val": 70}, 
+	{"category": "c", "val": 90}, 
+	{"category": "c", "val": 100}, 
+	{"category": "c", "val": 110}
+]
