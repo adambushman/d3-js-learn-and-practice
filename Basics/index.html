@@ -211,6 +211,35 @@
             .exit() // Exit selection
                 .attr("fill", "green")
 
+    </script>
+    <br>
+    <h2>Transitions (annimated effect)</h2>
+    <script>
+        var canvas = d3
+            .select("body")
+            .append("svg")
+            .attr("width", 500)
+            .attr("height", 500);
+
+        var circle = canvas
+            .append("circle")
+            .attr("cx", 100)
+            .attr("cy", 100)
+            .attr("r", 50)
+            .attr("fill", "pink");
+
+        circle.transition()
+            .duration(2000) // Expressed in miliseconds
+            .delay(2000) // Expressed in miliseconds
+            .attr("cx", 400)
+            .transition()
+            .duration(2000)
+            .attr("cy", 400)
+            .attr("cx", 100)
+            .each( // Event listener
+                "end", // What we're listening for
+                function() {d3.select(this).attr("fill", "red")} // What we want to happen
+            );
 
     </script>
 </html>
