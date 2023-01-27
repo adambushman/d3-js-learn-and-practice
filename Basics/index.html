@@ -257,6 +257,102 @@
         d3.shuffle(data)
     </script>
     <br>
+    <h2>Drawing Paths</h2>
+    <script>
+        var data = [
+            {x: 10, y: 20}, 
+            {x: 40, y: 60}, 
+            {x: 130, y: 80}, 
+            {x: 190, y: 170}
+        ];
+
+        var canvas = d3
+            .select("body")
+            .append("svg")
+            .attr("width", 500)
+            .attr("height", 500);
+        
+        var group = canvas
+            .append("g")
+            .attr("transform", "translate(100, 100)");
+
+
+        var line = d3
+            .svg.line()
+            .x(function (d) { return d.x})
+            .y(function (d) { return d.y});
+
+        group.selectAll("path")
+            .data([data])
+            .enter()
+            .append("path")
+            .attr("d", line)
+            .attr("fill", "none")
+            .attr("stroke", "orange")
+            .attr("stroke-width", 3);
+        
+    </script>
+    <br>
+    <h2>Arcs</h2>
+    <script>
+        var canvas = d3
+            .select("body")
+            .append("svg")
+            .attr("width", 500)
+            .attr("height", 500);
+        
+        var group = canvas
+            .append("g")
+            .attr("transform", "translate(200, 200)");
+
+        var r = 100;
+        var p = Math.PI * 2;
+        
+        var arc = d3
+            .svg.arc()
+            .innerRadius(r - 20)
+            .outerRadius(r)
+            .startAngle(0)
+            .endAngle(p-(Math.PI / 2));
+
+        group.append("path")
+            .attr("d", arc);
+    </script>
+    <br>
+    <h2>Donut chart</h2>
+    <script>
+        var data = [10, 50, 50];
+        var r = 300;
+
+        var canas = d3
+            .select("body")
+            .append("svg")
+            .attr("width", 1000)
+            .attr("height", 1000);
+        
+        var group = canvas
+            .append("g")
+            .attr("transform", "translate(500, 500");
+
+        var arc = d3
+            .svg.arc()
+            .innerRadius(r - 100)
+            .outerRadius(r);
+        
+        var pie = d3
+            .layout().pie()
+            .value(function (d) { return d; });
+        
+        var arcs = group
+            .selectAll(".arc")
+            .data(pie(data))
+            .append("g")
+            .attr("class", "arc");
+        
+        
+        
+    </script>
+    <br>
     <h2>Loading external data</h2>
     <script>
         // JSON example
