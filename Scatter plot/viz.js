@@ -3,11 +3,14 @@ let values = []
 let xScale
 let yScale
 
-let width = 800
+let width = 700
 let height = 500
 let mpadding = 20
 let lpadding = 50
 let tpadding = 100
+
+let title = 'NBA Scoring Leaders'
+let subtitle = 'Points vs True Shooting Attempts'
 
 let svg = d3.select('svg')
 
@@ -16,17 +19,25 @@ let drawCanvas = () => {
     svg.attr('height', height)
 }
 
-let generateScales = () => {
+let generateScales = (values) => {
     xScale = d3
         .scaleLinear()
+        .domain([
+            d3.min(values, (item) => { return item['PTS'] * 0.98}), 
+            d3.max(values, (item) => { return item['PTS'] * 1.02})
+        ])
         .range([lpadding + mpadding, width - mpadding])
     
     yScale = d3
         .scaleLinear()
+        .domain([
+            d3.min(values, (item) => { return item['TSA'] * 0.98}), 
+            d3.max(values, (item) => { return item['TSA'] * 1.02})
+        ])
         .range([height - tpadding, lpadding + mpadding])
 }
 
-let drawPoints = () => {
+let drawPoints = (values) => {
     svg.selectAll('circle')
         .data(values)
         .enter()
@@ -34,14 +45,20 @@ let drawPoints = () => {
         .attr('class', 'dot')
         .attr('r', '7')
         .attr('data-xvalue', (item) => {
-            return item
+            return item['PTS']
         })
         .attr('data-yvalue', (item) => {
-            return item
+            return item['TSA']
+        })
+        .attr('cx', (item) => {
+            return xScale(item['PTS'])
+        })
+        .attr('cy', (item) => {
+            return yScale(item['TSA'])
         })
 }
 
-let generateAxes = () => {
+let generateAxes = (values) => {
     let xAxis = d3
         .axisBottom(xScale)
     
@@ -59,13 +76,13 @@ let generateAxes = () => {
         .attr('transform', 'translate(' + (mpadding + lpadding) + ', ' + (lpadding - mpadding) + ')')
 }
 
+drawCanvas()
 
-d3.csv('./data.csv', function(data) {
-    values = data
-    console.log(values)
-
-    drawCanvas()
-    generateScales()
-    drawPoints()
-    generateAxes()
+d3.csv('data.csv', (d) => { 
+    generateScales(d)
+    drawPoints(d)
+    generateAxes(d)
 })
+
+
+

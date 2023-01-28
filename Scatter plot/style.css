@@ -6,3 +6,9 @@ body {
 #canvas {
     background-color: lavender;
 }
+
+.dot {
+    fill: darkslateblue;
+    opacity: 70%;
+    stroke-width: 1;
+}
