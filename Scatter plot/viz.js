@@ -42,6 +42,14 @@ d3.csv('data.csv', (data) => {
         ])
         .range([height - tpadding, lpadding + mpadding])
 
+    sizeScale = d3
+        .scaleLinear()
+        .domain([
+            d3.min(data, (item) => { return item['MIN']}), 
+            d3.max(data, (item) => { return item['MIN']})
+        ])
+        .range([4, 12])
+
     // Plotting the axes & labels
     svg.append('g')
         .call(d3.axisBottom(xScale))
@@ -81,7 +89,8 @@ d3.csv('data.csv', (data) => {
 
     var mousemove = function(d) {
         Tooltip
-            .html(d.PLAYER + " | " + d.TEAM)
+            .html(d.PLAYER + " | " + d.TEAM + "<br>" + d.MIN + " mpg")
+            .style("font-family", "montserrat")
             .style("left", (d3.mouse(this)[0]+30) + "px")
             .style("top", (d3.mouse(this)[1]) + "px")
             .style("position", "absolute")
@@ -106,7 +115,7 @@ d3.csv('data.csv', (data) => {
         .enter()
             .append('circle')
             .attr('class', 'dot')
-            .attr('r', '7')
+            .attr('r', 7)
             .attr('data-xvalue', (item) => {
                 return item['PTS']
             })
@@ -132,6 +141,8 @@ svg.append('text')
     .attr('y', lpadding)
     .attr('font-size', 30)
     .attr('text-anchor', 'middle')
+    .attr('font-family', 'montserrat')
+    .attr('font-weight', 800)
     .text(title)
     
 svg.append('text')
@@ -139,6 +150,7 @@ svg.append('text')
     .attr('y', lpadding + mpadding)
     .attr('font-size', 18)
     .attr('text-anchor', 'middle')
+    .attr('font-family', 'montserrat')
     .text(subtitle)
 
 svg.append('text')
@@ -146,6 +158,7 @@ svg.append('text')
     .attr('y', height - mpadding)
     .attr('font-size', 18)
     .attr('text-anchor', 'middle')
+    .attr('font-family', 'montserrat')
     .text(xlab)  
 
 svg.append('text')
@@ -154,4 +167,5 @@ svg.append('text')
     .attr('transform', 'rotate(-90, ' + lpadding / 2 + ', ' + (height - mpadding + lpadding) / 2 + ')')
     .attr('font-size', 18)
     .attr('text-anchor', 'middle')
+    .attr('font-family', 'montserrat')
     .text(ylab)  
