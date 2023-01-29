@@ -81,7 +81,7 @@ d3.csv('data.csv', (data) => {
 
     var mousemove = function(d) {
         Tooltip
-            .html("Name: " + d.PLAYER + "<br>Team: " + d.TEAM + "<br>Min/Gm: " + d.MIN)
+            .html(d.PLAYER + " | " + d.TEAM)
             .style("left", (d3.mouse(this)[0]+30) + "px")
             .style("top", (d3.mouse(this)[1]) + "px")
             .style("position", "absolute")
