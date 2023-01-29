@@ -81,6 +81,7 @@ d3.csv('data.csv', (data) => {
             .duration(250)
         d3.select(this)
             .style("fill", "white")
+            .style("opacity", 1)
             .style("stroke", "darkslateblue")
             .style("stroke-width", 2)
             .transition()
