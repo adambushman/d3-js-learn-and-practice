@@ -105,6 +105,7 @@ d3.csv('data.csv', (data) => {
         d3.select(this)
             .style("fill", "darkslateblue")
             .style("stroke-width", 1)
+            .style("opacity", 0.7)
             .transition()
             .duration(250)
     }
