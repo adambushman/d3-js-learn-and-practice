@@ -1,0 +1,14 @@
+* {
+    font-family: 'consolas';
+    background-color: '#F8F0FB';
+    color: '#211A1D';
+}
+
+body {
+    margin: 2rem, 1rem, 1rem, 1rem;
+}
+
+#my-table {
+    display: grid;
+    place-content: center;
+}
