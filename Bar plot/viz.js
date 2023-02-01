@@ -35,6 +35,8 @@ let svg = d3.select("#canvas")
 
 d3.csv('office_sales.csv', (data) => {
 
+    // Grouping sales by month
+
     let dataF = d3.nest()
         .key((d) => { return d.month })
         .rollup((d) => {
@@ -52,8 +54,9 @@ d3.csv('office_sales.csv', (data) => {
     console.log(dataF)
 
     // Defining the scales
+
     xScale = d3.scaleBand()
-        .domain(dataF.map((d) => { return d.month}))
+        .domain(dataF.map((d) => { return d.month }))
         .range([0, width]);
 
     ymin = d3.min(dataF, (d) => { return d.tsales })
@@ -85,10 +88,43 @@ d3.csv('office_sales.csv', (data) => {
         .enter()
         .append("rect")
         .attr("x", (d) => { return xScale(d.month) + thick })
-        .attr("y", (d) => (height - yScale(d.tsales))) 
-        .attr("height", (d) => yScale(d.tsales)) 
+        .attr("y", (d) => { return yScale(d.tsales) }) 
+        .attr("height", (d) => { return height - yScale(d.tsales) }) 
         .attr("width", xScale.bandwidth() - (thick * 2))
         .style("margin", "15px")
         .style("fill", "#333333")  
+
+    // Plotting the title, subtitle
+
+    svg.append("text")
+        .attr("x", (width / 2) - (margin.left / 2))
+        .attr("y", margin.top / -2)
+        .attr("text-anchor", "middle")
+        .style("font-size", 30)
+        .text(title)
+
+    svg.append("text")
+        .attr("x", (width / 2) - (margin.left / 2))
+        .attr("y", margin.top / -3)
+        .attr("text-anchor", "middle")
+        .style("font-size", 15)
+        .text(subtitle)
+
+    // Plotting the axis labels
+    
+    svg.append("text")
+        .attr("x", (width / 2))
+        .attr("y", height + (margin.bottom * 2 / 3))
+        .attr("text-anchor", "middle")
+        .style("font-size", 15)
+        .text(xlab)
+
+    svg.append("text")
+        .attr("x", (margin.left / -2))
+        .attr("y", (height / 2))
+        .attr('transform', 'rotate(-90, ' + (margin.left  * 2 / -3) + ', ' + (height / 2) + ')')
+        .attr("text-anchor", "middle")
+        .style("font-size", 15)
+        .text(ylab)  
 
 })
