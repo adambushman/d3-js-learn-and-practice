@@ -3,11 +3,13 @@
 let xScale
 let yScale
 
-let width = 1000
-let height = 1000
-let mpadding = 25
-let lpadding = 75
-let tpadding = 150
+// Master scale
+let s = 500
+
+let margin = {top: s * 0.2, right: s * 0.05, bottom: s * 0.12, left: s * 0.17}
+let width = s - margin.left - margin.right
+let height = s - margin.top - margin.bottom
+let thick = s * 0.05 // Bar thickness adj
 
 let title = "Sales of The Office"
 let subtitle = "Distribution of Sales by Month per Employee"
@@ -19,45 +21,74 @@ let ylab = "Sales Dollars"
 
 let svg = d3.select("#canvas")
     .append("svg")
-    .attr("height", height)
-    .attr("width", width)
-    .style("background-color", "#fff7e0")
-    .style("border", "solid")
-    .style("border-color", "#030303");
+        .attr("height", height + margin.top + margin.bottom)
+        .attr("width", width + margin.left + margin.right)
+        .style("background-color", "#fff7e0")
+        .style("border", "solid")
+        .style("border-color", "#030303")
+    .append("g")
+    .attr("transform",
+          "translate(" + margin.left + "," + margin.top + ")")
+
 
 // Plotting the data
 
 d3.csv('office_sales.csv', (data) => {
 
-    // console.log(d3.map(data, (d) => {return d.month}).keys())
+    let dataF = d3.nest()
+        .key((d) => { return d.month })
+        .rollup((d) => {
+            return d3.sum(d, (g) => { 
+                return g.sales
+            })
+        })
+        .entries(data);
     
+    dataF.forEach((d) => {
+        d.month = d.key;
+        d.tsales = d.value;
+    })
+    
+    console.log(dataF)
+
     // Defining the scales
     xScale = d3.scaleBand()
-        .domain(['November', 'December', 'January'])
-        .range([mpadding + lpadding, width - mpadding]);
+        .domain(dataF.map((d) => { return d.month}))
+        .range([0, width]);
+
+    ymin = d3.min(dataF, (d) => { return d.tsales })
+    ymax = d3.max(dataF, (d) => { return d.tsales })
 
     yScale = d3.scaleLinear()
         .domain([
-            d3.max(data, (d) => d.sales * 1.02), 
-            d3.min(data, (d) => d.sales)
+            ymin - (ymin * 0.15), 
+            ymax + (ymin * 0.15)
         ])
-        .range([height - tpadding, mpadding + tpadding]);
+        // .domain([44000, 151000])
+        .range([height, 0]);
 
     // Plotting the axes
 
     svg.append('g')
         .call(d3.axisBottom(xScale))
         .attr('id', 'x-axis')
-        .attr('transform', 'translate(0, ' + (height - (mpadding + lpadding)) + ')');
+        .attr('transform', 'translate(0, ' + height + ')');
 
     svg.append('g')
         .call(d3.axisLeft(yScale))
         .attr('id', 'y-axis')
-        .attr('transform', 'translate(' + (mpadding + lpadding) + ', ' + (lpadding - mpadding) + ')');
     
-    
+    // Plotting the bars
 
-
-    
+    svg.selectAll("rect")
+        .data(dataF)
+        .enter()
+        .append("rect")
+        .attr("x", (d) => { return xScale(d.month) + thick })
+        .attr("y", (d) => (height - yScale(d.tsales))) 
+        .attr("height", (d) => yScale(d.tsales)) 
+        .attr("width", xScale.bandwidth() - (thick * 2))
+        .style("margin", "15px")
+        .style("fill", "#333333")  
 
 })
