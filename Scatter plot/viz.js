@@ -23,7 +23,7 @@ let svg = d3.select('#canvas')
     .style('background-color', 'lavender')
 
 // Plotting the data
-d3.csv('data.csv', (data) => { 
+d3.csv('../Data files/nba_efficiency.csv', (data) => { 
 
     // Defining scales
     xScale = d3

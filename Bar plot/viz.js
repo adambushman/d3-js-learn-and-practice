@@ -33,7 +33,7 @@ let svg = d3.select("#canvas")
 
 // Plotting the data
 
-d3.csv('office_sales.csv', (data) => {
+d3.csv('../Data files/office_sales.csv', (data) => {
 
     // Grouping sales by month
 
