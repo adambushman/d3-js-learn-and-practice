@@ -1,6 +1,6 @@
 let columns
 
-d3.csv("../Data files/nba_efficiency.csv", (data) => {
+d3.csv("../../Data files/nba_efficiency.csv", (data) => {
 
     // Getting the column names
 

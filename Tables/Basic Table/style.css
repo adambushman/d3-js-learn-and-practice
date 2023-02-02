@@ -11,6 +11,7 @@ body {
     display: grid;
     place-content: center;
     background-color: #E5E7E6;
+    border-radius: 10px;
 }
 
 table {
