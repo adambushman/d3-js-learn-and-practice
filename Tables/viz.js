@@ -8,15 +8,23 @@ d3.csv("../Data files/nba_efficiency.csv", (data) => {
         columns = Object.keys(d)
     });
 
+    // Creating the table
+
     let table = d3.select("#my-table")
         .append("table");
+
+    // Creating a title
 
     let caption = table.append("caption")
         .text("Top NBA Scorers")
 
+    // Setting up the table head and body
+
     let thead = table.append("thead");
 
     let tbody = table.append("tbody");
+
+    // Appending rows and cells
 
     thead.append("tr")
         .selectAll("th")
