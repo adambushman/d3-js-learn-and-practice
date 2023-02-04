@@ -1,60 +1,104 @@
 let columns;
 
-d3.csv("../../Data files/office_sales.csv", (data) => {
+// Defining the sorting 
 
-    // Testing successful data load
+var sortInfo = { key: "sales", order: d3.descending };
 
-    console.log(data)
+d3.csv("../../Data files/office_sales.csv",
 
-    // Getting the column names
+    // Casting values
 
-    data.forEach((d) => {
-        columns = Object.keys(d)
-    });
+    (d) => {
+        return { 
+            month : d.month, 
+            sales_person : d.sales_person, 
+            sales: parseInt(d.sales) 
+        }
+    }, 
 
-    // Creating the table
+    // Loading the data
 
-    let table = d3.select("#my-table")
-        .append("table");
-    
-    // Creating a title and subtitle
+    (data) => {
 
-    table.append("caption")
-        .attr("class", "table-title")
-        .text("Sales of the Office");
+        // Testing successful data load
+        console.log(data)
 
-    table.append("caption")
-        .attr("class", "table-subtitle")
-        .text("From \'The Office\' Season 7 Episode 13")
-    
-    // Setting up the table head and body
-    
-    let thead = table.append("thead");
+        // Getting the column names
 
-    let tbody = table.append("tbody");
+        data.forEach((d) => {
+            columns = Object.keys(d)
+        });
 
-    // Appending rows and cells
+        // Creating the table
 
-    thead.append("tr")
-        .selectAll("th")
-        .data(columns)
-        .enter()
-        .append("th")
-        .text((c) => { return c });
+        let table = d3.select("#my-table")
+            .append("table");
+        
+        // Creating a title and subtitle
 
-    let rows = tbody.selectAll("tr")
-        .data(data)
-        .enter()
-        .append("tr");
+        table.append("caption")
+            .attr("class", "table-title")
+            .text("Sales of the Office");
 
-    let cells = rows.selectAll("td")
-        .data((row) => {
-            return columns.map((c) => {
-                return {column: c, value: row[c]}
+        table.append("caption")
+            .attr("class", "table-subtitle")
+            .text("From \'The Office\' Season 7 Episode 13")
+        
+        // Setting up the table head and body
+        
+        let thead = table.append("thead");
+
+        let tbody = table.append("tbody");
+
+        // Creating the columns
+
+        thead.append("tr")
+            .selectAll("th")
+            .data(columns)
+            .enter()
+            .append("th")
+            .on("click", (c) => { createTableBody(c) }) // Sorting function
+            .text((c) => { return c });
+
+        createTableBody("id");
+
+        function createTableBody(sortKey) {
+            
+            // Switch the sorting for every click
+
+            if (sortInfo.order.toString() == d3.ascending.toString()) { 
+                sortInfo.order = d3.descending; 
+            }
+            else { 
+                sortInfo.order = d3.ascending; 
+            }
+            
+            // Sorting the data
+
+            data.sort((x,y) => {
+                return sortInfo.order(x[sortKey], y[sortKey])
             });
-        })
-        .enter()
-        .append("td")
-        .text((d) => { return d.value });
+            
+            // Displaying the data 
+
+            tbody.selectAll("tr")
+                .data(data)
+                .enter()
+                .append("tr")
+                .selectAll("td")
+                .data((d) => { return d3.entries(d) })
+                .enter()
+                .append("td")
+                .text((d) => { return d.value });
+
+            // Implementing the sorting
+
+            tbody.selectAll("tr")
+                .data(data)
+                .selectAll("td")
+                .data((d) => { return d3.entries(d) })
+                .text((d)=> { return d.value });
+
+        };
 
 });
