@@ -24,7 +24,7 @@ d3.csv("../../Data files/nba_efficiency.csv", (data) => {
 
     let tbody = table.append("tbody");
 
-    // Appending rows and cells
+    // Adding the column headers
 
     thead.append("tr")
         .selectAll("th")
@@ -32,20 +32,15 @@ d3.csv("../../Data files/nba_efficiency.csv", (data) => {
         .enter()
         .append("th")
         .text((c) => { return c });
-    
-    let rows = tbody.selectAll("tr")
+
+    tbody.selectAll("tr")
         .data(data)
         .enter()
-        .append("tr");
-    
-    let cells = rows.selectAll("td")
-        .data((row) => {
-            return columns.map((c) => {
-                return {column: c, value: row[c]}
-            });
-        })
+        .append("tr")
+        .selectAll("td")
+        .data((d) => { return d3.entries(d) })
         .enter()
         .append("td")
-        .text((d) => { return d.value })
-
+        .text((d) => { return d.value });
+        
 })
