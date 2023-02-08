@@ -21,6 +21,13 @@ th {
     background-color: tan;
 }
 
+th:hover {
+    background-color: #C0955D;
+    color: #FFFFFF;
+    cursor: pointer;
+    transition: 250ms;
+}
+
 table, td, th {
     border: 0.5px dotted #888888;
     border-collapse: collapse;
