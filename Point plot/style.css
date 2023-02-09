@@ -1,0 +1,28 @@
+* {
+    font-family:Century Gothic;
+    background-color: #FFFFFF;
+    color: #414042;
+}
+
+body {
+    margin: 2rem 3rem;
+}
+
+#titles {
+    display:grid;
+    place-content:center;
+    text-align:center;
+}
+
+#canvas {
+    display:grid;
+    place-content:center;
+}
+
+.x-grid line, .y-grid line {
+    stroke: lightgray;
+}
+
+svg text {
+    fill: #414042;
+}
