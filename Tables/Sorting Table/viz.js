@@ -89,7 +89,14 @@ d3.csv("../../Data files/office_sales.csv",
                 .data((d) => { return d3.entries(d) })
                 .enter()
                 .append("td")
-                .text((d) => { return d.value });
+                .text((d) => { 
+                    if(d.key == "sales") {
+                        return d3.format("$,.0f")(d.value)
+                    }
+                    else {
+                        return d.value 
+                    }
+                });
 
             // Implementing the sorting
 
@@ -97,7 +104,14 @@ d3.csv("../../Data files/office_sales.csv",
                 .data(data)
                 .selectAll("td")
                 .data((d) => { return d3.entries(d) })
-                .text((d)=> { return d.value });
+                .text((d) => { 
+                    if(d.key == "sales") {
+                        return d3.format("$,.0f")(d.value)
+                    }
+                    else {
+                        return d.value 
+                    }
+                });
 
         };
 
