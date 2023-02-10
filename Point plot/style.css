@@ -10,6 +10,13 @@ body {
     place-content:center;
 }
 
+
+#titles {
+    display:grid;
+    place-content:center;
+    text-align:center;
+}
+
 #navigation {
     display:flex;
     flex-direction:row;
@@ -19,13 +26,17 @@ body {
 .toggle-bins {
     display:grid;
     place-items:center;
+    padding:1rem 2rem 1rem 0;
     padding-left: 2rem;
 }
 
-#titles {
-    display:grid;
-    place-content:center;
-    text-align:center;
+.toggle-bins h4 {
+    margin:0px;
+    padding-bottom:1rem;
+}
+
+.toggle-bins div:not(:last-child) {
+    padding-bottom:3px;
 }
 
 #canvas {
@@ -45,9 +56,8 @@ svg text {
     padding-bottom: 10px;
 }
 
-/*
 .vert-line {
     background-color:lightgray;
     height:0.5px;
+    padding: 0 10px 0 10px;
 }
-*/
