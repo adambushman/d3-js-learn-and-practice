@@ -15,6 +15,7 @@ let xlab = "Allowable Relative to UofU Health";
 let keys = ["UofU Health", "Intermountain Health", "Steward Healthcare"]
 
 // Drawing the plot
+
 let svg = d3.select("#canvas")
     .append("svg")
     .attr("width", width + margin.left + margin.right)
@@ -22,6 +23,8 @@ let svg = d3.select("#canvas")
     .style("background-color", "white")
     .append("g")
     .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+
+let pos = [document.getElementById("canvas").offsetLeft, document.getElementById("canvas").offsetTop]
 
 // Plotting the data
 
@@ -111,8 +114,6 @@ d3.csv("../Data files/health.csv",
         let yGrid = svg.append("g")
             .attr("class", "y-grid")
             .call(d3.axisLeft(yScale).tickSize(-width).tickFormat(''));
-            
-
         
         yGrid.select(".domain")
             .remove();
@@ -149,28 +150,30 @@ d3.csv("../Data files/health.csv",
         
             var mouseover = function(d) {
                 Tooltip
-                    .style("opacity", 1)
                     .transition()
                     .duration(250)
+                    .style("opacity", 1)
+
                 d3.select(this)
                     .style("opacity", 1)
                     .style("stroke", "#414042")
                     .style("stroke-width", 1)
             };
-        
+
             var mousemove = function(d) {
                 Tooltip
                     .html(d.system + "<br>" + Math.ceil(d.value * 100) + "%")
-                    .style("left", (d3.mouse(this)[0] + margin.left + margin.right + (mouse * 3)) + "px")
-                    .style("top", (d3.mouse(this)[1] + margin.top) + "px")
+                    .style("left", (d3.mouse(this)[0] + pos[0] + mouse) + "px")
+                    .style("top", (d3.mouse(this)[1] + pos[1] - (mouse / 2)) + "px")
                     .style("position", "absolute")
             };
         
             var mouseleave = function(d) {
                 Tooltip
-                    .style("opacity", 0)
                     .transition()
                     .duration(250)
+                    .style("opacity", 0)
+
                 d3.select(this)
                     .style("opacity", 0.7)
                     .style("stroke-width", 0)
