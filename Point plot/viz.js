@@ -5,14 +5,28 @@ let yAxisGrid;
 
 let s = 750;
 
-let margin = {top: s * 0.05, right: s * 0.05, bottom: s * 0.12, left: s * 0.12};
+let margin = {top: s * 0.05, right: s * 0.05, bottom: s * 0.12, left: s * 0.17};
 let width = s - margin.left - margin.right;
 let height = s - margin.top - margin.bottom;
 let mouse = s * 0.1;
 
 let xlab = "Allowable Relative to UofU Health";
 
-let keys = ["UofU Health", "Intermountain Health", "Steward Healthcare"]
+let keys = ["UofU Health", "Intermountain Health", "Steward Healthcare"];
+
+function getGroupers(d) {
+    let group = "";
+    let obj = [];
+
+    for (let i = 0; i < d.length; i++) {
+        if (group != d[i].insurers) {
+            group = d[i].insurers;
+            obj.push({ i: d[i].insurers, p: d[i].plans });
+        }
+    }
+
+    return obj;
+};
 
 // Drawing the plot
 
@@ -45,7 +59,8 @@ d3.csv("../Data files/health.csv",
 
     (data) => {
 
-        console.log(data)
+        console.log(data);
+        console.log(getGroupers(data));
 
         // Defining the scales
 
@@ -61,7 +76,7 @@ d3.csv("../Data files/health.csv",
 
         yScale = d3.scaleBand()
             .domain(data.map((d) => { return d.plans }))
-            .range([height, 0]);
+            .range([0, height]);
 
         colorScale = d3.scaleOrdinal()
             .domain(keys)
@@ -78,8 +93,10 @@ d3.csv("../Data files/health.csv",
             .call(xAxisGen)
             .attr("transform", "translate(0, " + height + ")");
 
-        let yAxis = svg.append("g")
+        let yAxisMain = svg.append("g")
             .call(yAxisGen);
+
+        let yAxisGroup
 
         xAxis.select(".domain")
             .remove();
@@ -90,13 +107,13 @@ d3.csv("../Data files/health.csv",
         xAxis.selectAll("text")
             .style("font-size", 12);
         
-        yAxis.select(".domain")
+        yAxisMain.select(".domain")
             .remove();
 
-        yAxis.selectAll("line")
+        yAxisMain.selectAll("line")
             .remove();
 
-        yAxis.selectAll("text")
+        yAxisMain.selectAll("text")
             .style("font-size", 15);
 
         // Plotting and styling the grid
@@ -234,4 +251,16 @@ d3.csv("../Data files/health.csv",
             .style("font-size", 15)
             .style("font-weight", 600)
             .text(xlab);
+
+        svg.selectAll("mylab")
+            .data(getGroupers(data))
+            .enter()
+            .append("text")
+            .attr("class", "group-text")
+            .attr("x", (-1 * margin.left) + 15)
+            .attr("y", (d) => { return yScale(d.p) + 15 })
+            .text((d) => { return d.i })
+            .style("font-weight", 600)
+            .style("text-decoration", "underline")
+            .style("color", "#414042");
 })
