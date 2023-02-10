@@ -23,3 +23,6 @@ SelectHealth,HP3,199000,UofU Health,97510,0
 SelectHealth,HP4,79000,Intermountain Health,17380,0.04
 SelectHealth,HP4,79000,Steward Healthcare,28440,0.14
 SelectHealth,HP4,79000,UofU Health,33180,-0.07
+SelectHealth,HP9,79000,Intermountain Health,1780,0.08
+SelectHealth,HP9,79000,Steward Healthcare,7440,0.12
+SelectHealth,HP9,79000,UofU Health,3180,-0.03
