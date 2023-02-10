@@ -6,6 +6,8 @@
 body {
     margin: 2rem 3rem;
     background-color: #FFFFFF;
+    display:grid;
+    place-content:center;
 }
 
 #navigation {
@@ -32,15 +34,20 @@ body {
 }
 
 .x-grid line, .y-grid line {
-    stroke: lightgray;
+    stroke:lightgray;
 }
 
 svg text {
-    fill: #414042;
+    fill:#414042;
 }
+
+#caption li:not(:last-child) {
+    padding-bottom: 10px;
+}
+
 /*
 .vert-line {
-    background-color:#414042;
-    height:5px;
+    background-color:lightgray;
+    height:0.5px;
 }
 */
