@@ -58,7 +58,22 @@ d3.csv("../../Data files/office_sales.csv",
             .enter()
             .append("th")
             .on("click", (c) => { createTableBody(c) }) // Sorting function
-            .text((c) => { return c });
+            .html((c) => { return c });
+            /*
+            .html((c) => { 
+                if(c == sortKey) {
+                    if(sortInfo.order.toString() == d3.ascending.toString()) {
+                        return c + " &#9660" 
+                    }
+                    else {
+                        return c + " &#9650" 
+                    }
+                }
+                else {
+                    return c
+                }
+            });
+            */
 
         createTableBody("id");
 
@@ -68,6 +83,7 @@ d3.csv("../../Data files/office_sales.csv",
 
             if (sortInfo.order.toString() == d3.ascending.toString()) { 
                 sortInfo.order = d3.descending; 
+                console.log(thead.selectAll("th").text())
             }
             else { 
                 sortInfo.order = d3.ascending; 
