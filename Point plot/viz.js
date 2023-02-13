@@ -14,6 +14,7 @@ let mouse = s * 0.1;
 let xlab = "Allowable Relative to UofU Health";
 
 let keys = ["UofU Health", "Intermountain Health", "Steward Healthcare"];
+let colors = ["#ac162c", "#8ab80c", "#214f78"];
 
 // Volume formatter
 
@@ -90,7 +91,7 @@ d3.csv("../Data files/health.csv",
 
         colorScale = d3.scaleOrdinal()
             .domain(keys)
-            .range(["#ac162c", "#8ab80c", "#214f78"]);
+            .range(colors);
         
         // Plotting and styling the axes
         
@@ -98,6 +99,7 @@ d3.csv("../Data files/health.csv",
         let yAxisGen = d3.axisLeft(yScale);
 
         xAxisGen.ticks(5)
+            .tickFormat(x => d3.format(".0%")(x));
 
         let xAxis = svg.append("g")
             .call(xAxisGen)
@@ -206,6 +208,9 @@ d3.csv("../Data files/health.csv",
                     .transition()
                     .duration(250)
                     .style("opacity", 0)
+                    // Moving the tool tip after looking
+                    // .style("left", (pos[0]) + "px")
+                    // .style("top", (pos[1]) + "px")
 
                 d3.select(this)
                     .style("opacity", 0.7)
@@ -251,14 +256,14 @@ d3.csv("../Data files/health.csv",
             .attr("y", 0)
             .attr("text-anchor", "middle")
             .style("font-size", 12)
-            .text("A note about the left side");
+            .text("Cheaper than UofU Heath");
         
         svg.append("text")
             .attr("x", 3 * width / 4)
             .attr("y", 0)
             .attr("text-anchor", "middle")
             .style("font-size", 12)
-            .text("A note about the right side");
+            .text("More Expensive than UofU Heath");
 
         // Plotting the axis labels
 
