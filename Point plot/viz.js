@@ -4,10 +4,11 @@ let colorScale;
 let yAxisGrid;
 
 let s = 750;
+let h = 750;
 
-let margin = {top: s * 0.05, right: s * 0.05, bottom: s * 0.12, left: s * 0.17};
+let margin = {top: h * 0.05, right: s * 0.05, bottom: h * 0.12, left: s * 0.17};
 let width = s - margin.left - margin.right;
-let height = s - margin.top - margin.bottom;
+let height = h - margin.top - margin.bottom;
 let mouse = s * 0.1;
 
 let xlab = "Allowable Relative to UofU Health";
