@@ -14,6 +14,15 @@ let xlab = "Allowable Relative to UofU Health";
 
 let keys = ["UofU Health", "Intermountain Health", "Steward Healthcare"];
 
+// Volume formatter
+
+const p = d3.precisionPrefix(1e3, 1e3);
+const f = d3.formatPrefix("." + p, 1e3);
+
+// console.log(f(181000));
+
+// Label Groupers
+
 function getGroupers(d) {
     let group = "";
     let obj = [];
@@ -21,7 +30,7 @@ function getGroupers(d) {
     for (let i = 0; i < d.length; i++) {
         if (group != d[i].insurers) {
             group = d[i].insurers;
-            obj.push({ i: d[i].insurers, p: d[i].plans });
+            obj.push({ i: d[i].insurers, p: d[i].plans});
         }
     }
 
@@ -115,7 +124,7 @@ d3.csv("../Data files/health.csv",
 
         yAxisMain.selectAll("text")
             .style("font-size", 15);
-            
+
 
         // Plotting and styling the grid
 
@@ -185,11 +194,9 @@ d3.csv("../Data files/health.csv",
                 let my_y = parseFloat(my_pos.substring(my_pos.indexOf(",")+1, my_pos.length-1));
 
                 Tooltip
-                    .html(d.system + "<br>" + Math.ceil(d.value * 100) + "%")
-                    //.style("left", (d3.mouse(this)[0] + pos[0] + mouse) + "px")
-                    //.style("top", (d3.mouse(this)[1] + pos[1] - (mouse / 2)) + "px")
+                    .html("<h4 class='tt'>" + d.system + "</h4>" + "<p>Value: " + Math.ceil(d.value * 100) + "%<br>Volume: " + f(d.system_volume) + "</p>")
                     .style("left", (my_x + pos[0] + mouse) + "px")
-                    .style("top", (my_y + pos[1] - (mouse / 2)) + "px")
+                    .style("top", (my_y + pos[1] - mouse) + "px")
                     .style("position", "absolute")
             };
         
@@ -221,17 +228,9 @@ d3.csv("../Data files/health.csv",
 
         var shpe = d3.symbol().type(customSymbolSquare).size(200);
 
-        svg
-            //.selectAll("circle")
-            .selectAll(".point")
+        svg.selectAll(".point")
             .data(data)
             .enter()
-                /*
-                .append("circle")
-                .attr("cx", (d) => { return xScale(d.value) })
-                .attr("cy", (d) => { return yScale(d.plans) + (yScale.bandwidth() / 2) })
-                .attr("r", 10)
-                */
                 .append("path")
                 .attr("class", "point")
                 .attr("d", shpe)
@@ -282,4 +281,18 @@ d3.csv("../Data files/health.csv",
             .style("font-weight", 600)
             .style("text-decoration", "underline")
             .style("color", "#414042");
+
+        svg.selectAll("myvol")
+            .data(data)
+            .enter()
+            .append("text")
+            .attr("class", "vol-text")
+            .attr("x", -15)
+            .attr("y", (d) => { return yScale(d.plans) + yScale.bandwidth() - 12 })
+            .text((d) => { return f(d.plan_volume) })
+            .style("font-size", 12)
+            .style("text-anchor", "end")
+            .style("font-style", "italic")
+            .style("color", "#414042");
+
 })

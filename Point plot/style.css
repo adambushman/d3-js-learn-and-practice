@@ -52,6 +52,22 @@ svg text {
     fill:#414042;
 }
 
+.tooltip h4, p {
+    color:#FFFFFF;
+}
+
+.tooltip h4 {
+    text-decoration:underline;
+    padding:0 0 5px 0;
+    margin:0;
+}
+
+.tooltip p {
+    font-size: 13px;
+    padding:0 0 2px 0;
+    margin:0;
+}
+
 #caption li:not(:last-child) {
     padding-bottom: 10px;
 }
