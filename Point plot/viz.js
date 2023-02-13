@@ -217,11 +217,11 @@ d3.csv("../Data files/health.csv",
             draw: function(context, size){
                 let h = Math.sqrt(size)*0.75/2;
                 let w = Math.sqrt(size)/2;
-                context.moveTo(-w,-h);
-                context.lineTo(-w,h);
-                context.lineTo(w-w,h*2.5);
-                context.lineTo(w,h);
-                context.lineTo(w,-h);
+                context.moveTo(0,0);
+                context.lineTo(-w,-h*1.5);
+                context.lineTo(-w,-h*3.5);
+                context.lineTo(w,-h*3.5);
+                context.lineTo(w,-h*1.5);
                 context.closePath();
             }
         }
@@ -235,9 +235,8 @@ d3.csv("../Data files/health.csv",
                 .attr("class", "point")
                 .attr("d", shpe)
                 .attr("transform", (d) => {
-                    return "translate(" + xScale(d.value) + ", " + (yScale(d.plans) + (yScale.bandwidth() / 2) - 12) + ")"
+                    return "translate(" + xScale(d.value) + ", " + (yScale(d.plans) + (yScale.bandwidth() / 2)) + ")"
                 })
-                
                 .style("fill", (d) => { return colorScale(d.system) })
                 .style("opacity", 0.7)
             .on("mouseover", mouseover)
