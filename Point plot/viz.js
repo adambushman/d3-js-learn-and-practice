@@ -115,6 +115,7 @@ d3.csv("../Data files/health.csv",
 
         yAxisMain.selectAll("text")
             .style("font-size", 15);
+            
 
         // Plotting and styling the grid
 
@@ -178,10 +179,17 @@ d3.csv("../Data files/health.csv",
             };
 
             var mousemove = function(d) {
+
+                let my_pos = d3.select(this).attr("transform");
+                let my_x = parseFloat(my_pos.substring(10, my_pos.indexOf(",")));
+                let my_y = parseFloat(my_pos.substring(my_pos.indexOf(",")+1, my_pos.length-1));
+
                 Tooltip
                     .html(d.system + "<br>" + Math.ceil(d.value * 100) + "%")
-                    .style("left", (d3.mouse(this)[0] + pos[0] + mouse) + "px")
-                    .style("top", (d3.mouse(this)[1] + pos[1] - (mouse / 2)) + "px")
+                    //.style("left", (d3.mouse(this)[0] + pos[0] + mouse) + "px")
+                    //.style("top", (d3.mouse(this)[1] + pos[1] - (mouse / 2)) + "px")
+                    .style("left", (my_x + pos[0] + mouse) + "px")
+                    .style("top", (my_y + pos[1] - (mouse / 2)) + "px")
                     .style("position", "absolute")
             };
         
@@ -196,30 +204,41 @@ d3.csv("../Data files/health.csv",
                     .style("stroke-width", 0)
             };
 
-        // Drawing points
+        // Custom Shape
 
-        var dia = d3.symbol()
-            .type(d3.symbolDiamond)
-            .size(150);
+        var customSymbolSquare = { 
+            draw: function(context, size){
+                let h = Math.sqrt(size)*0.75/2;
+                let w = Math.sqrt(size)/2;
+                context.moveTo(-w,-h);
+                context.lineTo(-w,h);
+                context.lineTo(w-w,h*2.5);
+                context.lineTo(w,h);
+                context.lineTo(w,-h);
+                context.closePath();
+            }
+        }
+
+        var shpe = d3.symbol().type(customSymbolSquare).size(200);
 
         svg
-            .selectAll("circle")
-            //.selectAll(".point")
+            //.selectAll("circle")
+            .selectAll(".point")
             .data(data)
             .enter()
-                
+                /*
                 .append("circle")
                 .attr("cx", (d) => { return xScale(d.value) })
                 .attr("cy", (d) => { return yScale(d.plans) + (yScale.bandwidth() / 2) })
                 .attr("r", 10)
-                /*
+                */
                 .append("path")
                 .attr("class", "point")
-                .attr("d", dia)
+                .attr("d", shpe)
                 .attr("transform", (d) => {
-                    return "translate(" + xScale(d.value) + ", " + (yScale(d.plans) + (yScale.bandwidth() / 2) - 10) + ")"
+                    return "translate(" + xScale(d.value) + ", " + (yScale(d.plans) + (yScale.bandwidth() / 2) - 12) + ")"
                 })
-                */
+                
                 .style("fill", (d) => { return colorScale(d.system) })
                 .style("opacity", 0.7)
             .on("mouseover", mouseover)
