@@ -1,28 +1,28 @@
 insurers,plans,plan_volume,system,system_volume,value
-Aetna,HP7,152000,Intermountain Health,56240,-0.06
-Aetna,HP7,152000,Steward Healthcare,31920,-0.08
-Aetna,HP7,152000,UofU Health,63840,-0.03
-Aetna,HP8,80000,Intermountain Health,15200,0.1
-Aetna,HP8,80000,Steward Healthcare,15200,-0.11
-Aetna,HP8,80000,UofU Health,49600,-0.15
-Cigna,HP5,60000,Intermountain Health,18000,0.04
-Cigna,HP5,60000,Steward Healthcare,20400,-0.02
-Cigna,HP5,60000,UofU Health,21600,-0.07
-Cigna,HP6,124000,Intermountain Health,21080,-0.07
-Cigna,HP6,124000,Steward Healthcare,32240,-0.12
-Cigna,HP6,124000,UofU Health,70680,0
-Regence,HP1,17000,Intermountain Health,1870,-0.01
-Regence,HP1,17000,Steward Healthcare,6120,0.08
-Regence,HP1,17000,UofU Health,9010,-0.04
-Regence,HP2,153000,Intermountain Health,45900,0.1
-Regence,HP2,153000,Steward Healthcare,41310,-0.03
-Regence,HP2,153000,UofU Health,65790,0
-SelectHealth,HP3,199000,Intermountain Health,65670,0.06
-SelectHealth,HP3,199000,Steward Healthcare,35820,-0.06
-SelectHealth,HP3,199000,UofU Health,97510,0
-SelectHealth,HP4,79000,Intermountain Health,17380,0.04
-SelectHealth,HP4,79000,Steward Healthcare,28440,0.14
-SelectHealth,HP4,79000,UofU Health,33180,-0.07
-SelectHealth,HP9,79000,Intermountain Health,1780,0.08
-SelectHealth,HP9,79000,Steward Healthcare,7440,0.12
-SelectHealth,HP9,79000,UofU Health,3180,-0.03
+Aetna,ALTIUS,152000,Intermountain Health,56240,-0.06
+Aetna,ALTIUS,152000,Steward Healthcare,31920,-0.08
+Aetna,ALTIUS,152000,UofU Health,63840,-0.03
+Aetna,CONNECTED,80000,Intermountain Health,15200,0.1
+Aetna,CONNECTED,80000,Steward Healthcare,15200,-0.11
+Aetna,CONNECTED,80000,UofU Health,49600,-0.15
+Cigna,HMO,60000,Intermountain Health,18000,0.04
+Cigna,HMO,60000,Steward Healthcare,20400,-0.02
+Cigna,HMO,60000,UofU Health,21600,-0.07
+Cigna,PPO,124000,Intermountain Health,21080,-0.07
+Cigna,PPO,124000,Steward Healthcare,32240,-0.12
+Cigna,PPO,124000,UofU Health,70680,0
+Regence,FOCALPOINT,17000,Intermountain Health,1870,-0.01
+Regence,FOCALPOINT,17000,Steward Healthcare,6120,0.08
+Regence,FOCALPOINT,17000,UofU Health,9010,-0.04
+Regence,VALUECARE,153000,Intermountain Health,45900,0.1
+Regence,VALUECARE,153000,Steward Healthcare,41310,-0.03
+Regence,VALUECARE,153000,UofU Health,65790,0
+SelectHealth,CARE,199000,Intermountain Health,65670,0.06
+SelectHealth,CARE,199000,Steward Healthcare,35820,-0.06
+SelectHealth,CARE,199000,UofU Health,97510,0
+SelectHealth,MED CHIP,79000,Intermountain Health,17380,0.04
+SelectHealth,MED CHIP,79000,Steward Healthcare,28440,0.14
+SelectHealth,MED CHIP,79000,UofU Health,33180,-0.07
+SelectHealth,VALUE,79000,Intermountain Health,1780,0.08
+SelectHealth,VALUE,79000,Steward Healthcare,7440,0.12
+SelectHealth,VALUE,79000,UofU Health,3180,-0.03
