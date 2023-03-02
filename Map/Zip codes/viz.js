@@ -1,6 +1,3 @@
-// Color scale
-let colorScale;
-
 
 d3.json("https://raw.githubusercontent.com/OpenDataDE/State-zip-code-GeoJSON/master/ut_utah_zip_codes_geo.min.json", data => {
     // console.log(data.features);
@@ -13,5 +10,39 @@ d3.json("https://raw.githubusercontent.com/OpenDataDE/State-zip-code-GeoJSON/mas
     })
 
     console.log(data)
+
+    let width = 1000
+    let height = 700
+
+    // Map projection
+
+    var path = d3.geoPath();
+    var projection = d3.geoAlbers()
+        .scale(width*15)
+        .center([-16, 40.75])
+        .translate([width / 2, height / 2]);
+
+    svg = d3.select("#canvas")
+        .append("svg")
+        .attr("width", width)
+        .attr("height", height);
+
+    let davis_zips = ['84015', '84041', '84010', '84037', '84403', '84405', '84103', '84075', '84040', '84087', '84025', '84054', '84014', '84315', '84056', '84011', '84016', '84089']
+
+    svg.append("g")
+        .selectAll("path")
+        .data(data)
+        .enter()
+            .append("path")
+            .attr("d", d3.geoPath()
+                .projection(projection)
+            )
+            .attr("fill", (d) => { 
+                return (davis_zips.includes(d.properties.ZCTA5CE10)) ? '#ac192d' : '#ebeaeb'
+             })
+             .attr("stroke", (d) => { 
+                return (davis_zips.includes(d.properties.ZCTA5CE10)) ? '#ebeaeb' : '#ac192d'
+             })
+            .attr("stroke-width", 0.5);
 
 })
