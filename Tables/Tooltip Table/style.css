@@ -26,3 +26,26 @@ table, td, th {
     border-collapse: collapse;
     padding: 3px 5px;
 }
+
+td .TT {
+    position:relative;
+}
+
+td .ToolTip {
+    display:none;
+    position:absolute; 
+    z-index:100;
+    border:1px;
+    background-color:white;
+    border-style:solid;
+    border-width:1px;
+    border-color:red;
+    padding:3px;
+    color:red; 
+    top:20px; 
+    left:20px;
+}
+
+.TT:hover span.ToolTip{
+    display:block;
+}

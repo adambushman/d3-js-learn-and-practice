@@ -1,18 +1,16 @@
 let columns;
 
-// Defining the sorting 
-
-var sortInfo = { key: "sales", order: d3.descending };
-
-d3.csv("../../Data files/office_sales.csv",
+d3.csv("../../Data files/nba_efficiency.csv",
 
     // Casting values
 
     (d) => {
         return { 
-            month : d.month, 
-            sales_person : d.sales_person, 
-            sales: parseInt(d.sales) 
+            PLAYER: d.PLAYER,
+            TEAM: d.TEAM, 
+            MIN: parseInt(d.PTS) , 
+            PTS: parseInt(d.PTS) , 
+            TSA: parseInt(d.TSA) 
         }
     }, 
 
@@ -43,6 +41,13 @@ d3.csv("../../Data files/office_sales.csv",
         table.append("caption")
             .attr("class", "table-subtitle")
             .text("From \'The Office\' Season 7 Episode 13")
+
+        // ToolTip Function
+
+        function genTT(val, min) {
+            let scaled = Math.round(val * 36 / min, 1)
+            return `${scaled} per 36`
+        }
         
         // Setting up the table head and body
         
@@ -70,13 +75,21 @@ d3.csv("../../Data files/office_sales.csv",
             .data((d) => { return d3.entries(d) })
             .enter()
             .append("td")
-            .text((d) => { 
-                if(d.key == "sales") {
-                    return d3.format("$,.0f")(d.value)
+            .attr("class", (d) => {
+                if(d.key == "PTS") {
+                    return "TT"
+                }
+            })
+            //.text((d) => { return d.value })
+            .html((d) => {
+                if(d.key == "PTS") {
+                    return d.value + "<span class='ToolTip'>" + d.value + "</span>"
                 }
                 else {
                     return d.value 
                 }
+                
             });
+            // Append spans here
 
 });
