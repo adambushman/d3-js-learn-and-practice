@@ -8,9 +8,11 @@ d3.csv("../../Data files/nba_efficiency.csv",
         return { 
             PLAYER: d.PLAYER,
             TEAM: d.TEAM, 
-            MIN: parseInt(d.MIN), 
-            PTS: parseInt(d.PTS), 
-            TSA: parseInt(d.TSA), 
+            MIN: parseFloat(d.MIN), 
+            PTS: parseFloat(d.PTS), 
+            TSA: parseFloat(d.TSA), 
+            PTS36: Math.round(10 *parseFloat(d.PTS) * 36 / parseFloat(d.MIN)) / 10, 
+            TSA36: Math.round(10 * parseFloat(d.TSA) * 36 / parseFloat(d.MIN)) / 10
         }
     }, 
 
@@ -21,21 +23,15 @@ d3.csv("../../Data files/nba_efficiency.csv",
         // Testing successful data load
         console.log(data)
 
-        // Additional data
-        let data_plus = [];
-        data.forEach((d) => {
-            data_plus.push({
-                PLAYER: d.PLAYER, 
-                PTS36: Math.round(parseInt(d.PTS) * 36 / parseInt(d.MIN)), 
-                TSA36: Math.round(parseInt(d.TSA) * 36 / parseInt(d.MIN))
-            })
-        });
-
         // Getting the column names
 
         data.forEach((d) => {
             columns = Object.keys(d)
         });
+
+        let cols_remove = ["PTS36", "TSA36"];
+
+        columns = columns.filter(v => !cols_remove.includes(v));
 
         // Creating the table
 
@@ -46,26 +42,60 @@ d3.csv("../../Data files/nba_efficiency.csv",
 
         table.append("caption")
             .attr("class", "table-title")
-            .text("Sales of the Office");
+            .text("NBA Top Scorers");
 
         table.append("caption")
             .attr("class", "table-subtitle")
-            .text("From \'The Office\' Season 7 Episode 13")
+            .text("2023 Season | Sourced from NBA.com")
 
         // ToolTip Functions
 
-        function getAdded(id, metric) {
-            data_plus.forEach((d) => {
-                if(id == d.PLAYER) {
-                    let t = d[metric + "36"];
-                    let test = genTT(t);
-                    return test;
-                }
-            })
+        var Tooltip = d3.select("#my-table")
+            .append("div")
+            .attr("class", "tooltip")
+            .style("opacity", 0)
+            .style("color", "white")
+            .style("background-color", "#C8102E")
+            .style("border-radius", "5px")
+            .style("padding", "5px 10px");
+
+        function mouseover(d) {
+            Tooltip
+                .transition()
+                .duration(250)
+                .style("opacity", 1);
+
+            d3.select(this)
+                .transition()
+                .duration(250)
+                .style("background-color", "#C8102E")
+                .style("color", "#FFFFFF");
         }
 
-        function genTT(val) {
-            return `<span class="ToolTip">${val} per 36</span>`
+        function mousemove(d) {
+            let my_x = this.offsetLeft;
+            let my_y = this.offsetTop;
+
+            // console.log(d);
+
+            Tooltip
+                .html(`<h4 class='tt'>${d.PTS}</h4>`)
+                .style("left", (my_x+90) + "px")
+                .style("top", (my_y-75) + "px")
+                .style("position", "absolute");
+        }
+
+        function mouseleave(d) {
+            Tooltip
+                .transition()
+                .duration(250)
+                .style("opacity", 0);
+            
+            d3.select(this)
+                .transition()
+                .duration(250)
+                .style("background-color", "#FFFFFF")
+                .style("color", "#000000");
         }
         
         // Setting up the table head and body
@@ -83,7 +113,6 @@ d3.csv("../../Data files/nba_efficiency.csv",
             .data(columns)
             .enter()
             .append("th")
-            .on("click", (c) => { createTableBody(c) }) // Sorting function
             .html((c) => { return c });
 
         // Displaying the data 
@@ -96,25 +125,12 @@ d3.csv("../../Data files/nba_efficiency.csv",
             .data((d) => { return d3.entries(d) })
             .enter()
             .append("td")
-            .attr("class", (d) => {
-                if(["PTS", "TSA"].includes(d.key)) {
-                    return "TT"
+            .text((d) => { 
+                if(columns.includes(d.key)) {
+                    return d.value
                 }
-            })
-            //.text((d) => { return d.value })
-            .html((d) => {
-                if(d.key == "PLAYER") {
-                    my_player = d.value;
-                }
-                if(["PTS", "TSA"].includes(d.key)) {
-                    // CAN'T FIGURE THIS ONE OUT
-                    // Issue is the function is returning NaN
-                    console.log(getAdded(my_player, d.key))
-                    return d.value + getAdded(my_player, d.key)
-                }
-                else {
-                    return d.value 
-                }
-                
-            });
+             })
+            .on("mouseover", mouseover)
+            .on("mousemove", mousemove)
+            .on("mouseleave", mouseleave);
 });
