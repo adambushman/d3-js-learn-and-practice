@@ -1,0 +1,28 @@
+* {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.table-title {
+    font-size: 2.1rem;
+    font-weight: 700;
+}
+
+.table-subtitle {
+    font-size: 1.1rem;
+    font-style: italic;
+    padding: 1px 0px 10px 0px;
+}
+
+table {
+    width: 70%;
+}
+
+th {
+    background-color: tan;
+}
+
+table, td, th {
+    border: 0.5px dotted #888888;
+    border-collapse: collapse;
+    padding: 3px 5px;
+}
