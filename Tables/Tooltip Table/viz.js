@@ -8,18 +8,28 @@ d3.csv("../../Data files/nba_efficiency.csv",
         return { 
             PLAYER: d.PLAYER,
             TEAM: d.TEAM, 
-            MIN: parseInt(d.PTS) , 
-            PTS: parseInt(d.PTS) , 
-            TSA: parseInt(d.TSA) 
+            MIN: parseInt(d.MIN), 
+            PTS: parseInt(d.PTS), 
+            TSA: parseInt(d.TSA), 
         }
     }, 
 
     // Loading the data
 
     (data) => {
-
+        
         // Testing successful data load
         console.log(data)
+
+        // Additional data
+        let data_plus = [];
+        data.forEach((d) => {
+            data_plus.push({
+                PLAYER: d.PLAYER, 
+                PTS36: Math.round(parseInt(d.PTS) * 36 / parseInt(d.MIN)), 
+                TSA36: Math.round(parseInt(d.TSA) * 36 / parseInt(d.MIN))
+            })
+        });
 
         // Getting the column names
 
@@ -42,11 +52,20 @@ d3.csv("../../Data files/nba_efficiency.csv",
             .attr("class", "table-subtitle")
             .text("From \'The Office\' Season 7 Episode 13")
 
-        // ToolTip Function
+        // ToolTip Functions
 
-        function genTT(val, min) {
-            let scaled = Math.round(val * 36 / min, 1)
-            return `${scaled} per 36`
+        function getAdded(id, metric) {
+            data_plus.forEach((d) => {
+                if(id == d.PLAYER) {
+                    let t = d[metric + "36"];
+                    let test = genTT(t);
+                    return test;
+                }
+            })
+        }
+
+        function genTT(val) {
+            return `<span class="ToolTip">${val} per 36</span>`
         }
         
         // Setting up the table head and body
@@ -54,6 +73,8 @@ d3.csv("../../Data files/nba_efficiency.csv",
         let thead = table.append("thead");
 
         let tbody = table.append("tbody");
+
+        let my_player;
 
         // Creating the columns
 
@@ -76,20 +97,24 @@ d3.csv("../../Data files/nba_efficiency.csv",
             .enter()
             .append("td")
             .attr("class", (d) => {
-                if(d.key == "PTS") {
+                if(["PTS", "TSA"].includes(d.key)) {
                     return "TT"
                 }
             })
             //.text((d) => { return d.value })
             .html((d) => {
-                if(d.key == "PTS") {
-                    return d.value + "<span class='ToolTip'>" + d.value + "</span>"
+                if(d.key == "PLAYER") {
+                    my_player = d.value;
+                }
+                if(["PTS", "TSA"].includes(d.key)) {
+                    // CAN'T FIGURE THIS ONE OUT
+                    // Issue is the function is returning NaN
+                    console.log(getAdded(my_player, d.key))
+                    return d.value + getAdded(my_player, d.key)
                 }
                 else {
                     return d.value 
                 }
                 
             });
-            // Append spans here
-
 });
