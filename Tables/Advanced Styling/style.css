@@ -4,6 +4,7 @@
     padding: 0;
 }
 
+
 /* Standard Headers */
 
 div {
@@ -17,6 +18,7 @@ h2 {
 h4 {
     margin-bottom:1rem;
 }
+
 
 /* Table 1 Styling */
 
@@ -50,21 +52,33 @@ h4 {
 }
 
 
-
-
-
-
 /* Table 2 Styling */
 
 #my-table-2 {
     font-family: 'Comfortaa', cursive;
     display: grid;
     justify-content:center;
+    background-color: #e5dcdd;
+    color: #424c55
 }
 
 #my-table-2 table {
     border-collapse:collapse;
+    text-align: left;
 }
+
+#my-table-2 th {
+    background-color: #825e62;
+    color: #f5edf0;
+    padding: 1rem 2rem;
+    font-size: 0.9rem;
+}
+
+#my-table-2 td {
+    padding: 0.75rem 2rem;
+    border-bottom: 1px solid #825e62;
+}
+
 
 /* Table 3 Styling */
 
@@ -77,6 +91,7 @@ h4 {
 #my-table-3 table {
     border-collapse:collapse;
 }
+
 
 /* Table 4 Styling */
 
