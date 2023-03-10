@@ -71,7 +71,7 @@ h4 {
     background-color: #825e62;
     color: #f5edf0;
     padding: 1rem 2rem;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
 }
 
 #my-table-2 td {
@@ -86,10 +86,33 @@ h4 {
     font-family: 'Source Sans Pro', sans-serif;
     display: grid;
     justify-content:center;
+    background-color: #E7E4F2;
+    color: #2b2a2e;
 }
 
 #my-table-3 table {
     border-collapse:collapse;
+    background-color: #F4F4F6;
+    
+}
+
+#my-table-3 th {
+    background-color:#D2D3DA;
+    text-align:center;
+    padding: 1rem 2rem;
+    border: 2px solid #F4F4F6;
+    border-bottom: 4px solid #BCBDC8;
+    letter-spacing: 0.1rem;
+}
+
+#my-table-3 td {
+    padding: 1rem 2rem;
+    text-align:left;
+    border: 2px solid #D2D3DA;
+}
+
+#my-table-3 tr:nth-child(even) {
+    background-color: #E9E9EC;
 }
 
 
