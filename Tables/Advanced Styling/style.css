@@ -1,0 +1,37 @@
+* {
+    font-family: consolas;
+    color: #141301;
+}
+
+body {
+    margin: 3rem;
+}
+
+#my-table {
+    display: grid;
+    place-content: center;
+    background-color: #E5E7E6;
+    border-radius: 10px;
+}
+
+table {
+    margin: 2rem 4rem;
+}
+
+caption {
+    font-size: 2rem;
+    padding: 1rem 1rem;
+}
+
+th {
+    color: #E5E7E6;
+    background-color: #141301;
+}
+
+td, th {
+    padding: 5px 4px;
+  }
+
+tr:nth-child(even) {
+    background-color: #B7B5B3;
+}
