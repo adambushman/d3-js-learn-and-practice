@@ -4,11 +4,15 @@
     padding: 0;
 }
 
-body div {
+div {
     margin-bottom: 3rem;
 }
 
 /* Table 1 Styling */
+
+#my-table-1 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
 
 #my-table-1 #my-table {
 
@@ -16,17 +20,29 @@ body div {
 
 /* Table 2 Styling */
 
+#my-table-2 {
+    font-family: 'Comfortaa', cursive;
+}
+
 #my-table-2 #my-table {
 
 }
 
 /* Table 3 Styling */
 
+#my-table-3 {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 #my-table-3 #my-table {
 
 }
 
 /* Table 4 Styling */
+
+#my-table-4 {
+    font-family: 'Domine', serif;
+}
 
 #my-table-4 #my-table {
 
