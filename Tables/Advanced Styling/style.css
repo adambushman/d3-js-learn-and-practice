@@ -93,7 +93,6 @@ h4 {
 #my-table-3 table {
     border-collapse:collapse;
     background-color: #F4F4F6;
-    
 }
 
 #my-table-3 th {
@@ -126,4 +125,16 @@ h4 {
 
 #my-table-4 table {
     border-collapse:collapse;
+}
+
+#my-table-4 th {
+    color: #db7221;
+    text-align: left;
+    padding: 0.5rem 2rem 0.5rem 0rem;
+    border-bottom: 1px solid #dedcd9;
+}
+
+#my-table-4 td {
+    padding: 0.5rem 2rem 0.5rem 0rem;
+    border-bottom: 1px solid #dedcd9;
 }
