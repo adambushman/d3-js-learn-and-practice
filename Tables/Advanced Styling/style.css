@@ -12,38 +12,46 @@ div {
 
 #my-table-1 {
     font-family: 'Source Sans Pro', sans-serif;
+    display: grid;
+    justify-content:center;
 }
 
-#my-table-1 #my-table {
-
+#my-table-1 table {
+    border-collapse:collapse;
 }
 
 /* Table 2 Styling */
 
 #my-table-2 {
     font-family: 'Comfortaa', cursive;
+    display: grid;
+    justify-content:center;
 }
 
-#my-table-2 #my-table {
-
+#my-table-2 table {
+    border-collapse:collapse;
 }
 
 /* Table 3 Styling */
 
 #my-table-3 {
     font-family: 'Source Sans Pro', sans-serif;
+    display: grid;
+    justify-content:center;
 }
 
-#my-table-3 #my-table {
-
+#my-table-3 table {
+    border-collapse:collapse;
 }
 
 /* Table 4 Styling */
 
 #my-table-4 {
     font-family: 'Domine', serif;
+    display: grid;
+    justify-content:center;
 }
 
-#my-table-4 #my-table {
-
+#my-table-4 table {
+    border-collapse:collapse;
 }
