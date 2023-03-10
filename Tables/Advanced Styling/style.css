@@ -1,37 +1,33 @@
-* {
-    font-family: consolas;
-    color: #141301;
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-body {
-    margin: 3rem;
+body div {
+    margin-bottom: 3rem;
 }
 
-#my-table {
-    display: grid;
-    place-content: center;
-    background-color: #E5E7E6;
-    border-radius: 10px;
+/* Table 1 Styling */
+
+#my-table-1 #my-table {
+
 }
 
-table {
-    margin: 2rem 4rem;
+/* Table 2 Styling */
+
+#my-table-2 #my-table {
+
 }
 
-caption {
-    font-size: 2rem;
-    padding: 1rem 1rem;
+/* Table 3 Styling */
+
+#my-table-3 #my-table {
+
 }
 
-th {
-    color: #E5E7E6;
-    background-color: #141301;
-}
+/* Table 4 Styling */
 
-td, th {
-    padding: 5px 4px;
-  }
+#my-table-4 #my-table {
 
-tr:nth-child(even) {
-    background-color: #B7B5B3;
 }
