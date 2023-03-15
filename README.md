@@ -8,3 +8,9 @@ Visualization is the crossroads of information sharing and true learning, which 
 from data analysis and machine learning. I work on improving my visualization skills using D3.js and its extensions.
 
 Within this repository you'll find JavaScript and HTML files, along with datasets and links to the resources I used to learn and practice the visualization techniques. 
+
+## Helpful Resources
+
+[D3.js Documentation](https://d3js.org/)
+
+[D3 Graph Gallery](https://d3-graph-gallery.com/index.html)
