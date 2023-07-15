@@ -37,6 +37,18 @@ function getNewData(data) {
     return(newData);
 }
 
+// Function to generate a y scale
+function genYScale(data) {
+    scale <- d3.scaleLinear()
+        .domain([
+            d3.min(data, (d) => { return d[filterData.metric] }), 
+            d3.max(data, (d) => { return d[filterData.metric] })
+        ])
+        .range([ dims.height, 0 ])
+
+    return(scale)
+}
+
 // Function to coordinate the data viz
 
 function coordinateViz() {
@@ -87,8 +99,7 @@ function drawCanvas(data) {
 
     yScale = d3.scaleLinear()
         .domain([
-            d3.min(data, (d) => { return d[filterData.metric] }), 
-            d3.max(data, (d) => { return d[filterData.metric] })
+            0, d3.max(data, (d) => { return d[filterData.metric] })
         ])
         .range([ dims.height, 0 ]);
 
@@ -146,6 +157,17 @@ function updateData(data) {
             newData = getNewData(data);
 
             // Update the axes
+            yScale = d3.scaleLinear()
+                .domain([
+                    0, d3.max(newData, (d) => { return d[filterData.metric] })
+                ])
+                .range([ dims.height, 0 ]);
+            
+            d3.select("#yaxis")
+                .transition()
+                .duration(1500)
+                .ease(d3.easeSin)
+                .call(d3.axisLeft(yScale));
 
             // Update the lines
             let curr_path = d3.select("#line-path").datum(newData);
