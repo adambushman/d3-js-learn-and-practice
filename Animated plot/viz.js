@@ -1,7 +1,8 @@
+
 const parseDate = d3.timeParse("%Y-%m-%d");
-const transitionPath = d3.transition()
-    .ease(d3.easeSin)
-    .duration(3500);
+const drawPathTransition = d3.transition()
+    .duration(3500)
+    .ease(d3.easeSin);
 let margin = {left: 50, right: 25, top: 60, bottom: 50}
 let dims = {width: 1000, height: 700};
 
@@ -24,39 +25,43 @@ function getFilters() {
     })
 }
 
+// Function to filter the data
+function getNewData(data) {
+    filterData = getFilters();
+    newData = aq.from(data)
+        .filter(aq.escape(
+            d => d.name == filterData.player & !isNaN(d[filterData.metric])
+        ))
+        .objects();
+
+    return(newData);
+}
+
 // Function to coordinate the data viz
 
 function coordinateViz() {
     d3.csv('../Data files/game_points.csv', 
-    raw => {
-        return({
-            game_date: parseDate(raw.game_date), 
-            headshot: raw.headshot, 
-            name: raw.name, 
-            total: parseInt(raw.total), 
-            roll: parseInt(raw.roll)
-        })
-    }, 
-    data => {
-        console.log(data);
+        raw => {
+            return({
+                game_date: parseDate(raw.game_date), 
+                headshot: raw.headshot, 
+                name: raw.name, 
+                total: parseInt(raw.total), 
+                roll: parseInt(raw.roll)
+            })
+        }, 
+        data => {
+            console.log(data);
 
-        // Filter data
+            // Filter data
+            newData = getNewData(data);
 
-        filterData = getFilters();
-        newData = aq.from(data)
-            .filter(aq.escape(
-                d => d.name == filterData.player & !isNaN(d[filterData.metric])
-            ))
-            .objects();
+            // Draw the canvas
+            drawCanvas(newData);
 
-        // Draw the canvas
-
-        drawCanvas(newData, filterData);
-
-        // Draw the lines
-
-        drawLines(newData);
-    })
+            // Draw the lines
+            drawLines(newData);
+    });
 }
 
 // Function to draw the canvas
@@ -79,8 +84,6 @@ function drawCanvas(data) {
     xScale = d3.scaleTime()
         .domain(d3.extent(data, (d) => { return d.game_date}))
         .range([ 0, dims.width ]);
-
-    console.log(filterData.metric);
 
     yScale = d3.scaleLinear()
         .domain([
@@ -107,6 +110,7 @@ function drawLines(data) {
     // Draw the lines
 
     let path = svg.append("path")
+        .attr("id", "line-path")
         .interrupt()
         .datum(data)
         .style("fill", "none")
@@ -122,8 +126,47 @@ function drawLines(data) {
 
     path.attr('stroke-dashoffset', -pathLength)
         .attr('stroke-dasharray', pathLength)
-        .transition(transitionPath)
+        .transition(drawPathTransition)
         .attr('stroke-dashoffset', 0);
 }
 
+function updateData(data) {
+    d3.csv('../Data files/game_points.csv', 
+        raw => {
+            return({
+                game_date: parseDate(raw.game_date), 
+                headshot: raw.headshot, 
+                name: raw.name, 
+                total: parseInt(raw.total), 
+                roll: parseInt(raw.roll)
+            })
+        }, 
+        data => {
+            // Filter data
+            newData = getNewData(data);
+
+            // Update the axes
+
+            // Update the lines
+            let curr_path = d3.select("#line-path").datum(newData);
+            curr_path
+                .merge(curr_path)
+                .transition()
+                .duration(1500)
+                .ease(d3.easeSin)
+                .attr("d", d3.line()
+                    .x((d) => { return xScale(d.game_date) })
+                    .y((d) => { return yScale(d[filterData.metric]) })
+                );
+    });
+}
+
 coordinateViz();
+
+document.getElementById('player-filt').addEventListener('change', () => {
+    updateData();
+});
+
+document.getElementById('metric-filt').addEventListener('change', () => {
+    updateData();
+});

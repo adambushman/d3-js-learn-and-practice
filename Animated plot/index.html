@@ -14,18 +14,20 @@
 <body>
     <div class="container">
         <div class="row justify-content-center mt-3">
-            <div class="col-10">
+            <div class="col-12 col-md-10 col-xl-8">
                 <h1>Animated <span class="fw-bolder" style="color: orange;">D3.js</span> plot</h1>
                 <h5 class="fw-normal">Here's an example of a line plot that's animated when changed via the dropdown.</h5>
                 <div class="row mt-4">
                     <div class="col-4 p-3">
+                        <label for="#player-filt" class="form-label">Player</label>
                         <select id="player-filt" class="form-select">
                             <option value="0" selected>Jarace Walker</option>
                             <option value="1">Taylor Hendricks</option>
-                            <option value="3">Noah Clowney</option>
+                            <option value="2">Noah Clowney</option>
                         </select>
                     </div>
                     <div class="col-5 p-3">
+                        <label for="#metric-filt" class="form-label">Perspective</label>
                         <select id="metric-filt" class="form-select">
                             <option value="0" selected>Total Points</option>
                             <option value="1">3 Game Rolling Points</option>
@@ -35,7 +37,7 @@
             </div>
         </div>
         <div class="row justify-content-center mt-4">
-            <div class="col-10">
+            <div class="col-12 col-md-10 col-lg-8">
                 <div class="row">
                     <div id="line-plot" class="p-3">
                         <!-- Line plot dynamically added here by script.js -->
