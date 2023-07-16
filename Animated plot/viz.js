@@ -159,7 +159,7 @@ function renderText(data) {
         .attr("id", "subtitle")
         .attr("x", (margin.left / -2))
         .attr("y", margin.top * 2 / -7)
-        .text(`${metric_text} points | 2022-23 regular seson + tournament`);
+        .text(`${metric_text} points | 2022-23 regular season + tournament`);
 }
 
 function updateData(data) {
