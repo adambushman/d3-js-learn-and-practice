@@ -1,7 +1,38 @@
 svg {
-    background-color: orange;
+    background-color: var(--bs-light);
 }
 
-#yaxis text {
+#line-path {
+    stroke: orange;
+    stroke-width: 0.3rem;
+    fill: none;
+}
+
+#yaxis, #xaxis {
     font-size: 1.5rem;
+}
+
+#xaxis text {
+    rotate: -45deg;
+    text-anchor:end
+}
+
+#title {
+    font-size: 3.5rem;
+}
+
+#subtitle {
+    font-size: 1.75rem;
+}
+
+#line-plot {
+    position: relative;
+}
+
+.player-photo {
+    width: 6vw; 
+    height: 6vw;
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
 }

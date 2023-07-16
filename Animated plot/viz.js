@@ -3,8 +3,8 @@ const parseDate = d3.timeParse("%Y-%m-%d");
 const drawPathTransition = d3.transition()
     .duration(3500)
     .ease(d3.easeSin);
-let margin = {left: 50, right: 25, top: 60, bottom: 50}
-let dims = {width: 1000, height: 700};
+let margin = {left: 75, right: 25, top: 175, bottom: 100}
+let dims = {width: 1000, height: 600};
 
 let svg;
 let xScale;
@@ -17,7 +17,7 @@ function getFilters() {
     let player_f = document.getElementById('player-filt');
     let metric_f = document.getElementById('metric-filt');
 
-    metric_f = metric_f[metric_f.value].text == 'Total Points' ? 'total' : 'roll';
+    metric_f = metric_f[metric_f.value].text == 'Per game' ? 'total' : 'roll';
 
     return({
         player: player_f[player_f.value].text, 
@@ -73,6 +73,9 @@ function coordinateViz() {
 
             // Draw the lines
             drawLines(newData);
+
+            // Render the text
+            renderText(newData);
     });
 }
 
@@ -124,8 +127,6 @@ function drawLines(data) {
         .attr("id", "line-path")
         .interrupt()
         .datum(data)
-        .style("fill", "none")
-        .style("stroke", "black")
         .attr("d", d3.line()
             .x((d) => { return xScale(d.game_date) })
             .y((d) => { return yScale(d[filterData.metric]) })
@@ -139,6 +140,26 @@ function drawLines(data) {
         .attr('stroke-dasharray', pathLength)
         .transition(drawPathTransition)
         .attr('stroke-dashoffset', 0);
+
+    d3.select('#headshot')
+        .attr('src', data[0].headshot);
+}
+
+function renderText(data) {
+    svg.append("text")
+        .attr("id", "title")
+        .attr("x", (margin.left / -2))
+        .attr("y", margin.top * 5 / -9)
+        .text(`${data[0].name} scoring trend`);
+
+    let metric_f = document.getElementById('metric-filt');
+    let metric_text = (metric_f[metric_f.value].text);
+
+    svg.append("text")
+        .attr("id", "subtitle")
+        .attr("x", (margin.left / -2))
+        .attr("y", margin.top * 2 / -7)
+        .text(`${metric_text} points | 2022-23 regular seson + tournament`);
 }
 
 function updateData(data) {
@@ -156,6 +177,22 @@ function updateData(data) {
             // Filter data
             newData = getNewData(data);
 
+            // Update the text
+            d3.select("#title")
+                .transition()
+                .duration(1500)
+                .ease(d3.easeSin)
+                .text(`${newData[0].name} scoring trend`);
+
+            let metric_f = document.getElementById('metric-filt');
+            let metric_text = (metric_f[metric_f.value].text);
+
+            d3.select("#subtitle")
+                .transition()
+                .duration(1500)
+                .ease(d3.easeSin)
+                .text(`${metric_text} points | 2022-23 regular seson + tournament`);
+
             // Update the axes
             yScale = d3.scaleLinear()
                 .domain([
@@ -168,6 +205,10 @@ function updateData(data) {
                 .duration(1500)
                 .ease(d3.easeSin)
                 .call(d3.axisLeft(yScale));
+
+            // Update the photo
+            d3.select('#headshot')
+                .attr('src', newData[0].headshot);
 
             // Update the lines
             let curr_path = d3.select("#line-path").datum(newData);
