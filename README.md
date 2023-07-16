@@ -1,3 +1,5 @@
+![D3.js Banner](./d3-banner.png)
+
 # D3.js Learn and Practice
 
 A series of JavaScript and HTML files for learning and practicing visualization techniques using the {D3} library and its other extensions.
