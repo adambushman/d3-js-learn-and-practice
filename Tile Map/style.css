@@ -1,0 +1,13 @@
+body {
+    background-color: #edf2f4;
+}
+
+span {
+    color: #4cc9f0;
+}
+
+.teams {
+    fill: white;
+    text-anchor:middle;
+    font-size: 1.75rem;
+}
