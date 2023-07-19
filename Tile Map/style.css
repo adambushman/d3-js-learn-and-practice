@@ -3,11 +3,16 @@ body {
 }
 
 span {
-    color: #4cc9f0;
+    color: rgb(76, 201, 240);
 }
 
 .teams {
     fill: white;
     text-anchor:middle;
     font-size: 1.75rem;
+}
+
+.form-select:focus {
+    border-color: rgb(76, 201, 240);
+    box-shadow: 0 0 0 0.25rem rgba(76, 201, 240, 0.25);
 }
