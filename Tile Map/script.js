@@ -65,8 +65,6 @@ raw => {
     }
 }, 
 data => {
-    console.log(data);
-
     // Configure plotting rnages
     let domains = [
         [d3.min(data, d => { return d.x }), d3.max(data, d => { return d.x })], 
@@ -125,7 +123,7 @@ data => {
         .append("text")
         .attr("class", "teams")
         .attr('x', d => { return d.center_coord[0]; })
-        .attr('y', d => { return d.center_coord[1]; })
+        .attr('y', d => { return d.center_coord[1] + 12; })
         .text(d => { return d.team_abbreviation; });
 })
 
@@ -147,7 +145,6 @@ function update() {
     data => {
         // Current filters
         let curr_filt = getFilters();
-        console.log(curr_filt);
 
         // Transform the data
         let new_data = aq.from(data)
