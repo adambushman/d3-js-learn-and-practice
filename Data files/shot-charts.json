@@ -1,0 +1,41 @@
+{
+    "nodes": [
+        {"node": 0, "name": "Point Guard"}, 
+        {"node": 1, "name": "Shooting Guard"}, 
+        {"node": 2, "name": "Small Guard"}, 
+        {"node": 3, "name": "Power Forward"}, 
+        {"node": 4, "name": "Center"}, 
+        {"node": 5, "name": "Rim"}, 
+        {"node": 6, "name": "Short Midrange"}, 
+        {"node": 7, "name": "Long Midrange"}, 
+        {"node": 8, "name": "Corner 3"}, 
+        {"node": 9, "name": "Above the Break 3"}
+    ], 
+    "links": [
+        {"source": 0, "target": 5, "value": 11994}, 
+        {"source": 0, "target": 6, "value": 5997}, 
+        {"source": 0, "target": 7, "value": 11994}, 
+        {"source": 0, "target": 8, "value": 5997}, 
+        {"source": 0, "target": 9, "value": 23988}, 
+        {"source": 1, "target": 5, "value": 7259}, 
+        {"source": 1, "target": 6, "value": 3630}, 
+        {"source": 1, "target": 7, "value": 10889}, 
+        {"source": 1, "target": 8, "value": 29038}, 
+        {"source": 1, "target": 9, "value": 21778}, 
+        {"source": 2, "target": 5, "value": 23672}, 
+        {"source": 2, "target": 6, "value": 11836}, 
+        {"source": 2, "target": 7, "value": 3945}, 
+        {"source": 2, "target": 8, "value": 27617}, 
+        {"source": 2, "target": 9, "value": 11836}, 
+        {"source": 3, "target": 5, "value": 19884}, 
+        {"source": 3, "target": 6, "value": 11363}, 
+        {"source": 3, "target": 7, "value": 2841}, 
+        {"source": 3, "target": 8, "value": 19884}, 
+        {"source": 3, "target": 9, "value": 2841}, 
+        {"source": 4, "target": 5, "value": 33141}, 
+        {"source": 4, "target": 6, "value": 2367}, 
+        {"source": 4, "target": 7, "value": 2367}, 
+        {"source": 4, "target": 8, "value": 7102}, 
+        {"source": 4, "target": 9, "value": 2367}
+    ]
+}

@@ -1,0 +1,37 @@
+body {
+    color: #edf2f4;
+    background-color: #001d3d;
+}
+
+span {
+    color: #ffd60a;
+}
+
+svg text {
+    fill: #edf2f4;
+    font-size: 1.3rem
+}
+
+.node rect {
+    rx: 7px;
+    fill: #ffc300;
+    opacity: 80%;
+}
+
+.node rect:hover {
+    opacity: 100%;
+    transition: 500ms;
+    cursor: pointer;
+}
+
+.link {
+    fill: none;
+    stroke: #ffd60a;
+    opacity: 50%;
+}
+
+.link:hover {
+    opacity: 80%;
+    transition: 500ms;
+    cursor: crosshair;
+}

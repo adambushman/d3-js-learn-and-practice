@@ -5,19 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <script src="https://d3js.org/d3.v4.min.js"></script>
-
     <title>Sankey Chart</title>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/holtzy/D3-graph-gallery@master/LIB/sankey.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/arquero@latest"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 <body>
     
-    <div id="chart"></div>
-
-    <script src="https://unpkg.com/d3-array@1"></script>
-    <script src="https://unpkg.com/d3-collection@1"></script>
-    <script src="https://unpkg.com/d3-path@1"></script>
-    <script src="https://unpkg.com/d3-shape@1"></script>
-    <script src="https://unpkg.com/d3-sankey@0"></script>
+    <div class="container">
+        <div class="row justify-content-center mt-3">
+            <div class="col-12 col-md-10 col-xl-8">
+                <h1>Sankey diagram in <span class="fw-bolder">D3.js</span> plot</h1>
+                <h5 class="fw-normal">Here's an example of a square tile map in D3.</h5>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-12 col-md-10 col-lg-8">
+                <div class="row">
+                    <div id="sankey-plot" class="p-3">
+                        <!-- Dynamically added here by script.js -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <script src="viz.js"></script>
 </body>
