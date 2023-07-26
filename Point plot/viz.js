@@ -4,17 +4,17 @@ let colorScale;
 let yAxisGrid;
 
 let s = 750;
-let h = 750;
+let h = 350;
 
-let margin = {top: h * 0.05, right: s * 0.05, bottom: h * 0.12, left: s * 0.17};
+let margin = {top: h * 0.05, right: s * 0.05, bottom: h * 0.17, left: s * 0.17};
 let width = s - margin.left - margin.right;
 let height = h - margin.top - margin.bottom;
 let mouse = s * 0.1;
 
-let xlab = "Allowable Relative to UofU Health";
+let xlab = "Rate Relative to West";
 
-let keys = ["UofU Health", "Intermountain Health", "Steward Healthcare"];
-let colors = ["#ac162c", "#8ab80c", "#214f78"];
+let keys = ["West", "Midwest", "East"];
+let colors = ["#E40066", "#345995", "#EAC435"];
 
 // Volume formatter
 
@@ -53,7 +53,7 @@ let pos = [document.getElementById("canvas").offsetLeft, document.getElementById
 
 // Plotting the data
 
-d3.csv("../Data files/health.csv", 
+d3.csv("../Data files/insurance.csv", 
     (raw) => {
 
         // Transforming the data
@@ -62,8 +62,8 @@ d3.csv("../Data files/health.csv",
             insurers: raw.insurers, 
             plans: raw.plans, 
             plan_volume: parseInt(raw.plan_volume), 
-            system: raw.system, 
-            system_volume: parseInt(raw.system_volume),
+            region: raw.region, 
+            region_volume: parseInt(raw.region_volume),
             value: parseFloat(raw.value) 
         }
     }, 
@@ -197,7 +197,7 @@ d3.csv("../Data files/health.csv",
                 let my_y = parseFloat(my_pos.substring(my_pos.indexOf(",")+1, my_pos.length-1));
 
                 Tooltip
-                    .html("<h4 class='tt'>" + d.system + "</h4>" + "<p>Value: " + Math.ceil(d.value * 100) + "%<br>Volume: " + f(d.system_volume) + "</p>")
+                    .html("<h4 class='tt'>" + d.region + "</h4>" + "<p>Value: " + Math.ceil(d.value * 100) + "%<br>Volume: " + f(d.region_volume) + "</p>")
                     .style("left", (my_x + pos[0] + mouse) + "px")
                     .style("top", (my_y + pos[1] - mouse) + "px")
                     .style("position", "absolute")
@@ -243,7 +243,7 @@ d3.csv("../Data files/health.csv",
                 .attr("transform", (d) => {
                     return "translate(" + xScale(d.value) + ", " + (yScale(d.plans) + (yScale.bandwidth() / 2)) + ")"
                 })
-                .style("fill", (d) => { return colorScale(d.system) })
+                .style("fill", (d) => { return colorScale(d.region) })
                 .style("opacity", 0.7)
             .on("mouseover", mouseover)
             .on("mousemove", mousemove)
@@ -256,14 +256,14 @@ d3.csv("../Data files/health.csv",
             .attr("y", 0)
             .attr("text-anchor", "middle")
             .style("font-size", 12)
-            .text("Cheaper than UofU Heath");
+            .text("Cheaper than West");
         
         svg.append("text")
             .attr("x", 3 * width / 4)
             .attr("y", 0)
             .attr("text-anchor", "middle")
             .style("font-size", 12)
-            .text("More Expensive than UofU Heath");
+            .text("More Expensive than West");
 
         // Plotting the axis labels
 

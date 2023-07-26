@@ -1,0 +1,7 @@
+insurers,plans,plan_volume,region,region_volume,value
+Progressive,HOME,152000,West,56240,-0.06
+Progressive,HOME,152000,Midwest,31920,-0.08
+Progressive,HOME,152000,East,63840,-0.03
+Progressive,AUTO,80000,West,15200,0.1
+Progressive,AUTO,80000,Midwest,15200,-0.11
+Progressive,AUTO,80000,East,49600,-0.15
