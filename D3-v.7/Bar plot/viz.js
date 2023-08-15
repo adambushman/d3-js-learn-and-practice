@@ -76,11 +76,11 @@ function createVis(selector) {
             .call(yAxis);
 
         let rect = svg.selectAll("rect")
-            .data(new_data)
+            .data(new_data, (d) => d)
             .join(
                 (enter) => {
                     let rect_enter = enter.append("rect")
-                        .attr("x", 0)
+                        .attr("x", 1)
                         .attr("y", 0)
                         .attr("height", 0);
                     
@@ -90,14 +90,13 @@ function createVis(selector) {
                 (exit) => exit.remove()
             );
 
-        rect.transition()
+        rect.attr("y", (d) => yScale(d.athlete_display_name) + yScale.bandwidth() * 0.15)
+            .attr("height", yScale.bandwidth() * 0.7)
+            .style("fill", "#684756")
+            .transition()
             .duration(1200)
             .ease(d3.easeSin)
-            .attr("y", (d) => yScale(d.athlete_display_name) + yScale.bandwidth() * 0.15)
-            .attr("height", yScale.bandwidth() * 0.7)
-            .attr("width", (d) => xScale(d[state.metric]) + 1)
-            .attr("x", 1)
-            .style("fill", "#684756");
+            .attr("width", (d,i) => xScale(d[state.metric]) + 1);
 
         return update;
     }
