@@ -16,6 +16,10 @@ body {
     background-color: var(--prim-dark);
 }
 
+svg:hover {
+    cursor: crosshair;
+}
+
 .Airplane {
     fill: var(--prim-green-dark);
 }
