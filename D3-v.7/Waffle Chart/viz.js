@@ -64,33 +64,21 @@ d3.csv('../../Data files/travel.csv')
 
         console.log(transformed);
 
-        let altered = aq.from(transformed)
-            .derive({instances: aq.escape(d => Array(parseInt(parseFloat(d.value) * 100)).fill(0)) })
-            .unroll('instances')
-            .groupby('group')
-            .derive({
-                index: d => op.row_number() - 1,
-            })
-            .derive({
-                x: aq.escape(d => ((d.index % 10) * 5) + 2), 
-                x2: aq.escape(d => ((d.index % 10) * 5) + 6), 
-                y: aq.escape(d => (Math.floor(d.index / 10) * 5) + 2), 
-                y2: aq.escape(d => (Math.floor(d.index / 10) * 5) + 6 )
-            })
-            .derive({ coords: d => [[d.x, d.y],[d.x2, d.y],[d.x2, d.y2],[d.x, d.y2]] })
-            .select(['group','detail','value','coords'])
-            .objects();
+        let mywaffle = new waffleChart(transformed, "|");
+
+        let altered = mywaffle.getData();
+        const ranges = mywaffle.getRanges();
 
         console.log(altered);
 
-        xScale = d3.scaleLinear().domain([2,51]).range([0, dims.width]);
-        yScale = d3.scaleLinear().domain([2,51]).range([dims.height, 0]);
+        xScale = d3.scaleLinear().domain(ranges.x).range([0, dims.width]);
+        yScale = d3.scaleLinear().domain(ranges.y).range([dims.height, 0]);
 
         let line = d3.line()
             .curve(d3.curveLinearClosed);
         
         svg.selectAll("path")
-            .data(altered.filter(d => { return d.group == '1930|North America'}))
+            .data(altered.filter(d => { return d.group == '1930|Africa'}))
             .enter()
             .append("path")
             .attr("class", d => { return `poly ${d.detail}` })
