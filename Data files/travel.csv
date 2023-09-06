@@ -1,0 +1,25 @@
+year,region,travel,share
+1930,North America,Airplane,0.05
+1930,North America,Automobile,0.41
+1930,North America,Boat,0.22
+1930,North America,Train,0.32
+1930,Europe,Airplane,0.02
+1930,Europe,Automobile,0.2
+1930,Europe,Boat,0.36
+1930,Europe,Train,0.42
+1930,Africa,Airplane,0.01
+1930,Africa,Automobile,0.05
+1930,Africa,Boat,0.41
+1930,Africa,Train,0.53
+2010,North America,Airplane,0.3
+2010,North America,Automobile,0.47
+2010,North America,Boat,0.1
+2010,North America,Train,0.13
+2010,Europe,Airplane,0.28
+2010,Europe,Automobile,0.27
+2010,Europe,Boat,0.15
+2010,Europe,Train,0.3
+2010,Africa,Airplane,0.18
+2010,Africa,Automobile,0.57
+2010,Africa,Boat,0.12
+2010,Africa,Train,0.13
