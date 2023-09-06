@@ -8,6 +8,16 @@ const margins = {left: 10, top: 10, right: 10, bottom: 10}
 let xScale;
 let yScale;
 
+function rescale(array) {
+    let new_array = [];
+    array.forEach(a => {
+        new_array.push([
+            xScale(a[0]), yScale(a[1])
+        ])
+    })
+    return new_array;
+}
+
 function mouseover(d) {
     let classname = d.target.classList[1];
 
@@ -80,12 +90,12 @@ d3.csv('../../Data files/travel.csv')
             .curve(d3.curveLinearClosed);
         
         svg.selectAll("path")
-            .data(altered.filter(d => { return d.group == '2010|North America'}))
+            .data(altered.filter(d => { return d.group == '1930|North America'}))
             .enter()
             .append("path")
             .attr("class", d => { return `poly ${d.detail}` })
             .attr("d", d => {
-                return line(d.coords);
+                return line(rescale(d.coords));
             })
             .on("mouseover", mouseover)
             .on("mousemove", mousemove)
