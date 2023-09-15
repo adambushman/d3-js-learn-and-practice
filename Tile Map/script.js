@@ -16,6 +16,21 @@ let xScale;
 let yScale;
 let colorScale;
 
+let Tooltip = d3.select("#tile-map")
+    .append("div")
+    .attr("class", "tooltip visually-hidden")
+    .style("opacity", 0)
+    .style("color", "#424041")
+    .style("background-color", "#FFFFFF")
+    .style("border", "solid")
+    .style("border-width", "1px")
+    .style("border-radius", "5px")
+    .style("border-color", "#424041")
+    .style("padding", "8px 10px")
+    .style("box-shadow", "0px 0px 5px 0.5px #D6D6D6")
+    .style("left", "0px")
+    .style("top", "0px");
+
 
 // Get filters function
 
@@ -49,6 +64,66 @@ function getColor(data, metric, d) {
     return(colorScale(d));
 }
 
+// Getting tooltip position, accounting for dynamic screens
+
+function tooltipPosition(val_x, val_y) {
+    // Variables to use in the calculation
+    let offset = document.getElementById("tile-map");
+    let tt = document.getElementById("tt").getBoundingClientRect();
+    let vbSize = document.getElementById("svg-viz").getBoundingClientRect();
+    let vbScale = {
+        x: vbSize.width / (dims.width + margins.left + margins.right), 
+        y: vbSize.height / (dims.height + margins.top + margins.bottom)
+    };
+
+    return([
+        // X coordinate
+        (val_x * vbScale.x) // Adjusted for viewbox scale
+        +  offset.offsetLeft // SVG offset from edge of screen
+        + (vbScale.x * margins.left) // Left margin adjusted for viewbox scale
+        - (tt.width / 2) // Center align tooltip to point
+        , 
+        // Y coordinate
+        (val_y * vbScale.y) // Adjusted for viewbox scale
+        + offset.offsetTop // SVG offset from top of screen
+        + (vbScale.y * margins.top) // Top margin adjusted for viewbox scale
+        - tt.height - 40 // Align tooltip above the point
+    ])
+}
+
+// Tooltip Function
+
+function toggleTip(d) {
+    // Update tooltip content
+    Tooltip.html(`<div id='tt'>
+        <h4>${d.team_abbreviation}</h4>
+        <table>
+            <tr>
+                <th>Net Rating</th>
+                <td>${d.e_net_rating}</td>
+            </tr>
+        </table>
+    </div>`);
+
+    // Positions
+    let y = d.points[1][1];
+    let x = (d.points[2][0] - d.points[1][0]) + d.points[1][0];
+    let positions = tooltipPosition(xScale(x), yScale(y));
+    
+    // Toggle hide
+    if(!Tooltip.attr("class").includes("visually-hidden")) {
+        Tooltip.classed("visually-hidden", true);
+    }
+    // Toggle show
+    else {
+        // Update the tooltip position
+        Tooltip
+            .classed("visually-hidden", false)
+            .style("left", positions[0] + "px")
+            .style("top", positions[1] + "px");
+    }
+    console.log(d);
+}
 
 d3.csv('../Data files/nba-team-stats_2023.csv', 
 raw => {
@@ -115,7 +190,8 @@ data => {
         .attr("d", d => {
             return line(d.points);
         })
-        .attr("fill", d => { return getColor(new_data, curr_filt.metric, d[curr_filt.metric]) });
+        .attr("fill", d => { return getColor(new_data, curr_filt.metric, d[curr_filt.metric]) })
+        .on("click", toggleTip);
 
     svg.selectAll("text")
         .data(new_data)
@@ -124,7 +200,8 @@ data => {
         .attr("class", "teams")
         .attr('x', d => { return d.center_coord[0]; })
         .attr('y', d => { return d.center_coord[1] + 12; })
-        .text(d => { return d.team_abbreviation; });
+        .text(d => { return d.team_abbreviation; })
+        .on("click", toggleTip);
 })
 
 function update() {
