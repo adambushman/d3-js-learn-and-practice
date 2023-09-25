@@ -22,9 +22,29 @@
             <div class="col-12 col-md-10 col-xl-8">
                 <h1><span class="fw-bolder">D3.js</span> waffle chart</h1>
                 <h5 class="fw-normal">Here's an example of a bar plot built with version 7 of D3.</h5>
+                <p>Visualizing proportions of categories from a whole gets tricky with very small categories, where tree maps and pie charts fall short.</p>
+                <p>Below is a cool example comparing transportation method tendencies between three continents.</p>
+                <div class="d-flex flex-row gap-2">
+                    <div class="d-inline-flex align-items-center Airplane-text-bg rounded px-2 py-1">
+                        <i class="bi bi-airplane pe-2"></i>
+                        Airplane
+                    </div>
+                    <div class="d-inline-flex align-items-center Automobile-text-bg rounded px-2 py-1">
+                        <i class="bi bi-airplane pe-2"></i>
+                        Automobile
+                    </div>
+                    <div class="d-inline-flex align-items-center Boat-text-bg rounded px-2 py-1">
+                        <i class="bi bi-airplane pe-2"></i>
+                        Boat
+                    </div>
+                    <div class="d-inline-flex align-items-center Train-text-bg rounded px-2 py-1">
+                        <i class="bi bi-airplane pe-2"></i>
+                        Train
+                    </div>
+                </div>
                 <div class="row mt-4 mx-1">
                     <div class="col-12 border rounded p-3">
-                        <div class="col">
+                        <div class="col-12 col-sm-4">
                             <select id="year-select" class="form-select" aria-label="Year">
                                 <option selected value="2010">2010</option>
                                 <option value="1930">1930</option>
@@ -36,20 +56,32 @@
         </div>
         <div class="row justify-content-center mt-4">
             <div class="col-12 col-md-10 col-lg-8">
-                <div class="row">
-                    <div class="col-6 col-md-4">
-                        <div id="chart-1" class="p-3">
-                            <!-- Chart dynamically added here by viz.js -->
+                <div class="row row-cols-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <div id="chart-1" class="p-3">
+                                    <!-- Chart dynamically added here by viz.js -->
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-6 col-md-4">
-                        <div id="chart-2" class="p-3">
-                            <!-- Chart dynamically added here by viz.js -->
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <div id="chart-2" class="p-3">
+                                    <!-- Chart dynamically added here by viz.js -->
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-6 col-md-4">
-                        <div id="chart-3" class="p-3">
-                            <!-- Chart dynamically added here by viz.js -->
+                    <div class="col">
+                        <div class="card">
+                            <div class="card-body">
+                                <div id="chart-3" class="p-3">
+                                    <!-- Chart dynamically added here by viz.js -->
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

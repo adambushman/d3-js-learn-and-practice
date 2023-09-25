@@ -37,6 +37,12 @@ function mouseover(d) {
     d3.selectAll(`.${classname}`)
         .classed(classname, false)
         .classed(`${classname}-hovered`, true);
+
+    d3.selectAll(".title-rect")
+        .classed(classname, true);
+    
+    d3.selectAll(`.${classname}-title-text`)
+        .style("fill", "var(--prim-dark)");
 }
 
 function mousemove(d) {
@@ -50,6 +56,12 @@ function mouseleave(d) {
     d3.selectAll(`.${classname}`)
         .classed(classname, false)
         .classed(classtrunc, true);
+
+    d3.selectAll(".title-rect")
+        .classed(classtrunc, false);
+
+    d3.selectAll(`.${classtrunc}-title-text`)
+        .style("fill", "transparent");
 }
 
 const populateSelections = () => {
@@ -107,9 +119,13 @@ function createVis() {
         ]
 
         charts.forEach(crt => {
+            let alt_filt = aq.from(altered)
+                .filter(aq.escape(d => d.group.includes(crt.title)))
+                .objects()
+            
             crt.svg.selectAll("path")
                 .data(
-                    altered.filter(d => { return d.group.includes(crt.title)}), 
+                    alt_filt, 
                     d => d.id
                 )
                 .join(
@@ -130,9 +146,45 @@ function createVis() {
                     (exit) => exit.remove()
                 );
 
-            crt.svg.append("text")
+            let group_filt = aq.from(alt_filt)
+                .groupby(["group", "detail"])
+                .rollup({ perc: d => op.mean(d.value)})
+                .objects();
+
+            crt.svg.append("rect")
+                .attr("class", "title-rect default")
                 .attr("x", 0)
-                .attr("y", margins.top * -1 / 3)
+                .attr("y", margins.top * -4 / 7)
+                .attr("height", 13)
+                .attr("width", 80)
+                .text(crt.title)
+                .attr("rx", 3);
+
+            crt.svg.selectAll("text .perc")
+                .data(group_filt)
+                .join(
+                    (enter) => {
+                        enter
+                            .append("text")
+                            .attr("class", d => `perc ${d.detail}-title-text`)
+                            .attr("x", 4)
+                            .attr("y", margins.top * -1 / 4)
+                            .text(d => `${d.detail}: ${d3.format(".0%")(d.perc)}`)
+                            .style("font-size", "0.5rem")
+                            .style("font-weight", "bold")
+                            .style("fill", "transparent");
+                    }, 
+                    (update) => {
+                        update
+                            .text(d => `${d.detail}: ${d3.format(".0%")(d.perc)}`);
+                    }, 
+                    (exit) => exit.remove()
+                );
+
+            crt.svg.append("text")
+                .attr("class", "title")
+                .attr("x", 0)
+                .attr("y", margins.top * -5 / 7)
                 .text(crt.title)
                 .style("font-size", "0.7rem")
                 .style("fill", "var(--prim-light)");
@@ -157,7 +209,7 @@ function updateApp() {
     vis(new_data);
 }
   
-// Initialize even handlers
+// Initialize event handlers by id
 ["year-select"].forEach(e => {
     d3.select(`#${e}`).on('change', () => {
         // update state

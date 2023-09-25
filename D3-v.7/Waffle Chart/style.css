@@ -16,8 +16,44 @@ body {
     background-color: var(--prim-dark);
 }
 
+.card {
+    background-color: var(--prim-dark);
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+
+.card-body {
+    margin: 0;
+    padding: 0;
+}
+
 svg:hover {
     cursor: crosshair;
+}
+
+.default {
+    fill: var(--prim-dark);
+}
+
+.Airplane-text-bg {
+    color: var(--prim-light);
+    background-color: var(--prim-green-dark);
+}
+
+.Automobile-text-bg {
+    color: var(--prim-light);
+    background-color: var(--prim-red-dark);
+}
+
+.Boat-text-bg {
+    color: var(--prim-light);
+    background-color: var(--prim-blue-dark);
+}
+
+.Train-text-bg {
+    color: var(--prim-dark);
+    background-color: var(--prim-yellow-dark);
 }
 
 .Airplane {
@@ -58,4 +94,8 @@ svg:hover {
     fill: var(--prim-blue);
     stroke: var(--prim-blue);
     stroke-width: 0.3;
+}
+
+.hidden {
+    fill: transparent;
 }
