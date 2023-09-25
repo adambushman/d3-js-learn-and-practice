@@ -23,14 +23,12 @@
                 <h1><span class="fw-bolder">D3.js</span> waffle chart</h1>
                 <h5 class="fw-normal">Here's an example of a bar plot built with version 7 of D3.</h5>
                 <div class="row mt-4 mx-1">
-                    <div class="col border rounded p-3">
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="perc-radio" id="fg-perc-radio" checked>
-                            <label class="form-check-label" for="fg-perc-radio">FG%</label>
-                        </div>
-                        <div class="form-check">
-                            <input class="form-check-input" type="radio" name="perc-radio" id="ts-perc-radio">
-                            <label class="form-check-label" for="ts-perc-radio">TS%</label>
+                    <div class="col-12 border rounded p-3">
+                        <div class="col">
+                            <select id="year-select" class="form-select" aria-label="Year">
+                                <option selected value="2010">2010</option>
+                                <option value="1930">1930</option>
+                            </select>
                         </div>
                     </div>
                 </div>
@@ -39,8 +37,20 @@
         <div class="row justify-content-center mt-4">
             <div class="col-12 col-md-10 col-lg-8">
                 <div class="row">
-                    <div id="chart" class="p-3">
-                        <!-- Chart dynamically added here by viz.js -->
+                    <div class="col-6 col-md-4">
+                        <div id="chart-1" class="p-3">
+                            <!-- Chart dynamically added here by viz.js -->
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div id="chart-2" class="p-3">
+                            <!-- Chart dynamically added here by viz.js -->
+                        </div>
+                    </div>
+                    <div class="col-6 col-md-4">
+                        <div id="chart-3" class="p-3">
+                            <!-- Chart dynamically added here by viz.js -->
+                        </div>
                     </div>
                 </div>
             </div>
