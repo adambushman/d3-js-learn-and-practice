@@ -105,7 +105,6 @@ function createVis() {
     function update(new_data) {
         // Joins data to elements, specifying enter, update, exit logic
         let mywaffle = new waffleChart(new_data, "|");
-
         let altered = mywaffle.getData();
         const ranges = mywaffle.getRanges();
 
@@ -118,12 +117,16 @@ function createVis() {
             {svg: af_svg, title: "Africa"}
         ]
 
+        console.log(altered);
+
         charts.forEach(crt => {
             let alt_filt = aq.from(altered)
                 .filter(aq.escape(d => d.group.includes(crt.title)))
                 .objects()
-            
-            crt.svg.selectAll("path")
+
+            crt.svg.append("g")
+                .attr("class", "tiles")
+                .selectAll("path")
                 .data(
                     alt_filt, 
                     d => d.id
@@ -161,7 +164,10 @@ function createVis() {
                 .attr("rx", 3);
 
             crt.svg.selectAll("text .perc")
-                .data(group_filt)
+                .data(
+                    group_filt, 
+                    d => d.id
+                )
                 .join(
                     (enter) => {
                         enter
