@@ -1,11 +1,11 @@
 const state = {
     data: [], 
-    metric: "ts_perc"
+    metric: "fg_perc"
     // e.g., user selection
 }
 
 function getFilters() {
-    return(state.metric = document.getElementById("fg-perc-radio").checked ? "fg_perc" : "ts_perc");
+    state.metric = document.getElementById("fg-perc-radio").checked ? "fg_perc" : "ts_perc";
 }
 
 function filterData(data) {
@@ -16,7 +16,7 @@ function filterData(data) {
 function wrangleData(filtered) {
     // wrangles the given filtered data to the format required by the visualizations
     let adjusted = aq.from(filtered)
-        .orderby(aq.desc(state.metric))
+        .orderby('athlete_display_name')
         .objects();
     return(adjusted);
 }
@@ -56,47 +56,52 @@ function createVis(selector) {
     let g_xAxis = svg.append("g")
         .attr("class", "x-axis")
         .attr('transform', 'translate(0, ' + dims.height + ')');
+
     let g_yAxis = svg.append("g").attr("class", "y-axis");
 
     function update(new_data) {
         // updates the specific visualization with the given data
+        getFilters();
+
         xScale.domain([
-            d3.min(new_data, d => { return d[state.metric]; }) - 0.01,
-            d3.max(new_data, d => { return d[state.metric]; })
+            d3.min(new_data, d => { return d[state.metric]; }) * 0.95,
+            d3.max(new_data, d => { return d[state.metric]; }) * 1.05
         ]);
-        yScale.domain(d3.map(state.data, d => { return d.athlete_display_name; }));
+
+        yScale.domain(d3.map(new_data, d => { return d.athlete_display_name; }));
 
         g_xAxis.transition()
             .duration(1200)
             .ease(d3.easeSin)
             .call(xAxis);
+
         g_yAxis.transition()
             .duration(1200)
             .ease(d3.easeSin)
             .call(yAxis);
 
-        let rect = svg.selectAll("rect")
-            .data(new_data, (d) => d)
+        svg.selectAll("rect")
+            .data(new_data)
             .join(
                 (enter) => {
-                    let rect_enter = enter.append("rect")
-                        .attr("x", 1)
-                        .attr("y", 0)
-                        .attr("height", 0);
-                    
-                        return rect_enter;
+                    enter.append("rect")
+                        .attr("x", 0)
+                        .attr("y", (d) => yScale(d.athlete_display_name) + yScale.bandwidth() * 0.15)
+                        .attr("height",  yScale.bandwidth() * 0.7)
+                        .style("fill", "#684756")
+                        .transition()
+                        .duration(1200)
+                        .ease(d3.easeSin)
+                        .attr("width", (d) => xScale(d[state.metric]));
                 }, 
-                (update) => update,
+                (update) => {
+                    update.transition()
+                        .duration(1200)
+                        .ease(d3.easeSin)
+                        .attr("width", (d) => xScale(d[state.metric]));
+                },
                 (exit) => exit.remove()
             );
-
-        rect.attr("y", (d) => yScale(d.athlete_display_name) + yScale.bandwidth() * 0.15)
-            .attr("height", yScale.bandwidth() * 0.7)
-            .style("fill", "#684756")
-            .transition()
-            .duration(1200)
-            .ease(d3.easeSin)
-            .attr("width", (d,i) => xScale(d[state.metric]) + 1);
 
         return update;
     }
@@ -119,14 +124,11 @@ function updateApp() {
 }
 
 // init interaction, e.g., listen to click events
-d3.select("#fg-perc-radio").on('click', () => {
-    // update state
-    updateApp();
-})
-
-d3.select("#ts-perc-radio").on('click', () => {
-    // update state
-    updateApp();
+["fg-perc-radio", "ts-perc-radio"].forEach(e => {
+    d3.select(`#${e}`).on('click', () => {
+        // update state
+        updateApp();
+    })
 })
 
 d3.csv("../../Data files/fg_ts_example.csv")
