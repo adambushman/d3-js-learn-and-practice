@@ -2,3 +2,19 @@ body {
     background-color: #1A1423;
     color: #FAFAFA;
 }
+
+.y-axis path, .x-axis path {
+    display: none;
+}
+
+.y-axis .tick line, .x-axis .tick line {
+    display: none;
+}
+
+.y-axis .tick text {
+    font-size: 0.95rem;
+}
+
+.x-axis .tick text {
+    font-size: 0.95rem;
+}

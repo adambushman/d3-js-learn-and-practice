@@ -25,11 +25,11 @@ function createVis(selector) {
     // initialized for creating the visualizations, e.g., setup SVG, init scales, ...
     const dims = {
         height: 800, 
-        width: 600
+        width: 700
     }
     const margins = {
         top: 25, 
-        left: 150, 
+        left: 175, 
         bottom: 25, 
         right: 25
     }
@@ -50,7 +50,7 @@ function createVis(selector) {
     let yScale = d3.scaleBand()
         .range([0, dims.height]);
 
-    let xAxis = d3.axisBottom().scale(xScale);
+    let xAxis = d3.axisBottom().scale(xScale).ticks(5).tickFormat(x => d3.format(".0%")(x));
     let yAxis = d3.axisLeft().scale(yScale);
     
     let g_xAxis = svg.append("g")
