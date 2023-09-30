@@ -2,7 +2,7 @@
     "nodes": [
         {"node": 0, "name": "Point Guard"}, 
         {"node": 1, "name": "Shooting Guard"}, 
-        {"node": 2, "name": "Small Guard"}, 
+        {"node": 2, "name": "Small Forward"}, 
         {"node": 3, "name": "Power Forward"}, 
         {"node": 4, "name": "Center"}, 
         {"node": 5, "name": "Rim"}, 

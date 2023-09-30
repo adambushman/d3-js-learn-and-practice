@@ -12,26 +12,23 @@ svg text {
     font-size: 1.3rem
 }
 
+svg:hover {
+    cursor: crosshair;
+}
+
 .node rect {
     rx: 7px;
     fill: #ffc300;
-    opacity: 80%;
-}
-
-.node rect:hover {
-    opacity: 100%;
-    transition: 500ms;
-    cursor: pointer;
+    opacity: 70%;
 }
 
 .link {
     fill: none;
     stroke: #ffd60a;
-    opacity: 50%;
+    opacity: 35%;
 }
 
 .link:hover {
-    opacity: 80%;
+    opacity: 100%;
     transition: 500ms;
-    cursor: crosshair;
 }
