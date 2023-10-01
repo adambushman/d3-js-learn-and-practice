@@ -1,0 +1,40 @@
+body {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.legend {
+    padding: 0.1rem 0.4rem;
+    color: white;
+    border-radius: 0.25rem;
+    font-size: 0.8rem;
+}
+
+.December {
+    background-color: #A65E3A;
+    fill: #A65E3A;
+}
+
+.November {
+    background-color: #FC814A;
+    fill: #FC814A;
+}
+
+.y-axis path, .y-axis line, .y-axis text {
+    fill: transparent;
+    stroke: transparent;
+}
+
+.x-axis text {
+    font-size: 1.25rem;
+}
+
+.x-axis path {
+    display: none;
+}
+
+.x-axis .tick line {
+    stroke: gray;
+    stroke-width: 0.035rem;
+}
