@@ -1,0 +1,2461 @@
+"team","team_fta","team_ftp","opponent_fta","opponent_ftp"
+"San Antonio Spurs",30,70,16,50
+"Dallas Mavericks",16,50,30,70
+"New Orleans Pelicans",29,86.2,31,71
+"Minnesota Timberwolves",31,71,29,86.2
+"Memphis Grizzlies",18,72.2,16,81.3
+"Oklahoma City Thunder",16,81.3,18,72.2
+"Sacramento Kings",15,66.7,25,72
+"Denver Nuggets",25,72,15,66.7
+"Utah Jazz",6,83.3,21,76.2
+"Los Angeles Lakers",21,76.2,6,83.3
+"LA Clippers",24,66.7,22,72.7
+"Phoenix Suns",22,72.7,24,66.7
+"Golden State Warriors",16,87.5,24,66.7
+"Portland Trail Blazers",24,66.7,16,87.5
+"Atlanta Hawks",19,78.9,14,78.6
+"Boston Celtics",14,78.6,19,78.9
+"Philadelphia 76ers",19,73.7,28,82.1
+"Brooklyn Nets",28,82.1,19,73.7
+"Charlotte Hornets",30,86.7,16,93.8
+"Cleveland Cavaliers",16,93.8,30,86.7
+"Orlando Magic",24,70.8,20,75
+"Miami Heat",20,75,24,70.8
+"Indiana Pacers",38,78.9,22,77.3
+"New York Knicks",22,77.3,38,78.9
+"Milwaukee Bucks",21,81,16,87.5
+"Toronto Raptors",16,87.5,21,81
+"Houston Rockets",28,71.4,21,61.9
+"Washington Wizards",21,61.9,28,71.4
+"Detroit Pistons",13,76.9,22,77.3
+"Chicago Bulls",22,77.3,13,76.9
+"Minnesota Timberwolves",21,71.4,24,75
+"San Antonio Spurs",24,75,21,71.4
+"Portland Trail Blazers",23,73.9,30,86.7
+"LA Clippers",30,86.7,23,73.9
+"Denver Nuggets",24,70.8,23,82.6
+"Utah Jazz",23,82.6,24,70.8
+"Phoenix Suns",14,85.7,17,76.5
+"Los Angeles Lakers",17,76.5,14,85.7
+"Golden State Warriors",24,87.5,18,55.6
+"Sacramento Kings",18,55.6,24,87.5
+"Chicago Bulls",18,66.7,13,76.9
+"Dallas Mavericks",13,76.9,18,66.7
+"Memphis Grizzlies",15,73.3,11,81.8
+"Milwaukee Bucks",11,81.8,15,73.3
+"New York Knicks",20,75,20,95
+"New Orleans Pelicans",20,95,20,75
+"Philadelphia 76ers",29,79.3,28,67.9
+"Atlanta Hawks",28,67.9,29,79.3
+"Toronto Raptors",17,76.5,21,76.2
+"Boston Celtics",21,76.2,17,76.5
+"Orlando Magic",17,88.2,25,88
+"Brooklyn Nets",25,88,17,88.2
+"Houston Rockets",28,75,27,74.1
+"Charlotte Hornets",27,74.1,28,75
+"Detroit Pistons",26,80.8,28,78.6
+"Indiana Pacers",28,78.6,26,80.8
+"Miami Heat",12,58.3,37,78.4
+"Washington Wizards",37,78.4,12,58.3
+"Denver Nuggets",23,82.6,25,80
+"Phoenix Suns",25,80,23,82.6
+"Oklahoma City Thunder",26,80.8,16,68.8
+"Utah Jazz",16,68.8,26,80.8
+"Portland Trail Blazers",18,83.3,28,89.3
+"San Antonio Spurs",28,89.3,18,83.3
+"Miami Heat",15,86.7,15,86.7
+"Philadelphia 76ers",15,86.7,15,86.7
+"Cleveland Cavaliers",9,88.9,19,78.9
+"Orlando Magic",19,78.9,9,88.9
+"Los Angeles Lakers",24,66.7,27,85.2
+"LA Clippers",27,85.2,24,66.7
+"Sacramento Kings",19,78.9,18,83.3
+"Dallas Mavericks",18,83.3,19,78.9
+"Memphis Grizzlies",25,76,39,74.4
+"New Orleans Pelicans",39,74.4,25,76
+"Washington Wizards",26,76.9,40,87.5
+"Atlanta Hawks",40,87.5,26,76.9
+"Toronto Raptors",17,76.5,18,55.6
+"Boston Celtics",18,55.6,17,76.5
+"Chicago Bulls",11,81.8,11,81.8
+"Milwaukee Bucks",11,81.8,11,81.8
+"Brooklyn Nets",23,69.6,14,92.9
+"Detroit Pistons",14,92.9,23,69.6
+"New York Knicks",25,64,30,80
+"Indiana Pacers",30,80,25,64
+"Oklahoma City Thunder",35,74.3,30,73.3
+"Golden State Warriors",30,73.3,35,74.3
+"San Antonio Spurs",14,78.6,26,73.1
+"Phoenix Suns",26,73.1,14,78.6
+"Los Angeles Lakers",35,77.1,31,77.4
+"Utah Jazz",31,77.4,35,77.1
+"Boston Celtics",16,62.5,16,87.5
+"Philadelphia 76ers",16,87.5,16,62.5
+"Atlanta Hawks",19,89.5,20,80
+"Chicago Bulls",20,80,19,89.5
+"Denver Nuggets",18,55.6,24,75
+"Houston Rockets",24,75,18,55.6
+"Portland Trail Blazers",17,64.7,22,77.3
+"Memphis Grizzlies",22,77.3,17,64.7
+"Sacramento Kings",15,80,27,81.5
+"New Orleans Pelicans",27,81.5,15,80
+"Minnesota Timberwolves",22,77.3,14,78.6
+"Brooklyn Nets",14,78.6,22,77.3
+"Toronto Raptors",28,75,19,84.2
+"Charlotte Hornets",19,84.2,28,75
+"Miami Heat",26,88.5,27,81.5
+"Detroit Pistons",27,81.5,26,88.5
+"Cleveland Cavaliers",20,90,17,76.5
+"Orlando Magic",17,76.5,20,90
+"Milwaukee Bucks",29,58.6,21,71.4
+"Washington Wizards",21,71.4,29,58.6
+"Golden State Warriors",17,100,18,83.3
+"Denver Nuggets",18,83.3,17,100
+"Indiana Pacers",29,82.8,26,69.2
+"Cleveland Cavaliers",26,69.2,29,82.8
+"Philadelphia 76ers",13,92.3,21,71.4
+"Milwaukee Bucks",21,71.4,13,92.3
+"Los Angeles Lakers",28,75,10,80
+"Houston Rockets",10,80,28,75
+"Phoenix Suns",28,82.1,41,85.4
+"Oklahoma City Thunder",41,85.4,28,82.1
+"Dallas Mavericks",32,68.8,22,81.8
+"Atlanta Hawks",22,81.8,32,68.8
+"Washington Wizards",18,83.3,18,72.2
+"New York Knicks",18,72.2,18,83.3
+"Detroit Pistons",36,80.6,40,62.5
+"Orlando Magic",40,62.5,36,80.6
+"San Antonio Spurs",29,86.2,32,78.1
+"Sacramento Kings",32,78.1,29,86.2
+"Utah Jazz",30,73.3,34,76.5
+"Brooklyn Nets",34,76.5,30,73.3
+"Memphis Grizzlies",12,83.3,22,86.4
+"Chicago Bulls",22,86.4,12,83.3
+"Portland Trail Blazers",20,60,23,78.3
+"Minnesota Timberwolves",23,78.3,20,60
+"Toronto Raptors",8,100,13,69.2
+"Charlotte Hornets",13,69.2,8,100
+"LA Clippers",23,82.6,35,88.6
+"New Orleans Pelicans",35,88.6,23,82.6
+"Dallas Mavericks",16,87.5,29,89.7
+"Miami Heat",29,89.7,16,87.5
+"Denver Nuggets",20,55,21,76.2
+"Phoenix Suns",21,76.2,20,55
+"San Antonio Spurs",23,69.6,21,71.4
+"Golden State Warriors",21,71.4,23,69.6
+"Sacramento Kings",15,73.3,23,65.2
+"Portland Trail Blazers",23,65.2,15,73.3
+"Detroit Pistons",27,66.7,45,75.6
+"Houston Rockets",45,75.6,27,66.7
+"LA Clippers",18,83.3,17,76.5
+"Memphis Grizzlies",17,76.5,18,83.3
+"Los Angeles Lakers",30,80,19,84.2
+"Minnesota Timberwolves",19,84.2,30,80
+"Utah Jazz",14,92.9,22,95.5
+"Boston Celtics",22,95.5,14,92.9
+"Atlanta Hawks",23,91.3,13,84.6
+"Brooklyn Nets",13,84.6,23,91.3
+"New York Knicks",24,62.5,13,84.6
+"Cleveland Cavaliers",13,84.6,24,62.5
+"Chicago Bulls",22,81.8,10,70
+"Charlotte Hornets",10,70,22,81.8
+"Oklahoma City Thunder",34,85.3,28,67.9
+"Indiana Pacers",28,67.9,34,85.3
+"Toronto Raptors",23,78.3,25,92
+"Philadelphia 76ers",25,92,23,78.3
+"Orlando Magic",26,76.9,12,83.3
+"Washington Wizards",12,83.3,26,76.9
+"New Orleans Pelicans",22,81.8,32,62.5
+"Denver Nuggets",32,62.5,22,81.8
+"Boston Celtics",20,80,13,69.2
+"Milwaukee Bucks",13,69.2,20,80
+"Minnesota Timberwolves",12,66.7,27,77.8
+"Phoenix Suns",27,77.8,12,66.7
+"Sacramento Kings",24,75,12,91.7
+"Portland Trail Blazers",12,91.7,24,75
+"Los Angeles Lakers",30,80,13,84.6
+"Chicago Bulls",13,84.6,30,80
+"LA Clippers",31,74.2,28,82.1
+"Memphis Grizzlies",28,82.1,31,74.2
+"Detroit Pistons",14,71.4,25,76
+"Oklahoma City Thunder",25,76,14,71.4
+"Utah Jazz",20,90,21,81
+"San Antonio Spurs",21,81,20,90
+"Houston Rockets",21,61.9,27,66.7
+"Brooklyn Nets",27,66.7,21,61.9
+"Miami Heat",14,64.3,23,52.2
+"New York Knicks",23,52.2,14,64.3
+"Dallas Mavericks",18,77.8,30,83.3
+"Philadelphia 76ers",30,83.3,18,77.8
+"Milwaukee Bucks",30,76.7,22,72.7
+"Indiana Pacers",22,72.7,30,76.7
+"New Orleans Pelicans",14,92.9,22,72.7
+"Golden State Warriors",22,72.7,14,92.9
+"Orlando Magic",15,80,23,73.9
+"Memphis Grizzlies",23,73.9,15,80
+"Charlotte Hornets",30,63.3,29,79.3
+"Oklahoma City Thunder",29,79.3,30,63.3
+"Cleveland Cavaliers",22,68.2,33,78.8
+"Atlanta Hawks",33,78.8,22,68.2
+"Miami Heat",19,94.7,9,88.9
+"Toronto Raptors",9,88.9,19,94.7
+"Boston Celtics",11,90.9,13,69.2
+"Washington Wizards",13,69.2,11,90.9
+"Chicago Bulls",21,71.4,16,50
+"LA Clippers",16,50,21,71.4
+"New Orleans Pelicans",17,82.4,15,86.7
+"Portland Trail Blazers",15,86.7,17,82.4
+"Minnesota Timberwolves",34,64.7,40,80
+"Sacramento Kings",40,80,34,64.7
+"Philadelphia 76ers",22,77.3,22,86.4
+"Denver Nuggets",22,86.4,22,77.3
+"Phoenix Suns",22,90.9,27,66.7
+"Utah Jazz",27,66.7,22,90.9
+"Houston Rockets",29,82.8,28,71.4
+"New York Knicks",28,71.4,29,82.8
+"Milwaukee Bucks",26,84.6,36,77.8
+"Detroit Pistons",36,77.8,26,84.6
+"Dallas Mavericks",17,88.2,23,78.3
+"Indiana Pacers",23,78.3,17,88.2
+"Minnesota Timberwolves",25,56,17,76.5
+"Golden State Warriors",17,76.5,25,56
+"Oklahoma City Thunder",28,85.7,27,74.1
+"Portland Trail Blazers",27,74.1,28,85.7
+"Memphis Grizzlies",19,73.7,26,84.6
+"Atlanta Hawks",26,84.6,19,73.7
+"San Antonio Spurs",18,72.2,21,71.4
+"Boston Celtics",21,71.4,18,72.2
+"Houston Rockets",18,83.3,24,87.5
+"Cleveland Cavaliers",24,87.5,18,83.3
+"Brooklyn Nets",28,85.7,28,78.6
+"Orlando Magic",28,78.6,28,85.7
+"Washington Wizards",20,60,16,81.3
+"Toronto Raptors",16,81.3,20,60
+"Chicago Bulls",13,76.9,28,67.9
+"Los Angeles Lakers",28,67.9,13,76.9
+"Dallas Mavericks",22,95.5,24,83.3
+"Charlotte Hornets",24,83.3,22,95.5
+"New Orleans Pelicans",9,88.9,21,81
+"LA Clippers",21,81,9,88.9
+"Philadelphia 76ers",27,88.9,19,84.2
+"Phoenix Suns",19,84.2,27,88.9
+"Utah Jazz",16,62.5,21,81
+"Sacramento Kings",21,81,16,62.5
+"Milwaukee Bucks",21,90.5,28,71.4
+"Denver Nuggets",28,71.4,21,90.5
+"Brooklyn Nets",25,92,14,85.7
+"Miami Heat",14,85.7,25,92
+"Indiana Pacers",12,100,25,88
+"Atlanta Hawks",25,88,12,100
+"Oklahoma City Thunder",19,89.5,28,71.4
+"Los Angeles Lakers",28,71.4,19,89.5
+"Philadelphia 76ers",34,82.4,24,75
+"Golden State Warriors",24,75,34,82.4
+"Chicago Bulls",14,78.6,18,88.9
+"Portland Trail Blazers",18,88.9,14,78.6
+"Phoenix Suns",29,75.9,32,87.5
+"Sacramento Kings",32,87.5,29,75.9
+"Milwaukee Bucks",16,75,34,73.5
+"Utah Jazz",34,73.5,16,75
+"Charlotte Hornets",27,74.1,24,75
+"Dallas Mavericks",24,75,27,74.1
+"Houston Rockets",21,61.9,14,85.7
+"Memphis Grizzlies",14,85.7,21,61.9
+"Detroit Pistons",30,76.7,29,79.3
+"Toronto Raptors",29,79.3,30,76.7
+"Indiana Pacers",22,59.1,19,73.7
+"Boston Celtics",19,73.7,22,59.1
+"San Antonio Spurs",15,60,26,73.1
+"Washington Wizards",26,73.1,15,60
+"Oklahoma City Thunder",11,90.9,20,75
+"LA Clippers",20,75,11,90.9
+"Charlotte Hornets",16,68.8,15,93.3
+"New Orleans Pelicans",15,93.3,16,68.8
+"Cleveland Cavaliers",26,76.9,27,88.9
+"Brooklyn Nets",27,88.9,26,76.9
+"New York Knicks",26,76.9,21,85.7
+"Orlando Magic",21,85.7,26,76.9
+"Phoenix Suns",20,75,46,78.3
+"Los Angeles Lakers",46,78.3,20,75
+"Portland Trail Blazers",30,80,36,72.2
+"Utah Jazz",36,72.2,30,80
+"Philadelphia 76ers",26,84.6,22,77.3
+"Chicago Bulls",22,77.3,26,84.6
+"Houston Rockets",23,73.9,33,84.8
+"Memphis Grizzlies",33,84.8,23,73.9
+"San Antonio Spurs",20,65,24,54.2
+"Milwaukee Bucks",24,54.2,20,65
+"Atlanta Hawks",25,88,29,82.8
+"Minnesota Timberwolves",29,82.8,25,88
+"New York Knicks",25,80,26,80.8
+"Miami Heat",26,80.8,25,80
+"Indiana Pacers",25,84,39,74.4
+"Toronto Raptors",39,74.4,25,84
+"Golden State Warriors",18,83.3,28,71.4
+"Dallas Mavericks",28,71.4,18,83.3
+"Denver Nuggets",21,90.5,16,75
+"Washington Wizards",16,75,21,90.5
+"Oklahoma City Thunder",14,92.9,21,57.1
+"LA Clippers",21,57.1,14,92.9
+"Boston Celtics",23,69.6,21,66.7
+"Sacramento Kings",21,66.7,23,69.6
+"San Antonio Spurs",19,57.9,23,82.6
+"New Orleans Pelicans",23,82.6,19,57.9
+"Detroit Pistons",24,83.3,36,75
+"Atlanta Hawks",36,75,24,83.3
+"Cleveland Cavaliers",21,81,23,78.3
+"Brooklyn Nets",23,78.3,21,81
+"Washington Wizards",23,78.3,25,96
+"Orlando Magic",25,96,23,78.3
+"Sacramento Kings",25,76,23,87
+"Utah Jazz",23,87,25,76
+"Golden State Warriors",19,84.2,24,83.3
+"Houston Rockets",24,83.3,19,84.2
+"Dallas Mavericks",20,95,26,76.9
+"Memphis Grizzlies",26,76.9,20,95
+"Minnesota Timberwolves",32,75,28,85.7
+"New York Knicks",28,85.7,32,75
+"Indiana Pacers",34,76.5,32,71.9
+"Charlotte Hornets",32,71.9,34,76.5
+"Chicago Bulls",29,82.8,22,86.4
+"Philadelphia 76ers",22,86.4,29,82.8
+"Orlando Magic",17,76.5,32,81.3
+"Los Angeles Lakers",32,81.3,17,76.5
+"LA Clippers",23,82.6,24,91.7
+"Portland Trail Blazers",24,91.7,23,82.6
+"Toronto Raptors",12,75,21,76.2
+"Milwaukee Bucks",21,76.2,12,75
+"New Orleans Pelicans",24,83.3,38,94.7
+"Houston Rockets",38,94.7,24,83.3
+"Miami Heat",25,92,17,82.4
+"Detroit Pistons",17,82.4,25,92
+"Atlanta Hawks",20,85,16,62.5
+"San Antonio Spurs",16,62.5,20,85
+"Denver Nuggets",13,92.3,16,87.5
+"Brooklyn Nets",16,87.5,13,92.3
+"Phoenix Suns",24,70.8,36,80.6
+"Oklahoma City Thunder",36,80.6,24,70.8
+"Boston Celtics",16,68.8,22,77.3
+"Utah Jazz",22,77.3,16,68.8
+"Sacramento Kings",23,60.9,27,85.2
+"Washington Wizards",27,85.2,23,60.9
+"Miami Heat",24,79.2,6,100
+"Chicago Bulls",6,100,24,79.2
+"Golden State Warriors",34,82.4,17,64.7
+"Memphis Grizzlies",17,64.7,34,82.4
+"Philadelphia 76ers",22,81.8,20,95
+"Indiana Pacers",20,95,22,81.8
+"Minnesota Timberwolves",28,85.7,21,81
+"Toronto Raptors",21,81,28,85.7
+"Orlando Magic",25,76,24,75
+"LA Clippers",24,75,25,76
+"Denver Nuggets",15,80,28,89.3
+"New York Knicks",28,89.3,15,80
+"Dallas Mavericks",19,78.9,31,61.3
+"Los Angeles Lakers",31,61.3,19,78.9
+"Boston Celtics",35,82.9,31,71
+"Portland Trail Blazers",31,71,35,82.9
+"Minnesota Timberwolves",31,67.7,30,86.7
+"Chicago Bulls",30,86.7,31,67.7
+"New Orleans Pelicans",25,88,24,70.8
+"Houston Rockets",24,70.8,25,88
+"Memphis Grizzlies",21,66.7,29,75.9
+"San Antonio Spurs",29,75.9,21,66.7
+"Golden State Warriors",20,70,25,68
+"Atlanta Hawks",25,68,20,70
+"Washington Wizards",20,80,22,77.3
+"Cleveland Cavaliers",22,77.3,20,80
+"Philadelphia 76ers",25,76,26,73.1
+"Charlotte Hornets",26,73.1,25,76
+"Orlando Magic",23,82.6,17,100
+"Phoenix Suns",17,100,23,82.6
+"Indiana Pacers",15,60,26,69.2
+"Milwaukee Bucks",26,69.2,15,60
+"Sacramento Kings",32,75,23,69.6
+"Brooklyn Nets",23,69.6,32,75
+"Oklahoma City Thunder",20,90,28,71.4
+"Toronto Raptors",28,71.4,20,90
+"Denver Nuggets",25,68,18,55.6
+"Detroit Pistons",18,55.6,25,68
+"Golden State Warriors",15,73.3,32,81.3
+"LA Clippers",32,81.3,15,73.3
+"Dallas Mavericks",37,86.5,26,57.7
+"San Antonio Spurs",26,57.7,37,86.5
+"Sacramento Kings",29,79.3,25,88
+"Chicago Bulls",25,88,29,79.3
+"Los Angeles Lakers",37,83.8,19,63.2
+"Houston Rockets",19,63.2,37,83.8
+"Boston Celtics",30,80,22,72.7
+"Minnesota Timberwolves",22,72.7,30,80
+"Philadelphia 76ers",27,85.2,22,68.2
+"Cleveland Cavaliers",22,68.2,27,85.2
+"Memphis Grizzlies",14,64.3,33,81.8
+"Miami Heat",33,81.8,14,64.3
+"Milwaukee Bucks",37,64.9,16,87.5
+"Phoenix Suns",16,87.5,37,64.9
+"New York Knicks",34,70.6,18,77.8
+"Portland Trail Blazers",18,77.8,34,70.6
+"Los Angeles Lakers",28,89.3,20,65
+"New Orleans Pelicans",20,65,28,89.3
+"Brooklyn Nets",34,73.5,23,87
+"Oklahoma City Thunder",23,87,34,73.5
+"Orlando Magic",21,76.2,18,77.8
+"San Antonio Spurs",18,77.8,21,76.2
+"Denver Nuggets",25,80,17,88.2
+"Toronto Raptors",17,88.2,25,80
+"Cleveland Cavaliers",19,84.2,15,80
+"Charlotte Hornets",15,80,19,84.2
+"Detroit Pistons",12,91.7,22,100
+"Washington Wizards",22,100,12,91.7
+"Phoenix Suns",22,72.7,24,58.3
+"Golden State Warriors",24,58.3,22,72.7
+"Milwaukee Bucks",22,81.8,15,73.3
+"Sacramento Kings",15,73.3,22,81.8
+"Boston Celtics",21,90.5,27,74.1
+"Houston Rockets",27,74.1,21,90.5
+"Minnesota Timberwolves",23,69.6,28,82.1
+"Atlanta Hawks",28,82.1,23,69.6
+"Utah Jazz",18,72.2,36,86.1
+"Miami Heat",36,86.1,18,72.2
+"Memphis Grizzlies",19,84.2,8,75
+"Dallas Mavericks",8,75,19,84.2
+"Indiana Pacers",24,62.5,10,70
+"Detroit Pistons",10,70,24,62.5
+"New York Knicks",21,81,17,58.8
+"Los Angeles Lakers",17,58.8,21,81
+"Portland Trail Blazers",20,70,29,75.9
+"New Orleans Pelicans",29,75.9,20,70
+"Oklahoma City Thunder",23,87,19,73.7
+"San Antonio Spurs",19,73.7,23,87
+"Washington Wizards",23,82.6,23,82.6
+"Philadelphia 76ers",23,82.6,23,82.6
+"Cleveland Cavaliers",34,73.5,22,72.7
+"Charlotte Hornets",22,72.7,34,73.5
+"Brooklyn Nets",24,87.5,24,75
+"Denver Nuggets",24,75,24,87.5
+"Sacramento Kings",37,83.8,22,81.8
+"Phoenix Suns",22,81.8,37,83.8
+"Oklahoma City Thunder",32,84.4,19,84.2
+"New Orleans Pelicans",19,84.2,32,84.4
+"Milwaukee Bucks",11,81.8,11,90.9
+"Golden State Warriors",11,90.9,11,81.8
+"Chicago Bulls",22,72.7,17,76.5
+"Houston Rockets",17,76.5,22,72.7
+"Dallas Mavericks",23,65.2,24,83.3
+"Memphis Grizzlies",24,83.3,23,65.2
+"Boston Celtics",12,83.3,16,93.8
+"Atlanta Hawks",16,93.8,12,83.3
+"Utah Jazz",20,90,15,93.3
+"Charlotte Hornets",15,93.3,20,90
+"Indiana Pacers",34,76.5,27,66.7
+"Detroit Pistons",27,66.7,34,76.5
+"Miami Heat",20,95,20,85
+"Orlando Magic",20,85,20,95
+"New York Knicks",27,88.9,16,75
+"LA Clippers",16,75,27,88.9
+"Toronto Raptors",13,76.9,19,100
+"Los Angeles Lakers",19,100,13,76.9
+"Cleveland Cavaliers",21,81,23,91.3
+"Miami Heat",23,91.3,21,81
+"Brooklyn Nets",33,72.7,29,62.1
+"Minnesota Timberwolves",29,62.1,33,72.7
+"Denver Nuggets",20,95,17,76.5
+"San Antonio Spurs",17,76.5,20,95
+"Portland Trail Blazers",30,66.7,29,79.3
+"Philadelphia 76ers",29,79.3,30,66.7
+"Atlanta Hawks",19,78.9,18,77.8
+"Washington Wizards",18,77.8,19,78.9
+"New York Knicks",31,64.5,32,75
+"Sacramento Kings",32,75,31,64.5
+"Brooklyn Nets",17,100,14,78.6
+"Milwaukee Bucks",14,78.6,17,100
+"Golden State Warriors",24,95.8,18,72.2
+"Memphis Grizzlies",18,72.2,24,95.8
+"Charlotte Hornets",32,59.4,20,80
+"Detroit Pistons",20,80,32,59.4
+"Houston Rockets",29,72.4,21,95.2
+"Indiana Pacers",21,95.2,29,72.4
+"Utah Jazz",21,95.2,31,64.5
+"Orlando Magic",31,64.5,21,95.2
+"Toronto Raptors",14,92.9,31,77.4
+"LA Clippers",31,77.4,14,92.9
+"Chicago Bulls",18,94.4,15,46.7
+"Denver Nuggets",15,46.7,18,94.4
+"Oklahoma City Thunder",21,95.2,16,87.5
+"Phoenix Suns",16,87.5,21,95.2
+"Portland Trail Blazers",27,81.5,20,65
+"Boston Celtics",20,65,27,81.5
+"Cleveland Cavaliers",19,89.5,29,75.9
+"Miami Heat",29,75.9,19,89.5
+"Dallas Mavericks",19,73.7,18,88.9
+"New Orleans Pelicans",18,88.9,19,73.7
+"Atlanta Hawks",26,76.9,17,82.4
+"Washington Wizards",17,82.4,26,76.9
+"Memphis Grizzlies",29,75.9,29,79.3
+"Los Angeles Lakers",29,79.3,29,75.9
+"Utah Jazz",25,76,22,77.3
+"Dallas Mavericks",22,77.3,25,76
+"Brooklyn Nets",29,79.3,24,70.8
+"Houston Rockets",24,70.8,29,79.3
+"Golden State Warriors",16,87.5,24,83.3
+"Oklahoma City Thunder",24,83.3,16,87.5
+"Charlotte Hornets",21,76.2,24,75
+"New York Knicks",24,75,21,76.2
+"Philadelphia 76ers",23,95.7,21,71.4
+"Minnesota Timberwolves",21,71.4,23,95.7
+"Milwaukee Bucks",34,94.1,19,73.7
+"Orlando Magic",19,73.7,34,94.1
+"Washington Wizards",17,76.5,22,81.8
+"Detroit Pistons",22,81.8,17,76.5
+"New Orleans Pelicans",14,78.6,20,65
+"Sacramento Kings",20,65,14,78.6
+"Toronto Raptors",20,85,23,82.6
+"Denver Nuggets",23,82.6,20,85
+"Atlanta Hawks",23,73.9,37,86.5
+"Miami Heat",37,86.5,23,73.9
+"Boston Celtics",21,66.7,25,80
+"Cleveland Cavaliers",25,80,21,66.7
+"Philadelphia 76ers",38,92.1,31,71
+"Indiana Pacers",31,71,38,92.1
+"Portland Trail Blazers",25,76,20,70
+"Detroit Pistons",20,70,25,76
+"Memphis Grizzlies",15,73.3,35,94.3
+"LA Clippers",35,94.3,15,73.3
+"New York Knicks",32,68.8,25,88
+"Boston Celtics",25,88,32,68.8
+"Milwaukee Bucks",22,77.3,12,91.7
+"Washington Wizards",12,91.7,22,77.3
+"San Antonio Spurs",21,61.9,29,86.2
+"Houston Rockets",29,86.2,21,61.9
+"Utah Jazz",27,81.5,33,81.8
+"Oklahoma City Thunder",33,81.8,27,81.5
+"Charlotte Hornets",15,80,22,81.8
+"Brooklyn Nets",22,81.8,15,80
+"Portland Trail Blazers",32,87.5,31,77.4
+"Orlando Magic",31,77.4,32,87.5
+"Golden State Warriors",18,83.3,22,81.8
+"Los Angeles Lakers",22,81.8,18,83.3
+"Indiana Pacers",16,81.3,25,88
+"Chicago Bulls",25,88,16,81.3
+"Phoenix Suns",25,80,38,92.1
+"Dallas Mavericks",38,92.1,25,80
+"Minnesota Timberwolves",31,71,30,73.3
+"Sacramento Kings",30,73.3,31,71
+"Philadelphia 76ers",37,83.8,28,89.3
+"Milwaukee Bucks",28,89.3,37,83.8
+"Atlanta Hawks",30,86.7,23,87
+"Miami Heat",23,87,30,86.7
+"Houston Rockets",22,72.7,20,95
+"San Antonio Spurs",20,95,22,72.7
+"Detroit Pistons",25,72,18,55.6
+"Cleveland Cavaliers",18,55.6,25,72
+"Toronto Raptors",14,71.4,22,86.4
+"Washington Wizards",22,86.4,14,71.4
+"Minnesota Timberwolves",16,75,24,83.3
+"Los Angeles Lakers",24,83.3,16,75
+"Memphis Grizzlies",31,77.4,31,80.6
+"Denver Nuggets",31,80.6,31,77.4
+"New Orleans Pelicans",27,77.8,20,90
+"Golden State Warriors",20,90,27,77.8
+"LA Clippers",27,70.4,26,100
+"Sacramento Kings",26,100,27,70.4
+"New York Knicks",17,64.7,32,93.8
+"Miami Heat",32,93.8,17,64.7
+"Phoenix Suns",25,84,25,76
+"Chicago Bulls",25,76,25,84
+"Utah Jazz",23,78.3,14,64.3
+"Oklahoma City Thunder",14,64.3,23,78.3
+"Portland Trail Blazers",20,80,16,81.3
+"Atlanta Hawks",16,81.3,20,80
+"Brooklyn Nets",26,80.8,20,70
+"Boston Celtics",20,70,26,80.8
+"Orlando Magic",19,78.9,25,84
+"Charlotte Hornets",25,84,19,78.9
+"LA Clippers",21,85.7,27,85.2
+"Golden State Warriors",27,85.2,21,85.7
+"Indiana Pacers",11,81.8,13,76.9
+"San Antonio Spurs",13,76.9,11,81.8
+"Philadelphia 76ers",29,82.8,27,66.7
+"Dallas Mavericks",27,66.7,29,82.8
+"Toronto Raptors",17,100,24,79.2
+"Washington Wizards",24,79.2,17,100
+"New Orleans Pelicans",23,87,29,93.1
+"Portland Trail Blazers",29,93.1,23,87
+"Memphis Grizzlies",19,84.2,25,64
+"Houston Rockets",25,64,19,84.2
+"Orlando Magic",29,75.9,19,78.9
+"Milwaukee Bucks",19,78.9,29,75.9
+"Los Angeles Lakers",39,79.5,24,75
+"Oklahoma City Thunder",24,75,39,79.5
+"Cleveland Cavaliers",21,61.9,28,82.1
+"Boston Celtics",28,82.1,21,61.9
+"Philadelphia 76ers",22,100,23,91.3
+"Miami Heat",23,91.3,22,100
+"Brooklyn Nets",20,95,21,66.7
+"New York Knicks",21,66.7,20,95
+"Phoenix Suns",15,80,28,64.3
+"Charlotte Hornets",28,64.3,15,80
+"Chicago Bulls",31,74.2,28,82.1
+"Detroit Pistons",28,82.1,31,74.2
+"Portland Trail Blazers",22,86.4,16,81.3
+"Golden State Warriors",16,81.3,22,86.4
+"Minnesota Timberwolves",22,59.1,23,87
+"LA Clippers",23,87,22,59.1
+"San Antonio Spurs",25,64,36,66.7
+"Utah Jazz",36,66.7,25,64
+"Indiana Pacers",40,77.5,28,64.3
+"Dallas Mavericks",28,64.3,40,77.5
+"Denver Nuggets",16,68.8,10,70
+"Houston Rockets",10,70,16,68.8
+"Sacramento Kings",30,73.3,24,83.3
+"Oklahoma City Thunder",24,83.3,30,73.3
+"Washington Wizards",20,85,19,89.5
+"Atlanta Hawks",19,89.5,20,85
+"Milwaukee Bucks",12,33.3,25,80
+"Brooklyn Nets",25,80,12,33.3
+"Chicago Bulls",17,82.4,19,68.4
+"Toronto Raptors",19,68.4,17,82.4
+"Los Angeles Lakers",23,87,17,76.5
+"Memphis Grizzlies",17,76.5,23,87
+"Orlando Magic",26,76.9,23,82.6
+"New Orleans Pelicans",23,82.6,26,76.9
+"Boston Celtics",14,78.6,34,67.6
+"New York Knicks",34,67.6,14,78.6
+"Detroit Pistons",27,70.4,22,81.8
+"Charlotte Hornets",22,81.8,27,70.4
+"Miami Heat",22,72.7,28,89.3
+"Philadelphia 76ers",28,89.3,22,72.7
+"LA Clippers",30,83.3,31,74.2
+"Denver Nuggets",31,74.2,30,83.3
+"Houston Rockets",25,68,35,77.1
+"Portland Trail Blazers",35,77.1,25,68
+"Minnesota Timberwolves",21,52.4,22,72.7
+"Golden State Warriors",22,72.7,21,52.4
+"Sacramento Kings",24,66.7,23,73.9
+"Oklahoma City Thunder",23,73.9,24,66.7
+"Toronto Raptors",15,80,14,85.7
+"Cleveland Cavaliers",14,85.7,15,80
+"Washington Wizards",23,52.2,17,82.4
+"Chicago Bulls",17,82.4,23,52.2
+"Los Angeles Lakers",28,75,14,71.4
+"Dallas Mavericks",14,71.4,28,75
+"Brooklyn Nets",29,93.1,28,82.1
+"Atlanta Hawks",28,82.1,29,93.1
+"Phoenix Suns",22,59.1,21,71.4
+"Milwaukee Bucks",21,71.4,22,59.1
+"San Antonio Spurs",21,81,28,78.6
+"Utah Jazz",28,78.6,21,81
+"Boston Celtics",12,66.7,35,80
+"Philadelphia 76ers",35,80,12,66.7
+"Denver Nuggets",14,78.6,8,87.5
+"Memphis Grizzlies",8,87.5,14,78.6
+"New Orleans Pelicans",21,85.7,23,82.6
+"New York Knicks",23,82.6,21,85.7
+"Miami Heat",34,82.4,27,81.5
+"Charlotte Hornets",27,81.5,34,82.4
+"Indiana Pacers",14,71.4,38,84.2
+"Orlando Magic",38,84.2,14,71.4
+"Toronto Raptors",34,64.7,14,64.3
+"Detroit Pistons",14,64.3,34,64.7
+"Sacramento Kings",35,80,36,86.1
+"LA Clippers",36,86.1,35,80
+"Oklahoma City Thunder",24,75,32,81.3
+"Phoenix Suns",32,81.3,24,75
+"Houston Rockets",22,81.8,18,88.9
+"Golden State Warriors",18,88.9,22,81.8
+"Charlotte Hornets",28,89.3,16,62.5
+"Minnesota Timberwolves",16,62.5,28,89.3
+"Brooklyn Nets",19,78.9,28,67.9
+"Chicago Bulls",28,67.9,19,78.9
+"Cleveland Cavaliers",29,89.7,23,91.3
+"Atlanta Hawks",23,91.3,29,89.7
+"Miami Heat",25,72,19,78.9
+"Milwaukee Bucks",19,78.9,25,72
+"New York Knicks",16,81.3,12,100
+"Washington Wizards",12,100,16,81.3
+"Golden State Warriors",21,81,34,70.6
+"Los Angeles Lakers",34,70.6,21,81
+"Portland Trail Blazers",17,82.4,31,80.6
+"Sacramento Kings",31,80.6,17,82.4
+"Oklahoma City Thunder",27,77.8,27,85.2
+"Utah Jazz",27,85.2,27,77.8
+"San Antonio Spurs",23,69.6,36,77.8
+"Dallas Mavericks",36,77.8,23,69.6
+"Memphis Grizzlies",36,83.3,36,80.6
+"Philadelphia 76ers",36,80.6,36,83.3
+"New Orleans Pelicans",25,76,25,80
+"Toronto Raptors",25,80,25,76
+"Denver Nuggets",23,87,20,85
+"Cleveland Cavaliers",20,85,23,87
+"Boston Celtics",26,84.6,22,81.8
+"Indiana Pacers",22,81.8,26,84.6
+"Detroit Pistons",19,78.9,23,78.3
+"Orlando Magic",23,78.3,19,78.9
+"LA Clippers",27,92.6,16,75
+"Phoenix Suns",16,75,27,92.6
+"Washington Wizards",17,82.4,22,90.9
+"Minnesota Timberwolves",22,90.9,17,82.4
+"Milwaukee Bucks",18,77.8,21,76.2
+"Chicago Bulls",21,76.2,18,77.8
+"New Orleans Pelicans",24,70.8,36,61.1
+"Los Angeles Lakers",36,61.1,24,70.8
+"Dallas Mavericks",20,85,15,73.3
+"Denver Nuggets",15,73.3,20,85
+"Utah Jazz",19,78.9,25,68
+"Memphis Grizzlies",25,68,19,78.9
+"Houston Rockets",38,68.4,47,85.1
+"Oklahoma City Thunder",47,85.1,38,68.4
+"Cleveland Cavaliers",25,80,29,93.1
+"Philadelphia 76ers",29,93.1,25,80
+"New York Knicks",22,81.8,21,76.2
+"Atlanta Hawks",21,76.2,22,81.8
+"Detroit Pistons",16,75,10,80
+"Boston Celtics",10,80,16,75
+"Miami Heat",29,72.4,20,85
+"Brooklyn Nets",20,85,29,72.4
+"San Antonio Spurs",20,75,29,69
+"Charlotte Hornets",29,69,20,75
+"Chicago Bulls",21,76.2,22,95.5
+"Indiana Pacers",22,95.5,21,76.2
+"Golden State Warriors",27,70.4,22,86.4
+"LA Clippers",22,86.4,27,70.4
+"Washington Wizards",22,86.4,24,70.8
+"Portland Trail Blazers",24,70.8,22,86.4
+"Sacramento Kings",24,87.5,16,81.3
+"Phoenix Suns",16,81.3,24,87.5
+"Orlando Magic",18,77.8,20,75
+"Toronto Raptors",20,75,18,77.8
+"Boston Celtics",20,80,35,77.1
+"Milwaukee Bucks",35,77.1,20,80
+"Washington Wizards",21,85.7,15,73.3
+"Golden State Warriors",15,73.3,21,85.7
+"Los Angeles Lakers",21,90.5,13,92.3
+"Portland Trail Blazers",13,92.3,21,90.5
+"Minnesota Timberwolves",26,73.1,29,75.9
+"Dallas Mavericks",29,75.9,26,73.1
+"Orlando Magic",19,84.2,19,94.7
+"Chicago Bulls",19,94.7,19,84.2
+"New Orleans Pelicans",18,88.9,18,83.3
+"Oklahoma City Thunder",18,83.3,18,88.9
+"Denver Nuggets",15,86.7,20,90
+"Miami Heat",20,90,15,86.7
+"Brooklyn Nets",33,72.7,26,73.1
+"New York Knicks",26,73.1,33,72.7
+"Atlanta Hawks",21,100,23,78.3
+"Charlotte Hornets",23,78.3,21,100
+"San Antonio Spurs",20,75,25,80
+"Cleveland Cavaliers",25,80,20,75
+"Utah Jazz",25,88,20,70
+"Indiana Pacers",20,70,25,88
+"Houston Rockets",31,90.3,17,94.1
+"Philadelphia 76ers",17,94.1,31,90.3
+"Detroit Pistons",32,78.1,36,66.7
+"Toronto Raptors",36,66.7,32,78.1
+"Memphis Grizzlies",21,61.9,26,76.9
+"Boston Celtics",26,76.9,21,61.9
+"Dallas Mavericks",19,73.7,25,92
+"Sacramento Kings",25,92,19,73.7
+"Los Angeles Lakers",26,80.8,12,91.7
+"Golden State Warriors",12,91.7,26,80.8
+"Chicago Bulls",15,80,19,84.2
+"Cleveland Cavaliers",19,84.2,15,80
+"San Antonio Spurs",17,88.2,19,78.9
+"Atlanta Hawks",19,78.9,17,88.2
+"Utah Jazz",28,75,38,73.7
+"New York Knicks",38,73.7,28,75
+"Denver Nuggets",17,82.4,29,58.6
+"Charlotte Hornets",29,58.6,17,82.4
+"Miami Heat",23,91.3,23,78.3
+"Orlando Magic",23,78.3,23,91.3
+"Indiana Pacers",17,76.5,22,86.4
+"Washington Wizards",22,86.4,17,76.5
+"Philadelphia 76ers",30,96.7,13,84.6
+"Brooklyn Nets",13,84.6,30,96.7
+"Milwaukee Bucks",16,75,14,78.6
+"LA Clippers",14,78.6,16,75
+"Cleveland Cavaliers",15,80,25,80
+"New Orleans Pelicans",25,80,15,80
+"Oklahoma City Thunder",35,91.4,31,93.5
+"Portland Trail Blazers",31,93.5,35,91.4
+"Dallas Mavericks",19,94.7,32,84.4
+"Sacramento Kings",32,84.4,19,94.7
+"Houston Rockets",24,75,22,95.5
+"Miami Heat",22,95.5,24,75
+"Minnesota Timberwolves",12,83.3,27,74.1
+"Memphis Grizzlies",27,74.1,12,83.3
+"Charlotte Hornets",26,69.2,17,82.4
+"Boston Celtics",17,82.4,26,69.2
+"Utah Jazz",29,75.9,30,73.3
+"Toronto Raptors",30,73.3,29,75.9
+"San Antonio Spurs",34,79.4,49,79.6
+"Detroit Pistons",49,79.6,34,79.4
+"Phoenix Suns",24,87.5,28,75
+"Indiana Pacers",28,75,24,87.5
+"New York Knicks",16,68.8,22,77.3
+"Philadelphia 76ers",22,77.3,16,68.8
+"Milwaukee Bucks",18,72.2,21,71.4
+"Los Angeles Lakers",21,71.4,18,72.2
+"Phoenix Suns",29,75.9,27,74.1
+"Atlanta Hawks",27,74.1,29,75.9
+"Chicago Bulls",21,76.2,25,84
+"Brooklyn Nets",25,84,21,76.2
+"Denver Nuggets",24,66.7,19,63.2
+"Orlando Magic",19,63.2,24,66.7
+"Dallas Mavericks",17,64.7,21,76.2
+"LA Clippers",21,76.2,17,64.7
+"Golden State Warriors",10,90,32,96.9
+"Portland Trail Blazers",32,96.9,10,90
+"Minnesota Timberwolves",8,100,21,85.7
+"Utah Jazz",21,85.7,8,100
+"Sacramento Kings",30,93.3,28,85.7
+"Houston Rockets",28,85.7,30,93.3
+"Philadelphia 76ers",20,75,10,70
+"Boston Celtics",10,70,20,75
+"Indiana Pacers",28,71.4,39,92.3
+"Miami Heat",39,92.3,28,71.4
+"San Antonio Spurs",27,70.4,21,76.2
+"Toronto Raptors",21,76.2,27,70.4
+"Detroit Pistons",18,94.4,25,84
+"Cleveland Cavaliers",25,84,18,94.4
+"Charlotte Hornets",21,81,17,88.2
+"Washington Wizards",17,88.2,21,81
+"Oklahoma City Thunder",20,90,26,69.2
+"Los Angeles Lakers",26,69.2,20,90
+"Minnesota Timberwolves",26,84.6,22,77.3
+"Denver Nuggets",22,77.3,26,84.6
+"Chicago Bulls",27,66.7,21,71.4
+"Memphis Grizzlies",21,71.4,27,66.7
+"Phoenix Suns",28,75,31,87.1
+"Brooklyn Nets",31,87.1,28,75
+"Atlanta Hawks",25,76,21,66.7
+"New Orleans Pelicans",21,66.7,25,76
+"New York Knicks",19,68.4,24,75
+"Orlando Magic",24,75,19,68.4
+"Oklahoma City Thunder",21,71.4,7,42.9
+"Golden State Warriors",7,42.9,21,71.4
+"Milwaukee Bucks",21,81,29,86.2
+"Portland Trail Blazers",29,86.2,21,81
+"Dallas Mavericks",31,87.1,26,88.5
+"Utah Jazz",26,88.5,31,87.1
+"San Antonio Spurs",17,94.1,25,88
+"Chicago Bulls",25,88,17,94.1
+"Sacramento Kings",18,83.3,24,79.2
+"Houston Rockets",24,79.2,18,83.3
+"LA Clippers",30,80,22,81.8
+"Brooklyn Nets",22,81.8,30,80
+"Boston Celtics",21,81,21,76.2
+"Detroit Pistons",21,76.2,21,81
+"Cleveland Cavaliers",20,70,19,78.9
+"Washington Wizards",19,78.9,20,70
+"Denver Nuggets",31,77.4,30,73.3
+"Minnesota Timberwolves",30,73.3,31,77.4
+"Sacramento Kings",27,85.2,34,76.5
+"New Orleans Pelicans",34,76.5,27,85.2
+"Philadelphia 76ers",36,83.3,39,71.8
+"New York Knicks",39,71.8,36,83.3
+"Toronto Raptors",12,58.3,23,73.9
+"Memphis Grizzlies",23,73.9,12,58.3
+"Cleveland Cavaliers",16,93.8,22,68.2
+"Indiana Pacers",22,68.2,16,93.8
+"Orlando Magic",30,90,23,47.8
+"Charlotte Hornets",23,47.8,30,90
+"Atlanta Hawks",17,82.4,20,85
+"Denver Nuggets",20,85,17,82.4
+"Dallas Mavericks",27,77.8,19,78.9
+"Golden State Warriors",19,78.9,27,77.8
+"Portland Trail Blazers",21,90.5,25,84
+"Chicago Bulls",25,84,21,90.5
+"Miami Heat",21,81,28,60.7
+"Milwaukee Bucks",28,60.7,21,81
+"Houston Rockets",27,77.8,23,87
+"Oklahoma City Thunder",23,87,27,77.8
+"Phoenix Suns",31,67.7,22,63.6
+"Detroit Pistons",22,63.6,31,67.7
+"LA Clippers",35,85.7,26,76.9
+"New York Knicks",26,76.9,35,85.7
+"Washington Wizards",41,78,28,89.3
+"Brooklyn Nets",28,89.3,41,78
+"Los Angeles Lakers",33,75.8,20,90
+"New Orleans Pelicans",20,90,33,75.8
+"Atlanta Hawks",23,73.9,18,72.2
+"Utah Jazz",18,72.2,23,73.9
+"Toronto Raptors",27,74.1,33,72.7
+"Houston Rockets",33,72.7,27,74.1
+"Orlando Magic",38,65.8,28,85.7
+"Minnesota Timberwolves",28,85.7,38,65.8
+"Philadelphia 76ers",41,78,15,93.3
+"San Antonio Spurs",15,93.3,41,78
+"Phoenix Suns",14,85.7,31,83.9
+"Boston Celtics",31,83.9,14,85.7
+"Charlotte Hornets",30,76.7,23,69.6
+"Detroit Pistons",23,69.6,30,76.7
+"Sacramento Kings",20,85,14,71.4
+"Indiana Pacers",14,71.4,20,85
+"Portland Trail Blazers",23,91.3,22,90.9
+"Washington Wizards",22,90.9,23,91.3
+"LA Clippers",20,70,27,70.4
+"Milwaukee Bucks",27,70.4,20,70
+"Golden State Warriors",19,63.2,21,76.2
+"Denver Nuggets",21,76.2,19,63.2
+"New Orleans Pelicans",21,81,29,79.3
+"Dallas Mavericks",29,79.3,21,81
+"Charlotte Hornets",14,92.9,26,80.8
+"Chicago Bulls",26,80.8,14,92.9
+"Memphis Grizzlies",22,95.5,22,72.7
+"Cleveland Cavaliers",22,72.7,22,95.5
+"Miami Heat",16,81.3,18,77.8
+"New York Knicks",18,77.8,16,81.3
+"Los Angeles Lakers",31,71,6,83.3
+"Indiana Pacers",6,83.3,31,71
+"Atlanta Hawks",11,81.8,31,83.9
+"Phoenix Suns",31,83.9,11,81.8
+"Toronto Raptors",26,69.2,30,86.7
+"Utah Jazz",30,86.7,26,69.2
+"Oklahoma City Thunder",22,81.8,31,74.2
+"Houston Rockets",31,74.2,22,81.8
+"Golden State Warriors",34,79.4,24,54.2
+"Minnesota Timberwolves",24,54.2,34,79.4
+"Sacramento Kings",19,78.9,7,71.4
+"San Antonio Spurs",7,71.4,19,78.9
+"Brooklyn Nets",18,83.3,10,70
+"Boston Celtics",10,70,18,83.3
+"Orlando Magic",29,75.9,26,88.5
+"Philadelphia 76ers",26,88.5,29,75.9
+"Portland Trail Blazers",27,96.3,28,75
+"Memphis Grizzlies",28,75,27,96.3
+"New Orleans Pelicans",25,84,24,83.3
+"Denver Nuggets",24,83.3,25,84
+"LA Clippers",26,84.6,21,71.4
+"Chicago Bulls",21,71.4,26,84.6
+"Charlotte Hornets",26,76.9,27,85.2
+"Milwaukee Bucks",27,85.2,26,76.9
+"Los Angeles Lakers",31,71,32,87.5
+"New York Knicks",32,87.5,31,71
+"Miami Heat",25,72,12,50
+"Cleveland Cavaliers",12,50,25,72
+"Atlanta Hawks",30,80,27,88.9
+"Portland Trail Blazers",27,88.9,30,80
+"Toronto Raptors",19,89.5,21,81
+"Phoenix Suns",21,81,19,89.5
+"Detroit Pistons",27,70.4,33,69.7
+"Dallas Mavericks",33,69.7,27,70.4
+"Sacramento Kings",22,68.2,25,52
+"Minnesota Timberwolves",25,52,22,68.2
+"Golden State Warriors",20,80,20,85
+"Oklahoma City Thunder",20,85,20,80
+"Washington Wizards",17,88.2,23,65.2
+"San Antonio Spurs",23,65.2,17,88.2
+"Los Angeles Lakers",37,62.2,19,78.9
+"Brooklyn Nets",19,78.9,37,62.2
+"Orlando Magic",30,80,23,78.3
+"Philadelphia 76ers",23,78.3,30,80
+"New Orleans Pelicans",21,71.4,20,60
+"Milwaukee Bucks",20,60,21,71.4
+"LA Clippers",27,85.2,19,73.7
+"Cleveland Cavaliers",19,73.7,27,85.2
+"Indiana Pacers",21,90.5,22,77.3
+"Memphis Grizzlies",22,77.3,21,90.5
+"Miami Heat",23,73.9,22,77.3
+"Charlotte Hornets",22,77.3,23,73.9
+"Toronto Raptors",18,94.4,23,78.3
+"Portland Trail Blazers",23,78.3,18,94.4
+"Dallas Mavericks",17,70.6,24,70.8
+"Utah Jazz",24,70.8,17,70.6
+"Los Angeles Lakers",20,75,39,87.2
+"Boston Celtics",39,87.2,20,75
+"Sacramento Kings",36,75,21,76.2
+"Minnesota Timberwolves",21,76.2,36,75
+"Washington Wizards",29,75.9,19,89.5
+"New Orleans Pelicans",19,89.5,29,75.9
+"Phoenix Suns",26,76.9,17,70.6
+"San Antonio Spurs",17,70.6,26,76.9
+"LA Clippers",19,89.5,20,80
+"Atlanta Hawks",20,80,19,89.5
+"Houston Rockets",27,77.8,31,77.4
+"Detroit Pistons",31,77.4,27,77.8
+"Chicago Bulls",19,84.2,24,70.8
+"Orlando Magic",24,70.8,19,84.2
+"New York Knicks",19,78.9,14,57.1
+"Brooklyn Nets",14,57.1,19,78.9
+"Denver Nuggets",20,85,24,66.7
+"Philadelphia 76ers",24,66.7,20,85
+"Toronto Raptors",21,61.9,15,73.3
+"Golden State Warriors",15,73.3,21,61.9
+"Orlando Magic",32,84.4,26,84.6
+"Miami Heat",26,84.6,32,84.4
+"Cleveland Cavaliers",18,77.8,25,88
+"Oklahoma City Thunder",25,88,18,77.8
+"Memphis Grizzlies",19,84.2,15,66.7
+"Minnesota Timberwolves",15,66.7,19,84.2
+"Milwaukee Bucks",31,61.3,28,71.4
+"Indiana Pacers",28,71.4,31,61.3
+"San Antonio Spurs",28,64.3,21,76.2
+"LA Clippers",21,76.2,28,64.3
+"Dallas Mavericks",28,71.4,16,75
+"Phoenix Suns",16,75,28,71.4
+"Cleveland Cavaliers",22,81.8,20,60
+"Houston Rockets",20,60,22,81.8
+"New York Knicks",23,82.6,23,82.6
+"Boston Celtics",23,82.6,23,82.6
+"Detroit Pistons",26,88.5,27,85.2
+"Brooklyn Nets",27,85.2,26,88.5
+"Chicago Bulls",22,81.8,31,83.9
+"Charlotte Hornets",31,83.9,22,81.8
+"San Antonio Spurs",18,88.9,30,76.7
+"Los Angeles Lakers",30,76.7,18,88.9
+"Memphis Grizzlies",37,70.3,28,78.6
+"Golden State Warriors",28,78.6,37,70.3
+"Utah Jazz",15,66.7,18,83.3
+"Portland Trail Blazers",18,83.3,15,66.7
+"Toronto Raptors",7,71.4,13,92.3
+"Sacramento Kings",13,92.3,7,71.4
+"Washington Wizards",23,78.3,20,70
+"Houston Rockets",20,70,23,78.3
+"Denver Nuggets",16,75,28,71.4
+"Milwaukee Bucks",28,71.4,16,75
+"Minnesota Timberwolves",28,71.4,21,76.2
+"New Orleans Pelicans",21,76.2,28,71.4
+"Atlanta Hawks",33,78.8,16,68.8
+"Oklahoma City Thunder",16,68.8,33,78.8
+"Brooklyn Nets",27,77.8,36,97.2
+"Philadelphia 76ers",36,97.2,27,77.8
+"Indiana Pacers",29,79.3,25,76
+"Orlando Magic",25,76,29,79.3
+"LA Clippers",15,80,24,62.5
+"Los Angeles Lakers",24,62.5,15,80
+"Charlotte Hornets",18,72.2,13,92.3
+"Phoenix Suns",13,92.3,18,72.2
+"Washington Wizards",41,78,26,84.6
+"Dallas Mavericks",26,84.6,41,78
+"Denver Nuggets",13,76.9,20,85
+"New Orleans Pelicans",20,85,13,76.9
+"Boston Celtics",27,77.8,23,78.3
+"Miami Heat",23,78.3,27,77.8
+"Cleveland Cavaliers",16,68.8,21,66.7
+"New York Knicks",21,66.7,16,68.8
+"Chicago Bulls",25,76,28,78.6
+"Indiana Pacers",28,78.6,25,76
+"Memphis Grizzlies",10,80,14,92.9
+"Sacramento Kings",14,92.9,10,80
+"San Antonio Spurs",26,76.9,22,77.3
+"Portland Trail Blazers",22,77.3,26,76.9
+"Charlotte Hornets",34,70.6,26,84.6
+"Utah Jazz",26,84.6,34,70.6
+"Atlanta Hawks",19,63.2,18,66.7
+"Chicago Bulls",18,66.7,19,63.2
+"Minnesota Timberwolves",22,72.7,30,66.7
+"Houston Rockets",30,66.7,22,72.7
+"Milwaukee Bucks",24,70.8,40,77.5
+"Detroit Pistons",40,77.5,24,70.8
+"Boston Celtics",11,72.7,24,66.7
+"Orlando Magic",24,66.7,11,72.7
+"Los Angeles Lakers",27,77.8,25,84
+"Portland Trail Blazers",25,84,27,77.8
+"Brooklyn Nets",31,64.5,27,77.8
+"Golden State Warriors",27,77.8,31,64.5
+"Oklahoma City Thunder",16,87.5,33,51.5
+"Denver Nuggets",33,51.5,16,87.5
+"Memphis Grizzlies",27,70.4,25,84
+"Phoenix Suns",25,84,27,70.4
+"New York Knicks",26,69.2,35,80
+"Toronto Raptors",35,80,26,69.2
+"New Orleans Pelicans",18,77.8,27,81.5
+"Miami Heat",27,81.5,18,77.8
+"LA Clippers",31,96.8,26,57.7
+"Dallas Mavericks",26,57.7,31,96.8
+"Philadelphia 76ers",23,82.6,29,75.9
+"Sacramento Kings",29,75.9,23,82.6
+"Indiana Pacers",26,84.6,35,68.6
+"Phoenix Suns",35,68.6,26,84.6
+"Houston Rockets",33,57.6,24,83.3
+"Minnesota Timberwolves",24,83.3,33,57.6
+"Charlotte Hornets",22,86.4,20,85
+"Atlanta Hawks",20,85,22,86.4
+"Milwaukee Bucks",11,90.9,17,64.7
+"Cleveland Cavaliers",17,64.7,11,90.9
+"Orlando Magic",24,83.3,25,72
+"Washington Wizards",25,72,24,83.3
+"Boston Celtics",15,93.3,7,71.4
+"Toronto Raptors",7,71.4,15,93.3
+"Memphis Grizzlies",40,65,41,80.5
+"Los Angeles Lakers",41,80.5,40,65
+"Oklahoma City Thunder",11,63.6,28,85.7
+"Sacramento Kings",28,85.7,11,63.6
+"Indiana Pacers",37,78.4,26,69.2
+"Denver Nuggets",26,69.2,37,78.4
+"Brooklyn Nets",20,65,23,69.6
+"Utah Jazz",23,69.6,20,65
+"LA Clippers",20,70,14,71.4
+"San Antonio Spurs",14,71.4,20,70
+"New York Knicks",17,76.5,16,87.5
+"Atlanta Hawks",16,87.5,17,76.5
+"Golden State Warriors",19,68.4,19,84.2
+"Cleveland Cavaliers",19,84.2,19,68.4
+"Miami Heat",27,74.1,28,82.1
+"Dallas Mavericks",28,82.1,27,74.1
+"New Orleans Pelicans",24,75,34,88.2
+"Orlando Magic",34,88.2,24,75
+"Brooklyn Nets",25,60,41,68.3
+"Phoenix Suns",41,68.3,25,60
+"Philadelphia 76ers",19,78.9,29,75.9
+"Portland Trail Blazers",29,75.9,19,78.9
+"Toronto Raptors",27,74.1,23,91.3
+"Minnesota Timberwolves",23,91.3,27,74.1
+"Golden State Warriors",23,87,30,73.3
+"Boston Celtics",30,73.3,23,87
+"Chicago Bulls",21,90.5,27,81.5
+"Detroit Pistons",27,81.5,21,90.5
+"Sacramento Kings",27,77.8,18,77.8
+"Los Angeles Lakers",18,77.8,27,77.8
+"Minnesota Timberwolves",28,78.6,32,75
+"Denver Nuggets",32,75,28,78.6
+"LA Clippers",21,66.7,22,77.3
+"Utah Jazz",22,77.3,21,66.7
+"Charlotte Hornets",25,68,20,75
+"Houston Rockets",20,75,25,68
+"Cleveland Cavaliers",21,66.7,22,72.7
+"Memphis Grizzlies",22,72.7,21,66.7
+"Miami Heat",16,75,18,61.1
+"New Orleans Pelicans",18,61.1,16,75
+"Indiana Pacers",24,66.7,21,76.2
+"Oklahoma City Thunder",21,76.2,24,66.7
+"Washington Wizards",19,84.2,27,66.7
+"New York Knicks",27,66.7,19,84.2
+"Atlanta Hawks",20,95,24,75
+"Dallas Mavericks",24,75,20,95
+"Philadelphia 76ers",34,85.3,20,80
+"LA Clippers",20,80,34,85.3
+"Portland Trail Blazers",25,96,28,82.1
+"Denver Nuggets",28,82.1,25,96
+"Brooklyn Nets",24,87.5,28,89.3
+"San Antonio Spurs",28,89.3,24,87.5
+"Toronto Raptors",27,63,21,90.5
+"Milwaukee Bucks",21,90.5,27,63
+"Houston Rockets",31,74.2,35,85.7
+"Los Angeles Lakers",35,85.7,31,74.2
+"Phoenix Suns",19,94.7,20,80
+"Memphis Grizzlies",20,80,19,94.7
+"Utah Jazz",28,82.1,18,83.3
+"Minnesota Timberwolves",18,83.3,28,82.1
+"Miami Heat",20,95,22,81.8
+"Atlanta Hawks",22,81.8,20,95
+"New Orleans Pelicans",22,77.3,33,78.8
+"Cleveland Cavaliers",33,78.8,22,77.3
+"Toronto Raptors",41,82.9,35,80
+"New York Knicks",35,80,41,82.9
+"Golden State Warriors",21,90.5,23,87
+"Washington Wizards",23,87,21,90.5
+"Indiana Pacers",15,93.3,15,86.7
+"Milwaukee Bucks",15,86.7,15,93.3
+"Boston Celtics",25,96,30,76.7
+"Charlotte Hornets",30,76.7,25,96
+"Philadelphia 76ers",19,78.9,13,76.9
+"Los Angeles Lakers",13,76.9,19,78.9
+"Dallas Mavericks",33,81.8,42,88.1
+"Portland Trail Blazers",42,88.1,33,81.8
+"Orlando Magic",34,79.4,19,52.6
+"Denver Nuggets",19,52.6,34,79.4
+"Sacramento Kings",25,80,20,65
+"San Antonio Spurs",20,65,25,80
+"Oklahoma City Thunder",26,76.9,19,63.2
+"Brooklyn Nets",19,63.2,26,76.9
+"Golden State Warriors",22,68.2,24,87.5
+"Chicago Bulls",24,87.5,22,68.2
+"Houston Rockets",23,73.9,21,71.4
+"LA Clippers",21,71.4,23,73.9
+"New York Knicks",31,80.6,15,80
+"Detroit Pistons",15,80,31,80.6
+"Dallas Mavericks",19,57.9,22,95.5
+"Portland Trail Blazers",22,95.5,19,57.9
+"Philadelphia 76ers",26,80.8,23,82.6
+"Utah Jazz",23,82.6,26,80.8
+"Cleveland Cavaliers",23,87,15,73.3
+"Minnesota Timberwolves",15,73.3,23,87
+"Atlanta Hawks",18,94.4,30,80
+"Toronto Raptors",30,80,18,94.4
+"Boston Celtics",10,90,19,84.2
+"Charlotte Hornets",19,84.2,10,90
+"Memphis Grizzlies",28,78.6,28,89.3
+"Indiana Pacers",28,89.3,28,78.6
+"Milwaukee Bucks",12,66.7,12,83.3
+"Miami Heat",12,83.3,12,66.7
+"Denver Nuggets",25,76,14,78.6
+"LA Clippers",14,78.6,25,76
+"Houston Rockets",25,64,29,86.2
+"Sacramento Kings",29,86.2,25,64
+"Orlando Magic",16,62.5,40,72.5
+"Utah Jazz",40,72.5,16,62.5
+"Oklahoma City Thunder",22,86.4,24,91.7
+"Chicago Bulls",24,91.7,22,86.4
+"Phoenix Suns",24,83.3,20,85
+"Minnesota Timberwolves",20,85,24,83.3
+"Golden State Warriors",20,80,34,73.5
+"San Antonio Spurs",34,73.5,20,80
+"New Orleans Pelicans",30,70,24,70.8
+"Detroit Pistons",24,70.8,30,70
+"Atlanta Hawks",21,71.4,29,82.8
+"Indiana Pacers",29,82.8,21,71.4
+"New York Knicks",31,71,26,88.5
+"Washington Wizards",26,88.5,31,71
+"Dallas Mavericks",17,52.9,27,63
+"Los Angeles Lakers",27,63,17,52.9
+"Cleveland Cavaliers",31,77.4,29,75.9
+"Portland Trail Blazers",29,75.9,31,77.4
+"Boston Celtics",17,88.2,11,81.8
+"Brooklyn Nets",11,81.8,17,88.2
+"Milwaukee Bucks",15,66.7,16,93.8
+"Miami Heat",16,93.8,15,66.7
+"Charlotte Hornets",27,70.4,36,77.8
+"Toronto Raptors",36,77.8,27,70.4
+"Oklahoma City Thunder",33,93.9,27,92.6
+"Philadelphia 76ers",27,92.6,33,93.9
+"Phoenix Suns",14,71.4,21,71.4
+"Denver Nuggets",21,71.4,14,71.4
+"Houston Rockets",17,64.7,31,83.9
+"Sacramento Kings",31,83.9,17,64.7
+"San Antonio Spurs",23,78.3,25,68
+"Memphis Grizzlies",25,68,23,78.3
+"Milwaukee Bucks",11,54.5,18,88.9
+"Atlanta Hawks",18,88.9,11,54.5
+"New Orleans Pelicans",17,76.5,25,88
+"Boston Celtics",25,88,17,76.5
+"Indiana Pacers",21,71.4,33,84.8
+"New York Knicks",33,84.8,21,71.4
+"Minnesota Timberwolves",21,76.2,28,78.6
+"Detroit Pistons",28,78.6,21,76.2
+"Chicago Bulls",9,66.7,21,81
+"Washington Wizards",21,81,9,66.7
+"Dallas Mavericks",36,80.6,30,76.7
+"LA Clippers",30,76.7,36,80.6
+"Phoenix Suns",31,93.5,27,77.8
+"Golden State Warriors",27,77.8,31,93.5
+"Orlando Magic",25,80,19,84.2
+"Portland Trail Blazers",19,84.2,25,80
+"Cleveland Cavaliers",24,83.3,37,81.1
+"Utah Jazz",37,81.1,24,83.3
+"Oklahoma City Thunder",21,66.7,40,100
+"Miami Heat",40,100,21,66.7
+"Charlotte Hornets",15,73.3,27,81.5
+"Toronto Raptors",27,81.5,15,73.3
+"Detroit Pistons",36,83.3,30,93.3
+"Philadelphia 76ers",30,93.3,36,83.3
+"Orlando Magic",20,75,12,75
+"Sacramento Kings",12,75,20,75
+"Los Angeles Lakers",25,76,17,88.2
+"Denver Nuggets",17,88.2,25,76
+"San Antonio Spurs",16,87.5,35,57.1
+"Memphis Grizzlies",35,57.1,16,87.5
+"Chicago Bulls",14,64.3,21,95.2
+"Boston Celtics",21,95.2,14,64.3
+"Milwaukee Bucks",18,77.8,22,90.9
+"New York Knicks",22,90.9,18,77.8
+"New Orleans Pelicans",31,77.4,18,77.8
+"Washington Wizards",18,77.8,31,77.4
+"Atlanta Hawks",20,80,31,77.4
+"LA Clippers",31,77.4,20,80
+"Cleveland Cavaliers",17,64.7,11,90.9
+"Phoenix Suns",11,90.9,17,64.7
+"Minnesota Timberwolves",22,81.8,15,60
+"Houston Rockets",15,60,22,81.8
+"Dallas Mavericks",42,78.6,20,80
+"Oklahoma City Thunder",20,80,42,78.6
+"Brooklyn Nets",15,80,17,70.6
+"Miami Heat",17,70.6,15,80
+"Utah Jazz",22,81.8,22,72.7
+"Memphis Grizzlies",22,72.7,22,81.8
+"Charlotte Hornets",27,88.9,33,81.8
+"Indiana Pacers",33,81.8,27,88.9
+"Portland Trail Blazers",37,75.7,29,86.2
+"Toronto Raptors",29,86.2,37,75.7
+"Philadelphia 76ers",23,87,18,83.3
+"Detroit Pistons",18,83.3,23,87
+"Los Angeles Lakers",33,81.8,37,81.1
+"Sacramento Kings",37,81.1,33,81.8
+"Orlando Magic",24,58.3,21,81
+"Golden State Warriors",21,81,24,58.3
+"Utah Jazz",18,77.8,32,78.1
+"Chicago Bulls",32,78.1,18,77.8
+"New Orleans Pelicans",35,62.9,38,78.9
+"Dallas Mavericks",38,78.9,35,62.9
+"Boston Celtics",18,66.7,14,78.6
+"San Antonio Spurs",14,78.6,18,66.7
+"Atlanta Hawks",22,77.3,16,75
+"Los Angeles Lakers",16,75,22,77.3
+"Miami Heat",31,83.9,25,88
+"Phoenix Suns",25,88,31,83.9
+"LA Clippers",27,66.7,29,79.3
+"Minnesota Timberwolves",29,79.3,27,66.7
+"Cleveland Cavaliers",32,56.3,23,78.3
+"Denver Nuggets",23,78.3,32,56.3
+"Charlotte Hornets",19,63.2,24,62.5
+"Milwaukee Bucks",24,62.5,19,63.2
+"Washington Wizards",36,75,14,71.4
+"Oklahoma City Thunder",14,71.4,36,75
+"Detroit Pistons",17,58.8,26,84.6
+"San Antonio Spurs",26,84.6,17,58.8
+"New York Knicks",26,69.2,35,80
+"Toronto Raptors",35,80,26,69.2
+"Brooklyn Nets",20,95,25,80
+"New Orleans Pelicans",25,80,20,95
+"Portland Trail Blazers",17,82.4,28,89.3
+"Indiana Pacers",28,89.3,17,82.4
+"Chicago Bulls",17,58.8,18,77.8
+"Philadelphia 76ers",18,77.8,17,58.8
+"LA Clippers",25,72,21,85.7
+"Denver Nuggets",21,85.7,25,72
+"Utah Jazz",21,95.2,26,88.5
+"Houston Rockets",26,88.5,21,95.2
+"Boston Celtics",31,83.9,25,80
+"Dallas Mavericks",25,80,31,83.9
+"Memphis Grizzlies",23,65.2,30,86.7
+"Orlando Magic",30,86.7,23,65.2
+"Detroit Pistons",23,69.6,15,93.3
+"Golden State Warriors",15,93.3,23,69.6
+"Miami Heat",21,71.4,30,80
+"Los Angeles Lakers",30,80,21,71.4
+"Atlanta Hawks",22,90.9,27,92.6
+"Sacramento Kings",27,92.6,22,90.9
+"Brooklyn Nets",21,76.2,29,93.1
+"Chicago Bulls",29,93.1,21,76.2
+"Portland Trail Blazers",42,73.8,36,72.2
+"Minnesota Timberwolves",36,72.2,42,73.8
+"Houston Rockets",27,66.7,26,88.5
+"New Orleans Pelicans",26,88.5,27,66.7
+"San Antonio Spurs",26,80.8,26,65.4
+"New York Knicks",26,65.4,26,80.8
+"Milwaukee Bucks",30,70,20,80
+"Toronto Raptors",20,80,30,70
+"Memphis Grizzlies",37,75.7,24,83.3
+"Charlotte Hornets",24,83.3,37,75.7
+"Phoenix Suns",18,77.8,23,82.6
+"Cleveland Cavaliers",23,82.6,18,77.8
+"Oklahoma City Thunder",31,90.3,36,80.6
+"Orlando Magic",36,80.6,31,90.3
+"Indiana Pacers",26,88.5,22,86.4
+"Philadelphia 76ers",22,86.4,26,88.5
+"Sacramento Kings",18,88.9,29,89.7
+"Utah Jazz",29,89.7,18,88.9
+"Washington Wizards",23,91.3,17,94.1
+"Milwaukee Bucks",17,94.1,23,91.3
+"Boston Celtics",31,80.6,22,63.6
+"Oklahoma City Thunder",22,63.6,31,80.6
+"Miami Heat",24,83.3,34,88.2
+"LA Clippers",34,88.2,24,83.3
+"Atlanta Hawks",29,82.8,24,66.7
+"Golden State Warriors",24,66.7,29,82.8
+"Detroit Pistons",41,78,35,71.4
+"Portland Trail Blazers",35,71.4,41,78
+"Dallas Mavericks",34,88.2,29,72.4
+"Houston Rockets",29,72.4,34,88.2
+"Denver Nuggets",20,80,27,77.8
+"Minnesota Timberwolves",27,77.8,20,80
+"San Antonio Spurs",18,61.1,15,80
+"Brooklyn Nets",15,80,18,61.1
+"Los Angeles Lakers",30,70,29,69
+"Charlotte Hornets",29,69,30,70
+"Chicago Bulls",34,88.2,45,73.3
+"Cleveland Cavaliers",45,73.3,34,88.2
+"Toronto Raptors",23,78.3,26,84.6
+"Indiana Pacers",26,84.6,23,78.3
+"New Orleans Pelicans",20,80,28,82.1
+"Philadelphia 76ers",28,82.1,20,80
+"Phoenix Suns",7,71.4,25,68
+"New York Knicks",25,68,7,71.4
+"Sacramento Kings",15,100,24,66.7
+"Memphis Grizzlies",24,66.7,15,100
+"Washington Wizards",16,68.8,15,93.3
+"Milwaukee Bucks",15,93.3,16,68.8
+"Boston Celtics",27,81.5,18,88.9
+"Denver Nuggets",18,88.9,27,81.5
+"Miami Heat",30,76.7,44,81.8
+"Utah Jazz",44,81.8,30,76.7
+"New Orleans Pelicans",36,80.6,22,77.3
+"Memphis Grizzlies",22,77.3,36,80.6
+"Detroit Pistons",28,71.4,26,84.6
+"Minnesota Timberwolves",26,84.6,28,71.4
+"Philadelphia 76ers",17,70.6,22,63.6
+"Oklahoma City Thunder",22,63.6,17,70.6
+"Brooklyn Nets",19,73.7,21,90.5
+"Charlotte Hornets",21,90.5,19,73.7
+"Cleveland Cavaliers",19,63.2,24,70.8
+"Chicago Bulls",24,70.8,19,63.2
+"New York Knicks",32,71.9,23,69.6
+"Houston Rockets",23,69.6,32,71.9
+"Dallas Mavericks",21,57.1,32,71.9
+"San Antonio Spurs",32,71.9,21,57.1
+"LA Clippers",29,96.6,29,86.2
+"Indiana Pacers",29,86.2,29,96.6
+"Portland Trail Blazers",23,69.6,21,81
+"Golden State Warriors",21,81,23,69.6
+"Utah Jazz",30,83.3,19,73.7
+"Sacramento Kings",19,73.7,30,83.3
+"Miami Heat",30,90,22,77.3
+"Denver Nuggets",22,77.3,30,90
+"Philadelphia 76ers",22,81.8,36,72.2
+"New Orleans Pelicans",36,72.2,22,81.8
+"Detroit Pistons",24,79.2,15,93.3
+"Chicago Bulls",15,93.3,24,79.2
+"Minnesota Timberwolves",34,76.5,33,69.7
+"Milwaukee Bucks",33,69.7,34,76.5
+"Los Angeles Lakers",18,88.9,20,70
+"Atlanta Hawks",20,70,18,88.9
+"Phoenix Suns",23,87,26,84.6
+"Toronto Raptors",26,84.6,23,87
+"Washington Wizards",25,80,16,68.8
+"Orlando Magic",16,68.8,25,80
+"Houston Rockets",37,70.3,25,68
+"Dallas Mavericks",25,68,37,70.3
+"New York Knicks",31,77.4,29,72.4
+"San Antonio Spurs",29,72.4,31,77.4
+"LA Clippers",14,64.3,22,77.3
+"Boston Celtics",22,77.3,14,64.3
+"Memphis Grizzlies",14,71.4,24,75
+"Toronto Raptors",24,75,14,71.4
+"Oklahoma City Thunder",21,85.7,29,65.5
+"Charlotte Hornets",29,65.5,21,85.7
+"Cleveland Cavaliers",20,70,21,95.2
+"Indiana Pacers",21,95.2,20,70
+"Utah Jazz",26,69.2,27,81.5
+"Golden State Warriors",27,81.5,26,69.2
+"Denver Nuggets",18,88.9,25,76
+"Sacramento Kings",25,76,18,88.9
+"Milwaukee Bucks",32,68.8,30,86.7
+"Chicago Bulls",30,86.7,32,68.8
+"Minnesota Timberwolves",32,75,43,69.8
+"New Orleans Pelicans",43,69.8,32,75
+"Brooklyn Nets",17,82.4,22,68.2
+"Atlanta Hawks",22,68.2,17,82.4
+"Los Angeles Lakers",15,73.3,16,81.3
+"Miami Heat",16,81.3,15,73.3
+"Orlando Magic",34,76.5,40,77.5
+"Detroit Pistons",40,77.5,34,76.5
+"Phoenix Suns",16,68.8,28,89.3
+"Washington Wizards",28,89.3,16,68.8
+"Charlotte Hornets",25,76,24,83.3
+"Golden State Warriors",24,83.3,25,76
+"Denver Nuggets",21,85.7,19,84.2
+"Sacramento Kings",19,84.2,21,85.7
+"New York Knicks",24,62.5,33,75.8
+"Dallas Mavericks",33,75.8,24,62.5
+"Phoenix Suns",25,88,34,82.4
+"Memphis Grizzlies",34,82.4,25,88
+"San Antonio Spurs",14,85.7,31,80.6
+"Oklahoma City Thunder",31,80.6,14,85.7
+"Houston Rockets",14,85.7,23,87
+"Boston Celtics",23,87,14,85.7
+"Atlanta Hawks",29,75.9,27,81.5
+"Indiana Pacers",27,81.5,29,75.9
+"LA Clippers",23,82.6,26,80.8
+"Toronto Raptors",26,80.8,23,82.6
+"Los Angeles Lakers",17,82.4,25,64
+"Orlando Magic",25,64,17,82.4
+"Philadelphia 76ers",31,87.1,31,87.1
+"Washington Wizards",31,87.1,31,87.1
+"Charlotte Hornets",25,76,28,85.7
+"Portland Trail Blazers",28,85.7,25,76
+"Utah Jazz",37,83.8,34,70.6
+"San Antonio Spurs",34,70.6,37,83.8
+"Houston Rockets",22,72.7,21,71.4
+"Chicago Bulls",21,71.4,22,72.7
+"Indiana Pacers",20,70,24,79.2
+"New Orleans Pelicans",24,79.2,20,70
+"Minnesota Timberwolves",14,64.3,8,75
+"Miami Heat",8,75,14,64.3
+"Brooklyn Nets",17,76.5,30,86.7
+"Cleveland Cavaliers",30,86.7,17,76.5
+"LA Clippers",29,86.2,34,79.4
+"Detroit Pistons",34,79.4,29,86.2
+"Phoenix Suns",26,69.2,34,73.5
+"Denver Nuggets",34,73.5,26,69.2
+"Memphis Grizzlies",30,73.3,26,73.1
+"Golden State Warriors",26,73.1,30,73.3
+"Milwaukee Bucks",27,77.8,25,80
+"Boston Celtics",25,80,27,77.8
+"Los Angeles Lakers",32,87.5,25,72
+"Dallas Mavericks",25,72,32,87.5
+"Philadelphia 76ers",29,79.3,17,82.4
+"New York Knicks",17,82.4,29,79.3
+"Charlotte Hornets",18,77.8,22,68.2
+"Los Angeles Lakers",22,68.2,18,77.8
+"Memphis Grizzlies",38,73.7,26,57.7
+"Phoenix Suns",26,57.7,38,73.7
+"Washington Wizards",24,70.8,35,77.1
+"Sacramento Kings",35,77.1,24,70.8
+"Portland Trail Blazers",26,76.9,26,61.5
+"Denver Nuggets",26,61.5,26,76.9
+"Indiana Pacers",14,71.4,14,92.9
+"Miami Heat",14,92.9,14,71.4
+"Dallas Mavericks",27,88.9,28,85.7
+"Houston Rockets",28,85.7,27,88.9
+"New Orleans Pelicans",40,82.5,25,72
+"Oklahoma City Thunder",25,72,40,82.5
+"Detroit Pistons",29,75.9,24,83.3
+"Atlanta Hawks",24,83.3,29,75.9
+"Minnesota Timberwolves",15,73.3,26,76.9
+"Boston Celtics",26,76.9,15,73.3
+"Milwaukee Bucks",22,77.3,13,92.3
+"Brooklyn Nets",13,92.3,22,77.3
+"Toronto Raptors",18,83.3,30,60
+"Cleveland Cavaliers",30,60,18,83.3
+"Chicago Bulls",18,77.8,26,57.7
+"New York Knicks",26,57.7,18,77.8
+"San Antonio Spurs",18,72.2,20,80
+"Orlando Magic",20,80,18,72.2
+"LA Clippers",23,78.3,14,92.9
+"Philadelphia 76ers",14,92.9,23,78.3
+"Washington Wizards",17,76.5,21,95.2
+"Utah Jazz",21,95.2,17,76.5
+"San Antonio Spurs",27,81.5,27,92.6
+"New Orleans Pelicans",27,92.6,27,81.5
+"Charlotte Hornets",29,75.9,23,91.3
+"LA Clippers",23,91.3,29,75.9
+"Los Angeles Lakers",30,83.3,28,75
+"Sacramento Kings",28,75,30,83.3
+"Orlando Magic",33,69.7,17,64.7
+"Houston Rockets",17,64.7,33,69.7
+"Dallas Mavericks",27,85.2,10,70
+"Minnesota Timberwolves",10,70,27,85.2
+"Portland Trail Blazers",9,66.7,25,84
+"Oklahoma City Thunder",25,84,9,66.7
+"Chicago Bulls",22,77.3,16,100
+"Atlanta Hawks",16,100,22,77.3
+"Indiana Pacers",9,77.8,25,84
+"Boston Celtics",25,84,9,77.8
+"Golden State Warriors",25,76,16,87.5
+"Brooklyn Nets",16,87.5,25,76
+"Toronto Raptors",22,90.9,18,61.1
+"New York Knicks",18,61.1,22,90.9
+"Milwaukee Bucks",22,68.2,28,78.6
+"Cleveland Cavaliers",28,78.6,22,68.2
+"Detroit Pistons",34,73.5,22,90.9
+"Philadelphia 76ers",22,90.9,34,73.5
+"Memphis Grizzlies",21,66.7,25,60
+"Denver Nuggets",25,60,21,66.7
+"Washington Wizards",37,70.3,19,78.9
+"Phoenix Suns",19,78.9,37,70.3
+"Chicago Bulls",24,83.3,17,70.6
+"Miami Heat",17,70.6,24,83.3
+"Golden State Warriors",13,92.3,32,78.1
+"New York Knicks",32,78.1,13,92.3
+"Utah Jazz",19,63.2,27,74.1
+"Detroit Pistons",27,74.1,19,63.2
+"Charlotte Hornets",23,73.9,31,54.8
+"Sacramento Kings",31,54.8,23,73.9
+"Los Angeles Lakers",17,82.4,24,75
+"Phoenix Suns",24,75,17,82.4
+"San Antonio Spurs",19,78.9,31,64.5
+"Houston Rockets",31,64.5,19,78.9
+"Dallas Mavericks",31,80.6,24,83.3
+"Minnesota Timberwolves",24,83.3,31,80.6
+"Milwaukee Bucks",31,80.6,24,70.8
+"New Orleans Pelicans",24,70.8,31,80.6
+"Portland Trail Blazers",21,81,37,86.5
+"Oklahoma City Thunder",37,86.5,21,81
+"Orlando Magic",25,92,20,90
+"Atlanta Hawks",20,90,25,92
+"Utah Jazz",23,73.9,26,80.8
+"Cleveland Cavaliers",26,80.8,23,73.9
+"Toronto Raptors",20,80,27,92.6
+"Philadelphia 76ers",27,92.6,20,80
+"Washington Wizards",24,79.2,22,72.7
+"Los Angeles Lakers",22,72.7,24,79.2
+"Charlotte Hornets",23,91.3,34,64.7
+"Denver Nuggets",34,64.7,23,91.3
+"Chicago Bulls",24,75,16,81.3
+"Minnesota Timberwolves",16,81.3,24,75
+"Brooklyn Nets",23,91.3,34,85.3
+"Detroit Pistons",34,85.3,23,91.3
+"Golden State Warriors",26,84.6,22,77.3
+"Toronto Raptors",22,77.3,26,84.6
+"New York Knicks",30,76.7,23,65.2
+"Indiana Pacers",23,65.2,30,76.7
+"Orlando Magic",19,89.5,21,85.7
+"Boston Celtics",21,85.7,19,89.5
+"New Orleans Pelicans",13,76.9,35,71.4
+"Phoenix Suns",35,71.4,13,76.9
+"Dallas Mavericks",19,63.2,22,59.1
+"Cleveland Cavaliers",22,59.1,19,63.2
+"Portland Trail Blazers",19,73.7,29,69
+"Houston Rockets",29,69,19,73.7
+"Utah Jazz",6,50,11,81.8
+"Milwaukee Bucks",11,81.8,6,50
+"Memphis Grizzlies",37,78.4,31,64.5
+"Oklahoma City Thunder",31,64.5,37,78.4
+"Miami Heat",23,69.6,33,75.8
+"San Antonio Spurs",33,75.8,23,69.6
+"Washington Wizards",13,92.3,26,61.5
+"LA Clippers",26,61.5,13,92.3
+"Denver Nuggets",28,75,24,75
+"Los Angeles Lakers",24,75,28,75
+"Portland Trail Blazers",25,76,26,84.6
+"Dallas Mavericks",26,84.6,25,76
+"New York Knicks",32,71.9,8,87.5
+"Chicago Bulls",8,87.5,32,71.9
+"Minnesota Timberwolves",25,56,21,81
+"Oklahoma City Thunder",21,81,25,56
+"Orlando Magic",28,85.7,34,82.4
+"Boston Celtics",34,82.4,28,85.7
+"Indiana Pacers",19,89.5,32,87.5
+"Cleveland Cavaliers",32,87.5,19,89.5
+"Golden State Warriors",13,84.6,31,80.6
+"Philadelphia 76ers",31,80.6,13,84.6
+"Brooklyn Nets",23,78.3,29,86.2
+"Toronto Raptors",29,86.2,23,78.3
+"Atlanta Hawks",34,82.4,19,68.4
+"Charlotte Hornets",19,68.4,34,82.4
+"Sacramento Kings",29,82.8,31,80.6
+"Detroit Pistons",31,80.6,29,82.8
+"Phoenix Suns",18,77.8,21,71.4
+"LA Clippers",21,71.4,18,77.8
+"New Orleans Pelicans",28,82.1,37,81.1
+"Utah Jazz",37,81.1,28,82.1
+"Miami Heat",23,73.9,17,64.7
+"Houston Rockets",17,64.7,23,73.9
+"Milwaukee Bucks",27,66.7,23,78.3
+"Memphis Grizzlies",23,78.3,27,66.7
+"Minnesota Timberwolves",30,73.3,21,81
+"LA Clippers",21,81,30,73.3
+"Cleveland Cavaliers",19,78.9,26,73.1
+"Dallas Mavericks",26,73.1,19,78.9
+"Washington Wizards",23,56.5,35,82.9
+"Denver Nuggets",35,82.9,23,56.5
+"Miami Heat",15,80,23,73.9
+"Oklahoma City Thunder",23,73.9,15,80
+"Portland Trail Blazers",17,70.6,19,57.9
+"San Antonio Spurs",19,57.9,17,70.6
+"Sacramento Kings",20,85,27,85.2
+"Toronto Raptors",27,85.2,20,85
+"New York Knicks",25,80,22,86.4
+"Chicago Bulls",22,86.4,25,80
+"Detroit Pistons",36,75,29,79.3
+"Charlotte Hornets",29,79.3,36,75
+"Golden State Warriors",29,86.2,25,84
+"Indiana Pacers",25,84,29,86.2
+"Atlanta Hawks",27,88.9,30,83.3
+"Orlando Magic",30,83.3,27,88.9
+"Boston Celtics",16,68.8,30,73.3
+"Los Angeles Lakers",30,73.3,16,68.8
+"New Orleans Pelicans",33,66.7,12,66.7
+"Utah Jazz",12,66.7,33,66.7
+"Phoenix Suns",19,94.7,34,91.2
+"Houston Rockets",34,91.2,19,94.7
+"Golden State Warriors",19,78.9,32,81.3
+"Milwaukee Bucks",32,81.3,19,78.9
+"Sacramento Kings",20,85,27,77.8
+"Philadelphia 76ers",27,77.8,20,85
+"Boston Celtics",26,69.2,21,71.4
+"LA Clippers",21,71.4,26,69.2
+"Minnesota Timberwolves",19,52.6,21,76.2
+"Portland Trail Blazers",21,76.2,19,52.6
+"Oklahoma City Thunder",21,95.2,25,84
+"Dallas Mavericks",25,84,21,95.2
+"Cleveland Cavaliers",17,94.1,16,68.8
+"San Antonio Spurs",16,68.8,17,94.1
+"Atlanta Hawks",22,77.3,18,83.3
+"Memphis Grizzlies",18,83.3,22,77.3
+"Miami Heat",18,77.8,20,75
+"Indiana Pacers",20,75,18,77.8
+"Brooklyn Nets",18,88.9,22,68.2
+"Washington Wizards",22,68.2,18,88.9
+"Milwaukee Bucks",18,77.8,12,91.7
+"Houston Rockets",12,91.7,18,77.8
+"Chicago Bulls",23,82.6,21,76.2
+"Atlanta Hawks",21,76.2,23,82.6
+"Los Angeles Lakers",27,77.8,17,82.4
+"Detroit Pistons",17,82.4,27,77.8
+"Sacramento Kings",35,65.7,27,88.9
+"New York Knicks",27,88.9,35,65.7
+"Toronto Raptors",38,86.8,31,80.6
+"Orlando Magic",31,80.6,38,86.8
+"Charlotte Hornets",30,86.7,32,81.3
+"Philadelphia 76ers",32,81.3,30,86.7
+"Phoenix Suns",17,76.5,28,75
+"New Orleans Pelicans",28,75,17,76.5
+"Minnesota Timberwolves",24,75,28,89.3
+"Portland Trail Blazers",28,89.3,24,75
+"Utah Jazz",21,81,16,81.3
+"Denver Nuggets",16,81.3,21,81
+"Boston Celtics",26,73.1,20,80
+"Golden State Warriors",20,80,26,73.1
+"Dallas Mavericks",26,84.6,24,70.8
+"Chicago Bulls",24,70.8,26,84.6
+"Oklahoma City Thunder",20,80,26,69.2
+"Cleveland Cavaliers",26,69.2,20,80
+"Brooklyn Nets",32,71.9,24,75
+"Indiana Pacers",24,75,32,71.9
+"LA Clippers",16,93.8,19,89.5
+"Washington Wizards",19,89.5,16,93.8
+"San Antonio Spurs",31,77.4,28,71.4
+"Miami Heat",28,71.4,31,77.4
+"Milwaukee Bucks",23,82.6,24,41.7
+"Dallas Mavericks",24,41.7,23,82.6
+"Minnesota Timberwolves",26,76.9,24,70.8
+"Utah Jazz",24,70.8,26,76.9
+"Phoenix Suns",13,69.2,35,80
+"New Orleans Pelicans",35,80,13,69.2
+"Detroit Pistons",27,74.1,32,53.1
+"Memphis Grizzlies",32,53.1,27,74.1
+"Atlanta Hawks",16,87.5,21,81
+"Brooklyn Nets",21,81,16,87.5
+"Sacramento Kings",32,62.5,22,77.3
+"Cleveland Cavaliers",22,77.3,32,62.5
+"Los Angeles Lakers",30,76.7,22,86.4
+"Philadelphia 76ers",22,86.4,30,76.7
+"New York Knicks",30,86.7,28,78.6
+"Charlotte Hornets",28,78.6,30,86.7
+"Washington Wizards",25,76,20,85
+"Indiana Pacers",20,85,25,76
+"Toronto Raptors",33,81.8,21,90.5
+"Orlando Magic",21,90.5,33,81.8
+"Denver Nuggets",22,68.2,16,100
+"Portland Trail Blazers",16,100,22,68.2
+"Houston Rockets",15,73.3,15,86.7
+"San Antonio Spurs",15,86.7,15,73.3
+"LA Clippers",21,90.5,14,78.6
+"Miami Heat",14,78.6,21,90.5
+"Boston Celtics",13,84.6,19,84.2
+"Phoenix Suns",19,84.2,13,84.6
+"Golden State Warriors",25,76,21,81
+"Utah Jazz",21,81,25,76
+"Washington Wizards",29,69,17,88.2
+"Chicago Bulls",17,88.2,29,69
+"Oklahoma City Thunder",23,87,16,81.3
+"Memphis Grizzlies",16,81.3,23,87
+"Sacramento Kings",16,93.8,24,83.3
+"Milwaukee Bucks",24,83.3,16,93.8
+"Indiana Pacers",24,75,27,92.6
+"Minnesota Timberwolves",27,92.6,24,75
+"Detroit Pistons",16,81.3,23,78.3
+"New Orleans Pelicans",23,78.3,16,81.3
+"Charlotte Hornets",23,52.2,16,75
+"Brooklyn Nets",16,75,23,52.2
+"Atlanta Hawks",24,79.2,24,91.7
+"New York Knicks",24,91.7,24,79.2
+"Los Angeles Lakers",35,91.4,24,83.3
+"Toronto Raptors",24,83.3,35,91.4
+"LA Clippers",26,69.2,31,90.3
+"Orlando Magic",31,90.3,26,69.2
+"Dallas Mavericks",31,87.1,28,78.6
+"Denver Nuggets",28,78.6,31,87.1
+"Los Angeles Lakers",24,83.3,17,76.5
+"Cleveland Cavaliers",17,76.5,24,83.3
+"Detroit Pistons",15,73.3,26,76.9
+"Miami Heat",26,76.9,15,73.3
+"Indiana Pacers",18,61.1,19,78.9
+"Golden State Warriors",19,78.9,18,61.1
+"Phoenix Suns",26,69.2,26,84.6
+"Dallas Mavericks",26,84.6,26,69.2
+"Philadelphia 76ers",36,77.8,44,77.3
+"Houston Rockets",44,77.3,36,77.8
+"Miami Heat",22,77.3,9,100
+"Memphis Grizzlies",9,100,22,77.3
+"Oklahoma City Thunder",24,95.8,17,76.5
+"Atlanta Hawks",17,76.5,24,95.8
+"Boston Celtics",21,71.4,30,73.3
+"Toronto Raptors",30,73.3,21,71.4
+"LA Clippers",21,66.7,17,64.7
+"Charlotte Hornets",17,64.7,21,66.7
+"Milwaukee Bucks",26,76.9,29,89.7
+"Orlando Magic",29,89.7,26,76.9
+"Indiana Pacers",12,83.3,22,68.2
+"Portland Trail Blazers",22,68.2,12,83.3
+"Boston Celtics",20,90,22,68.2
+"Brooklyn Nets",22,68.2,20,90
+"Memphis Grizzlies",29,72.4,30,83.3
+"Detroit Pistons",30,83.3,29,72.4
+"Cleveland Cavaliers",20,75,21,81
+"New York Knicks",21,81,20,75
+"Los Angeles Lakers",22,72.7,15,73.3
+"Washington Wizards",15,73.3,22,72.7
+"Chicago Bulls",19,84.2,19,89.5
+"Sacramento Kings",19,89.5,19,84.2
+"Phoenix Suns",20,80,18,72.2
+"San Antonio Spurs",18,72.2,20,80
+"Denver Nuggets",24,66.7,36,77.8
+"New Orleans Pelicans",36,77.8,24,66.7
+"Portland Trail Blazers",31,77.4,28,78.6
+"Utah Jazz",28,78.6,31,77.4
+"Houston Rockets",20,90,10,50
+"Golden State Warriors",10,50,20,90
+"Orlando Magic",26,80.8,25,72
+"Toronto Raptors",25,72,26,80.8
+"Oklahoma City Thunder",35,80,30,80
+"Minnesota Timberwolves",30,80,35,80
+"Milwaukee Bucks",19,78.9,26,88.5
+"Charlotte Hornets",26,88.5,19,78.9
+"Sacramento Kings",30,66.7,26,80.8
+"LA Clippers",26,80.8,30,66.7
+"Dallas Mavericks",14,78.6,28,71.4
+"New York Knicks",28,71.4,14,78.6
+"Chicago Bulls",24,66.7,23,65.2
+"Golden State Warriors",23,65.2,24,66.7
+"Houston Rockets",43,79.1,19,73.7
+"Phoenix Suns",19,73.7,43,79.1
+"Indiana Pacers",33,81.8,37,86.5
+"Utah Jazz",37,86.5,33,81.8
+"Philadelphia 76ers",17,88.2,28,78.6
+"Memphis Grizzlies",28,78.6,17,88.2
+"New Orleans Pelicans",26,96.2,16,75
+"San Antonio Spurs",16,75,26,96.2
+"Denver Nuggets",13,53.8,14,64.3
+"Atlanta Hawks",14,64.3,13,53.8
+"Miami Heat",18,72.2,28,75
+"Boston Celtics",28,75,18,72.2
+"Toronto Raptors",30,73.3,22,68.2
+"Brooklyn Nets",22,68.2,30,73.3
+"Orlando Magic",12,66.7,9,100
+"Cleveland Cavaliers",9,100,12,66.7
+"Los Angeles Lakers",24,75,15,80
+"Milwaukee Bucks",15,80,24,75
+"Washington Wizards",35,74.3,31,80.6
+"Charlotte Hornets",31,80.6,35,74.3
+"Dallas Mavericks",29,48.3,24,58.3
+"Detroit Pistons",24,58.3,29,48.3
+"Portland Trail Blazers",21,81,26,69.2
+"Los Angeles Lakers",26,69.2,21,81
+"Indiana Pacers",30,73.3,29,86.2
+"Sacramento Kings",29,86.2,30,73.3
+"Houston Rockets",18,77.8,20,75
+"Denver Nuggets",20,75,18,77.8
+"Chicago Bulls",33,81.8,21,90.5
+"Phoenix Suns",21,90.5,33,81.8
+"LA Clippers",36,77.8,28,75
+"Utah Jazz",28,75,36,77.8
+"Memphis Grizzlies",30,60,19,78.9
+"Minnesota Timberwolves",19,78.9,30,60
+"Toronto Raptors",19,68.4,26,84.6
+"New Orleans Pelicans",26,84.6,19,68.4
+"San Antonio Spurs",25,76,21,66.7
+"Oklahoma City Thunder",21,66.7,25,76
+"Miami Heat",9,100,23,87
+"Boston Celtics",23,87,9,100
+"Washington Wizards",34,67.6,26,92.3
+"Brooklyn Nets",26,92.3,34,67.6
+"Milwaukee Bucks",26,80.8,20,65
+"New York Knicks",20,65,26,80.8
+"Philadelphia 76ers",18,83.3,10,80
+"Cleveland Cavaliers",10,80,18,83.3
+"Atlanta Hawks",19,78.9,25,88
+"Orlando Magic",25,88,19,78.9
+"LA Clippers",28,82.1,15,73.3
+"Portland Trail Blazers",15,73.3,28,82.1
+"Golden State Warriors",23,78.3,27,63
+"Dallas Mavericks",27,63,23,78.3
+"New York Knicks",21,76.2,20,65
+"Detroit Pistons",20,65,21,76.2
+"Indiana Pacers",16,81.3,31,77.4
+"Los Angeles Lakers",31,77.4,16,81.3
+"Phoenix Suns",14,85.7,18,88.9
+"Sacramento Kings",18,88.9,14,85.7
+"Houston Rockets",25,76,20,85
+"Denver Nuggets",20,85,25,76
+"Chicago Bulls",25,88,15,40
+"Utah Jazz",15,40,25,88
+"Oklahoma City Thunder",23,91.3,20,90
+"New Orleans Pelicans",20,90,23,91.3
+"Charlotte Hornets",15,66.7,7,85.7
+"Boston Celtics",7,85.7,15,66.7
+"Orlando Magic",22,59.1,14,85.7
+"Brooklyn Nets",14,85.7,22,59.1
+"Cleveland Cavaliers",16,81.3,17,82.4
+"Toronto Raptors",17,82.4,16,81.3
+"Atlanta Hawks",22,68.2,18,88.9
+"Philadelphia 76ers",18,88.9,22,68.2
+"Minnesota Timberwolves",42,85.7,27,85.2
+"Washington Wizards",27,85.2,42,85.7
+"Dallas Mavericks",25,64,15,73.3
+"Milwaukee Bucks",15,73.3,25,64
+"Washington Wizards",33,78.8,26,100
+"Boston Celtics",26,100,33,78.8
+"Cleveland Cavaliers",33,84.8,26,53.8
+"Detroit Pistons",26,53.8,33,84.8
+"Memphis Grizzlies",31,74.2,30,83.3
+"New York Knicks",30,83.3,31,74.2
+"Philadelphia 76ers",27,81.5,25,76
+"Orlando Magic",25,76,27,81.5
+"Miami Heat",19,89.5,19,94.7
+"Atlanta Hawks",19,94.7,19,89.5
+"Indiana Pacers",23,82.6,32,75
+"LA Clippers",32,75,23,82.6
+"Golden State Warriors",20,85,29,75.9
+"Minnesota Timberwolves",29,75.9,20,85
+"Portland Trail Blazers",22,68.2,18,77.8
+"Brooklyn Nets",18,77.8,22,68.2
+"Utah Jazz",25,76,30,76.7
+"Phoenix Suns",30,76.7,25,76
+"Oklahoma City Thunder",23,82.6,14,71.4
+"Houston Rockets",14,71.4,23,82.6
+"Los Angeles Lakers",37,86.5,20,70
+"San Antonio Spurs",20,70,37,86.5
+"Dallas Mavericks",24,79.2,26,80.8
+"Toronto Raptors",26,80.8,24,79.2
+"Denver Nuggets",23,69.6,34,55.9
+"LA Clippers",34,55.9,23,69.6
+"Utah Jazz",17,88.2,6,83.3
+"Golden State Warriors",6,83.3,17,88.2
+"Detroit Pistons",16,93.8,26,65.4
+"Phoenix Suns",26,65.4,16,93.8
+"Sacramento Kings",26,88.5,27,88.9
+"Boston Celtics",27,88.9,26,88.5
+"Brooklyn Nets",10,80,38,78.9
+"Indiana Pacers",38,78.9,10,80
+"Washington Wizards",20,80,23,82.6
+"Miami Heat",23,82.6,20,80
+"Atlanta Hawks",36,80.6,41,82.9
+"Houston Rockets",41,82.9,36,80.6
+"New Orleans Pelicans",31,87.1,27,74.1
+"Memphis Grizzlies",27,74.1,31,87.1
+"Cleveland Cavaliers",26,84.6,25,72
+"Milwaukee Bucks",25,72,26,84.6
+"Chicago Bulls",23,82.6,32,87.5
+"Oklahoma City Thunder",32,87.5,23,82.6
+"Los Angeles Lakers",20,85,16,75
+"San Antonio Spurs",16,75,20,85
+"Portland Trail Blazers",51,74.5,28,85.7
+"New York Knicks",28,85.7,51,74.5
+"Philadelphia 76ers",18,83.3,27,81.5
+"Orlando Magic",27,81.5,18,83.3
+"Minnesota Timberwolves",18,94.4,32,68.8
+"Charlotte Hornets",32,68.8,18,94.4
+"LA Clippers",27,66.7,13,69.2
+"Golden State Warriors",13,69.2,27,66.7
+"Detroit Pistons",27,92.6,19,84.2
+"Utah Jazz",19,84.2,27,92.6
+"Chicago Bulls",18,77.8,25,76
+"Milwaukee Bucks",25,76,18,77.8
+"Denver Nuggets",41,80.5,28,85.7
+"Oklahoma City Thunder",28,85.7,41,80.5
+"New Orleans Pelicans",30,70,28,64.3
+"San Antonio Spurs",28,64.3,30,70
+"Sacramento Kings",21,71.4,23,95.7
+"Atlanta Hawks",23,95.7,21,71.4
+"Dallas Mavericks",21,61.9,21,85.7
+"Boston Celtics",21,85.7,21,61.9
+"Washington Wizards",19,57.9,22,86.4
+"Miami Heat",22,86.4,19,57.9
+"Brooklyn Nets",7,71.4,25,76
+"Toronto Raptors",25,76,7,71.4
+"Philadelphia 76ers",18,88.9,21,61.9
+"Charlotte Hornets",21,61.9,18,88.9
+"Portland Trail Blazers",13,100,23,87
+"Cleveland Cavaliers",23,87,13,100
+"Minnesota Timberwolves",17,76.5,16,68.8
+"Indiana Pacers",16,68.8,17,76.5
+"Los Angeles Lakers",35,82.9,5,60
+"Phoenix Suns",5,60,35,82.9
+"Detroit Pistons",14,85.7,26,65.4
+"Denver Nuggets",26,65.4,14,85.7
+"Sacramento Kings",27,74.1,30,63.3
+"Memphis Grizzlies",30,63.3,27,74.1
+"Brooklyn Nets",13,69.2,16,81.3
+"Philadelphia 76ers",16,81.3,13,69.2
+"Utah Jazz",24,91.7,19,94.7
+"LA Clippers",19,94.7,24,91.7
+"Boston Celtics",17,70.6,20,75
+"Chicago Bulls",20,75,17,70.6
+"Portland Trail Blazers",19,78.9,25,64
+"Milwaukee Bucks",25,64,19,78.9
+"Miami Heat",30,66.7,20,85
+"Minnesota Timberwolves",20,85,30,66.7
+"Golden State Warriors",19,89.5,21,71.4
+"New Orleans Pelicans",21,71.4,19,89.5
+"New York Knicks",20,80,32,78.1
+"Oklahoma City Thunder",32,78.1,20,80
+"Atlanta Hawks",17,88.2,23,87
+"Cleveland Cavaliers",23,87,17,88.2
+"Orlando Magic",25,76,27,88.9
+"Indiana Pacers",27,88.9,25,76
+"San Antonio Spurs",10,30,24,87.5
+"Los Angeles Lakers",24,87.5,10,30
+"Denver Nuggets",19,78.9,21,57.1
+"Dallas Mavericks",21,57.1,19,78.9
+"Memphis Grizzlies",31,54.8,15,73.3
+"Brooklyn Nets",15,73.3,31,54.8
+"Miami Heat",22,86.4,16,75
+"Cleveland Cavaliers",16,75,22,86.4
+"Golden State Warriors",15,73.3,27,85.2
+"Houston Rockets",27,85.2,15,73.3
+"Charlotte Hornets",23,69.6,18,72.2
+"Washington Wizards",18,72.2,23,69.6
+"Detroit Pistons",23,87,35,88.6
+"Sacramento Kings",35,88.6,23,87
+"New York Knicks",25,80,18,72.2
+"Phoenix Suns",18,72.2,25,80
+"San Antonio Spurs",21,85.7,19,52.6
+"LA Clippers",19,52.6,21,85.7
+"Utah Jazz",23,87,27,81.5
+"Portland Trail Blazers",27,81.5,23,87
+"Minnesota Timberwolves",24,83.3,32,84.4
+"Philadelphia 76ers",32,84.4,24,83.3
+"Orlando Magic",26,73.1,19,73.7
+"Indiana Pacers",19,73.7,26,73.1
+"Toronto Raptors",22,81.8,32,78.1
+"Atlanta Hawks",32,78.1,22,81.8
+"Detroit Pistons",32,75,40,87.5
+"Los Angeles Lakers",40,87.5,32,75
+"New York Knicks",34,94.1,20,55
+"Golden State Warriors",20,55,34,94.1
+"Phoenix Suns",28,92.9,24,66.7
+"Utah Jazz",24,66.7,28,92.9
+"Denver Nuggets",18,72.2,28,78.6
+"Dallas Mavericks",28,78.6,18,72.2
+"Boston Celtics",17,88.2,13,76.9
+"New Orleans Pelicans",13,76.9,17,88.2
+"Orlando Magic",22,90.9,25,80
+"Chicago Bulls",25,80,22,90.9
+"Indiana Pacers",27,77.8,32,84.4
+"Houston Rockets",32,84.4,27,77.8
+"Oklahoma City Thunder",11,81.8,40,72.5
+"Memphis Grizzlies",40,72.5,11,81.8
+"Charlotte Hornets",24,83.3,32,81.3
+"Cleveland Cavaliers",32,81.3,24,83.3
+"Milwaukee Bucks",21,38.1,26,65.4
+"Philadelphia 76ers",26,65.4,21,38.1
+"Miami Heat",32,78.1,14,71.4
+"Washington Wizards",14,71.4,32,78.1
+"Detroit Pistons",24,79.2,24,79.2
+"LA Clippers",24,79.2,24,79.2
+"Brooklyn Nets",23,78.3,27,81.5
+"Portland Trail Blazers",27,81.5,23,78.3
+"San Antonio Spurs",12,75,24,91.7
+"Sacramento Kings",24,91.7,12,75
+"New York Knicks",31,77.4,20,85
+"Denver Nuggets",20,85,31,77.4
+"Golden State Warriors",17,100,25,84
+"Phoenix Suns",25,84,17,100
+"Houston Rockets",24,87.5,19,94.7
+"Dallas Mavericks",19,94.7,24,87.5
+"Cleveland Cavaliers",17,82.4,27,55.6
+"Milwaukee Bucks",27,55.6,17,82.4
+"Chicago Bulls",17,64.7,24,87.5
+"New Orleans Pelicans",24,87.5,17,64.7
+"Boston Celtics",10,90,13,76.9
+"Atlanta Hawks",13,76.9,10,90
+"Miami Heat",22,86.4,22,77.3
+"Toronto Raptors",22,77.3,22,86.4
+"Indiana Pacers",31,83.9,18,83.3
+"Charlotte Hornets",18,83.3,31,83.9
+"Minnesota Timberwolves",28,78.6,17,88.2
+"Orlando Magic",17,88.2,28,78.6
+"Oklahoma City Thunder",26,65.4,17,88.2
+"Washington Wizards",17,88.2,26,65.4
+"San Antonio Spurs",17,76.5,26,76.9
+"Portland Trail Blazers",26,76.9,17,76.5
+"Brooklyn Nets",33,90.9,25,84
+"Sacramento Kings",25,84,33,90.9
+"New York Knicks",25,76,30,83.3
+"Utah Jazz",30,83.3,25,76
+"LA Clippers",26,80.8,24,66.7
+"Dallas Mavericks",24,66.7,26,80.8
+"Memphis Grizzlies",25,68,12,75
+"New Orleans Pelicans",12,75,25,68
+"San Antonio Spurs",19,68.4,16,93.8
+"Golden State Warriors",16,93.8,19,68.4
+"LA Clippers",33,78.8,31,61.3
+"Houston Rockets",31,61.3,33,78.8
+"Atlanta Hawks",30,86.7,41,78
+"Milwaukee Bucks",41,78,30,86.7
+"Oklahoma City Thunder",21,81,29,82.8
+"Boston Celtics",29,82.8,21,81
+"Phoenix Suns",4,50,25,88
+"Miami Heat",25,88,4,50
+"Toronto Raptors",28,96.4,43,72.1
+"Detroit Pistons",43,72.1,28,96.4
+"Charlotte Hornets",24,87.5,23,82.6
+"Orlando Magic",23,82.6,24,87.5
+"Brooklyn Nets",31,77.4,20,85
+"Los Angeles Lakers",20,85,31,77.4
+"Golden State Warriors",16,93.8,19,63.2
+"Sacramento Kings",19,63.2,16,93.8
+"Denver Nuggets",21,81,21,81
+"Chicago Bulls",21,81,21,81
+"Utah Jazz",23,56.5,26,80.8
+"Philadelphia 76ers",26,80.8,23,56.5
+"Minnesota Timberwolves",34,73.5,39,69.2
+"Cleveland Cavaliers",39,69.2,34,73.5
+"Memphis Grizzlies",10,70,21,52.4
+"Washington Wizards",21,52.4,10,70
+"Oklahoma City Thunder",20,90,33,87.9
+"New York Knicks",33,87.9,20,90
+"Portland Trail Blazers",35,77.1,26,80.8
+"Dallas Mavericks",26,80.8,35,77.1
+"Houston Rockets",18,77.8,31,87.1
+"New Orleans Pelicans",31,87.1,18,77.8
+"Charlotte Hornets",16,87.5,21,85.7
+"Miami Heat",21,85.7,16,87.5
+"Atlanta Hawks",27,85.2,31,80.6
+"Philadelphia 76ers",31,80.6,27,85.2
+"Boston Celtics",24,87.5,21,85.7
+"Detroit Pistons",21,85.7,24,87.5
+"Toronto Raptors",29,79.3,23,73.9
+"Indiana Pacers",23,73.9,29,79.3
+"Utah Jazz",11,90.9,20,85
+"Washington Wizards",20,85,11,90.9
+"Brooklyn Nets",21,66.7,20,80
+"LA Clippers",20,80,21,66.7
+"Sacramento Kings",21,85.7,26,76.9
+"Los Angeles Lakers",26,76.9,21,85.7
+"Cleveland Cavaliers",26,73.1,14,78.6
+"Golden State Warriors",14,78.6,26,73.1
+"Minnesota Timberwolves",22,86.4,27,70.4
+"Memphis Grizzlies",27,70.4,22,86.4
+"Toronto Raptors",36,72.2,17,76.5
+"Oklahoma City Thunder",17,76.5,36,72.2
+"Milwaukee Bucks",23,73.9,15,86.7
+"San Antonio Spurs",15,86.7,23,73.9
+"Detroit Pistons",41,75.6,29,93.1
+"New York Knicks",29,93.1,41,75.6
+"Denver Nuggets",20,80,20,75
+"Boston Celtics",20,75,20,80
+"Phoenix Suns",9,88.9,15,86.7
+"Orlando Magic",15,86.7,9,88.9
+"Portland Trail Blazers",26,76.9,24,79.2
+"New Orleans Pelicans",24,79.2,26,76.9
+"Philadelphia 76ers",30,83.3,23,87
+"Atlanta Hawks",23,87,30,83.3
+"Charlotte Hornets",20,60,36,80.6
+"Miami Heat",36,80.6,20,60
+"Dallas Mavericks",21,61.9,20,95
+"Washington Wizards",20,95,21,61.9
+"Los Angeles Lakers",17,64.7,26,76.9
+"LA Clippers",26,76.9,17,64.7
+"Cleveland Cavaliers",20,85,35,85.7
+"Sacramento Kings",35,85.7,20,85
+"New Orleans Pelicans",36,77.8,18,88.9
+"Chicago Bulls",18,88.9,36,77.8
+"Phoenix Suns",20,95,32,81.3
+"Minnesota Timberwolves",32,81.3,20,95
+"Milwaukee Bucks",22,86.4,19,73.7
+"Oklahoma City Thunder",19,73.7,22,86.4
+"Memphis Grizzlies",13,76.9,23,69.6
+"San Antonio Spurs",23,69.6,13,76.9
+"Utah Jazz",24,83.3,11,81.8
+"Atlanta Hawks",11,81.8,24,83.3
+"Detroit Pistons",40,77.5,21,76.2
+"Boston Celtics",21,76.2,40,77.5
+"New York Knicks",26,65.4,20,70
+"Brooklyn Nets",20,70,26,65.4
+"Houston Rockets",31,83.9,20,85
+"Toronto Raptors",20,85,31,83.9
+"Portland Trail Blazers",25,56,24,70.8
+"Charlotte Hornets",24,70.8,25,56
+"Denver Nuggets",26,92.3,19,78.9
+"Indiana Pacers",19,78.9,26,92.3
+"Dallas Mavericks",19,63.2,21,66.7
+"Orlando Magic",21,66.7,19,63.2
+"Cleveland Cavaliers",21,71.4,28,78.6
+"LA Clippers",28,78.6,21,71.4
+"Los Angeles Lakers",30,90,22,77.3
+"Utah Jazz",22,77.3,30,90
+"Sacramento Kings",29,86.2,21,66.7
+"Golden State Warriors",21,66.7,29,86.2
+"Brooklyn Nets",19,73.7,24,83.3
+"Dallas Mavericks",24,83.3,19,73.7
+"Denver Nuggets",20,65,18,61.1
+"San Antonio Spurs",18,61.1,20,65
+"New York Knicks",25,92,24,83.3
+"Minnesota Timberwolves",24,83.3,25,92
+"Boston Celtics",28,75,14,64.3
+"Memphis Grizzlies",14,64.3,28,75
+"Toronto Raptors",22,72.7,22,81.8
+"Chicago Bulls",22,81.8,22,72.7
+"Portland Trail Blazers",21,85.7,15,86.7
+"Miami Heat",15,86.7,21,85.7
+"Milwaukee Bucks",16,81.3,17,82.4
+"Atlanta Hawks",17,82.4,16,81.3
+"Phoenix Suns",22,81.8,31,83.9
+"Philadelphia 76ers",31,83.9,22,81.8
+"New Orleans Pelicans",17,70.6,23,91.3
+"Indiana Pacers",23,91.3,17,70.6
+"Oklahoma City Thunder",17,64.7,33,75.8
+"Detroit Pistons",33,75.8,17,64.7
+"Houston Rockets",25,72,31,80.6
+"Orlando Magic",31,80.6,25,72
+"Washington Wizards",30,63.3,16,68.8
+"Charlotte Hornets",16,68.8,30,63.3
+"Utah Jazz",26,96.2,13,61.5
+"LA Clippers",13,61.5,26,96.2
+"Chicago Bulls",13,84.6,20,75
+"Toronto Raptors",20,75,13,84.6
+"Washington Wizards",10,70,20,80
+"Memphis Grizzlies",20,80,10,70
+"Cleveland Cavaliers",36,88.9,21,57.1
+"Los Angeles Lakers",21,57.1,36,88.9
+"Portland Trail Blazers",24,62.5,28,75
+"Phoenix Suns",28,75,24,62.5
+"San Antonio Spurs",19,57.9,10,50
+"Denver Nuggets",10,50,19,57.9
+"Oklahoma City Thunder",16,62.5,17,88.2
+"Milwaukee Bucks",17,88.2,16,62.5
+"Houston Rockets",31,67.7,20,80
+"Minnesota Timberwolves",20,80,31,67.7
+"New Orleans Pelicans",28,71.4,25,84
+"Atlanta Hawks",25,84,28,71.4
+"Boston Celtics",12,100,16,93.8
+"New York Knicks",16,93.8,12,100
+"Brooklyn Nets",22,90.9,23,69.6
+"Charlotte Hornets",23,69.6,22,90.9
+"Sacramento Kings",26,65.4,20,95
+"Orlando Magic",20,95,26,65.4
+"Utah Jazz",10,90,28,89.3
+"Los Angeles Lakers",28,89.3,10,90
+"Milwaukee Bucks",28,57.1,17,76.5
+"Minnesota Timberwolves",17,76.5,28,57.1
+"Portland Trail Blazers",15,80,21,95.2
+"Phoenix Suns",21,95.2,15,80
+"Toronto Raptors",25,84,25,84
+"Dallas Mavericks",25,84,25,84
+"Golden State Warriors",25,92,29,69
+"New Orleans Pelicans",29,69,25,92
+"Charlotte Hornets",31,80.6,18,77.8
+"Memphis Grizzlies",18,77.8,31,80.6
+"LA Clippers",19,73.7,18,55.6
+"San Antonio Spurs",18,55.6,19,73.7
+"Chicago Bulls",25,88,39,82.1
+"Boston Celtics",39,82.1,25,88
+"Cleveland Cavaliers",16,81.3,15,86.7
+"Detroit Pistons",15,86.7,16,81.3
+"Miami Heat",26,100,23,65.2
+"Indiana Pacers",23,65.2,26,100
+"New York Knicks",27,85.2,21,81
+"Philadelphia 76ers",21,81,27,85.2
+"Brooklyn Nets",14,100,22,81.8
+"Washington Wizards",22,81.8,14,100
+"Denver Nuggets",16,87.5,19,73.7
+"Oklahoma City Thunder",19,73.7,16,87.5
+"Golden State Warriors",15,66.7,46,71.7
+"Orlando Magic",46,71.7,15,66.7
+"New Orleans Pelicans",21,71.4,23,87
+"Los Angeles Lakers",23,87,21,71.4
+"Memphis Grizzlies",27,81.5,26,80.8
+"Portland Trail Blazers",26,80.8,27,81.5
+"Utah Jazz",14,85.7,15,53.3
+"Dallas Mavericks",15,53.3,14,85.7
+"Charlotte Hornets",16,56.3,18,88.9
+"Chicago Bulls",18,88.9,16,56.3
+"LA Clippers",19,78.9,21,76.2
+"Houston Rockets",21,76.2,19,78.9
+"Detroit Pistons",15,93.3,24,83.3
+"Milwaukee Bucks",24,83.3,15,93.3
+"Toronto Raptors",16,93.8,14,85.7
+"San Antonio Spurs",14,85.7,16,93.8
+"Boston Celtics",27,96.3,24,79.2
+"Cleveland Cavaliers",24,79.2,27,96.3
+"Sacramento Kings",14,85.7,13,84.6
+"Miami Heat",13,84.6,14,85.7
+"Atlanta Hawks",16,75,20,75
+"New York Knicks",20,75,16,75
+"Washington Wizards",32,81.3,20,70
+"Philadelphia 76ers",20,70,32,81.3
+"Minnesota Timberwolves",24,83.3,22,77.3
+"Phoenix Suns",22,77.3,24,83.3
+"Orlando Magic",20,100,20,80
+"Oklahoma City Thunder",20,80,20,100
+"Chicago Bulls",21,85.7,19,78.9
+"Brooklyn Nets",19,78.9,21,85.7
+"Golden State Warriors",17,76.5,20,100
+"Miami Heat",20,100,17,76.5
+"Houston Rockets",23,73.9,17,70.6
+"LA Clippers",17,70.6,23,73.9
+"Memphis Grizzlies",42,54.8,22,81.8
+"Utah Jazz",22,81.8,42,54.8
+"Detroit Pistons",21,85.7,29,79.3
+"Milwaukee Bucks",29,79.3,21,85.7
+"Indiana Pacers",23,69.6,20,95
+"Brooklyn Nets",20,95,23,69.6
+"Atlanta Hawks",25,80,40,82.5
+"Toronto Raptors",40,82.5,25,80
+"Sacramento Kings",28,85.7,14,57.1
+"Charlotte Hornets",14,57.1,28,85.7
+"Philadelphia 76ers",20,70,26,96.2
+"Washington Wizards",26,96.2,20,70
+"Denver Nuggets",18,72.2,20,80
+"Los Angeles Lakers",20,80,18,72.2
+"Houston Rockets",26,84.6,30,73.3
+"Phoenix Suns",30,73.3,26,84.6
+"Orlando Magic",27,74.1,28,75
+"Dallas Mavericks",28,75,27,74.1
+"Minnesota Timberwolves",20,70,25,76
+"San Antonio Spurs",25,76,20,70
+"Washington Wizards",16,68.8,20,95
+"Boston Celtics",20,95,16,68.8
+"New York Knicks",16,50,19,84.2
+"Cleveland Cavaliers",19,84.2,16,50
+"Golden State Warriors",25,96,38,89.5
+"Detroit Pistons",38,89.5,25,96
+"New Orleans Pelicans",8,62.5,13,61.5
+"LA Clippers",13,61.5,8,62.5
+"Oklahoma City Thunder",31,77.4,34,79.4
+"Dallas Mavericks",34,79.4,31,77.4
+"Memphis Grizzlies",15,73.3,20,75
+"Utah Jazz",20,75,15,73.3
+"Philadelphia 76ers",27,81.5,29,89.7
+"Chicago Bulls",29,89.7,27,81.5
+"Atlanta Hawks",15,80,29,65.5
+"Milwaukee Bucks",29,65.5,15,80
+"Indiana Pacers",26,84.6,26,76.9
+"Brooklyn Nets",26,76.9,26,84.6
+"Golden State Warriors",16,75,31,77.4
+"Charlotte Hornets",31,77.4,16,75
+"Miami Heat",31,83.9,29,72.4
+"Sacramento Kings",29,72.4,31,83.9
+"New Orleans Pelicans",22,90.9,20,90
+"Phoenix Suns",20,90,22,90.9
+"Houston Rockets",21,81,20,80
+"Portland Trail Blazers",20,80,21,81
+"Utah Jazz",19,78.9,34,64.7
+"Denver Nuggets",34,64.7,19,78.9
+"Chicago Bulls",26,80.8,26,80.8
+"San Antonio Spurs",26,80.8,26,80.8
+"New York Knicks",32,68.8,27,81.5
+"Milwaukee Bucks",27,81.5,32,68.8
+"Los Angeles Lakers",27,70.4,24,66.7
+"Minnesota Timberwolves",24,66.7,27,70.4
+"Cleveland Cavaliers",34,76.5,32,81.3
+"Boston Celtics",32,81.3,34,76.5
+"Philadelphia 76ers",11,90.9,24,62.5
+"Toronto Raptors",24,62.5,11,90.9
+"Indiana Pacers",33,90.9,28,82.1
+"Washington Wizards",28,82.1,33,90.9
+"Atlanta Hawks",18,77.8,38,81.6
+"Detroit Pistons",38,81.6,18,77.8
+"Charlotte Hornets",24,66.7,26,73.1
+"Orlando Magic",26,73.1,24,66.7
+"Miami Heat",22,81.8,15,86.7
+"Golden State Warriors",15,86.7,22,81.8
+"Memphis Grizzlies",18,72.2,22,81.8
+"Sacramento Kings",22,81.8,18,72.2
+"LA Clippers",18,72.2,8,87.5
+"Oklahoma City Thunder",8,87.5,18,72.2
+"Dallas Mavericks",35,77.1,30,90
+"Brooklyn Nets",30,90,35,77.1
+"Los Angeles Lakers",16,68.8,21,81
+"Denver Nuggets",21,81,16,68.8
+"Miami Heat",19,84.2,26,69.2
+"Portland Trail Blazers",26,69.2,19,84.2
+"Houston Rockets",24,75,30,66.7
+"Utah Jazz",30,66.7,24,75
+"Indiana Pacers",24,79.2,24,91.7
+"Chicago Bulls",24,91.7,24,79.2
+"San Antonio Spurs",22,90.9,16,62.5
+"Minnesota Timberwolves",16,62.5,22,90.9
+"Charlotte Hornets",30,66.7,22,86.4
+"New York Knicks",22,86.4,30,66.7
+"Philadelphia 76ers",19,68.4,14,78.6
+"Toronto Raptors",14,78.6,19,68.4
+"Brooklyn Nets",30,80,29,75.9
+"Milwaukee Bucks",29,75.9,30,80
+"Orlando Magic",21,76.2,30,70
+"Cleveland Cavaliers",30,70,21,76.2
+"Atlanta Hawks",25,80,22,68.2
+"Detroit Pistons",22,68.2,25,80
+"Golden State Warriors",17,76.5,34,82.4
+"Phoenix Suns",34,82.4,17,76.5
+"LA Clippers",18,77.8,25,80
+"Oklahoma City Thunder",25,80,18,77.8
+"Dallas Mavericks",24,70.8,18,72.2
+"New Orleans Pelicans",18,72.2,24,70.8
+"Detroit Pistons",25,76,26,84.6
+"Washington Wizards",26,84.6,25,76
+"Denver Nuggets",14,57.1,31,74.2
+"Portland Trail Blazers",31,74.2,14,57.1
+"Boston Celtics",12,83.3,29,89.7
+"Chicago Bulls",29,89.7,12,83.3
+"Utah Jazz",16,56.3,32,84.4
+"Houston Rockets",32,84.4,16,56.3
+"Brooklyn Nets",26,80.8,31,77.4
+"Memphis Grizzlies",31,77.4,26,80.8
+"San Antonio Spurs",13,53.8,24,91.7
+"Minnesota Timberwolves",24,91.7,13,53.8
+"Toronto Raptors",20,80,27,88.9
+"Miami Heat",27,88.9,20,80
+"Orlando Magic",27,85.2,25,72
+"New York Knicks",25,72,27,85.2
+"Indiana Pacers",23,78.3,28,89.3
+"Philadelphia 76ers",28,89.3,23,78.3
+"Phoenix Suns",12,91.7,20,70
+"LA Clippers",20,70,12,91.7
+"Sacramento Kings",25,80,36,72.2
+"Golden State Warriors",36,72.2,25,80
+"Minnesota Timberwolves",22,63.6,21,71.4
+"Oklahoma City Thunder",21,71.4,22,63.6
+"Washington Wizards",15,60,25,88
+"Cleveland Cavaliers",25,88,15,60
+"Utah Jazz",28,82.1,22,77.3
+"New Orleans Pelicans",22,77.3,28,82.1
+"Charlotte Hornets",30,70,28,82.1
+"Atlanta Hawks",28,82.1,30,70
+"Portland Trail Blazers",27,81.5,20,80
+"Los Angeles Lakers",20,80,27,81.5
+"LA Clippers",22,90.9,26,57.7
+"Sacramento Kings",26,57.7,22,90.9
+"Oklahoma City Thunder",23,78.3,31,58.1
+"Denver Nuggets",31,58.1,23,78.3
+"Memphis Grizzlies",24,79.2,36,83.3
+"Dallas Mavericks",36,83.3,24,79.2
+"Toronto Raptors",28,75,27,92.6
+"Miami Heat",27,92.6,28,75
+"Cleveland Cavaliers",18,88.9,25,84
+"Chicago Bulls",25,84,18,88.9
+"Houston Rockets",22,77.3,21,61.9
+"Milwaukee Bucks",21,61.9,22,77.3
+"Detroit Pistons",30,76.7,24,75
+"Indiana Pacers",24,75,30,76.7
+"Boston Celtics",28,82.1,23,65.2
+"Orlando Magic",23,65.2,28,82.1
+"San Antonio Spurs",15,80,28,75
+"Philadelphia 76ers",28,75,15,80
+"Denver Nuggets",25,84,27,88.9
+"Golden State Warriors",27,88.9,25,84
+"Phoenix Suns",21,71.4,36,86.1
+"Portland Trail Blazers",36,86.1,21,71.4
+"Memphis Grizzlies",29,69,30,60
+"Houston Rockets",30,60,29,69
+"Utah Jazz",21,66.7,23,73.9
+"Minnesota Timberwolves",23,73.9,21,66.7
+"Orlando Magic",30,80,16,93.8
+"Atlanta Hawks",16,93.8,30,80
+"Toronto Raptors",18,66.7,29,69
+"Brooklyn Nets",29,69,18,66.7
+"Boston Celtics",15,100,15,80
+"Miami Heat",15,80,15,100
+"Detroit Pistons",32,59.4,22,63.6
+"New York Knicks",22,63.6,32,59.4
+"New Orleans Pelicans",37,86.5,14,78.6
+"Charlotte Hornets",14,78.6,37,86.5
+"San Antonio Spurs",44,72.7,22,95.5
+"Indiana Pacers",22,95.5,44,72.7
+"Chicago Bulls",33,81.8,11,90.9
+"Washington Wizards",11,90.9,33,81.8
+"LA Clippers",31,64.5,26,84.6
+"Los Angeles Lakers",26,84.6,31,64.5
+"Milwaukee Bucks",14,64.3,13,84.6
+"Philadelphia 76ers",13,84.6,14,64.3
+"Dallas Mavericks",34,61.8,22,86.4
+"Phoenix Suns",22,86.4,34,61.8
+"Portland Trail Blazers",33,78.8,19,68.4
+"Sacramento Kings",19,68.4,33,78.8
+"Denver Nuggets",18,94.4,31,74.2
+"Utah Jazz",31,74.2,18,94.4
+"Oklahoma City Thunder",22,81.8,33,81.8
+"Minnesota Timberwolves",33,81.8,22,81.8
+"Charlotte Hornets",23,87,21,71.4
+"San Antonio Spurs",21,71.4,23,87
+"Houston Rockets",15,93.3,24,83.3
+"Atlanta Hawks",24,83.3,15,93.3
+"New Orleans Pelicans",25,72,24,75
+"Brooklyn Nets",24,75,25,72
+"Chicago Bulls",28,75,28,78.6
+"Miami Heat",28,78.6,28,75
+"Cleveland Cavaliers",23,82.6,32,71.9
+"Toronto Raptors",32,71.9,23,82.6
+"New York Knicks",18,83.3,23,60.9
+"Memphis Grizzlies",23,60.9,18,83.3
+"Orlando Magic",19,73.7,24,79.2
+"Detroit Pistons",24,79.2,19,73.7
+"Washington Wizards",24,79.2,21,66.7
+"Indiana Pacers",21,66.7,24,79.2
+"Los Angeles Lakers",25,76,23,73.9
+"Golden State Warriors",23,73.9,25,76
+"Philadelphia 76ers",28,85.7,28,78.6
+"Boston Celtics",28,78.6,28,85.7

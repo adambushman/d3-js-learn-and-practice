@@ -1,0 +1,15 @@
+svg:hover {
+    cursor: crosshair;
+}
+
+.x-axis path {
+    display: none;
+}
+
+.x-axis .tick line {
+    display: none;
+}
+
+.x-axis .tick text {
+    font-size: 1.25rem
+}
