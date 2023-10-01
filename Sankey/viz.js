@@ -55,7 +55,7 @@ let sankey = d3.sankey()
     .nodePadding(130)
     .size([dims.width, dims.height]);
 
-d3.json("/Data files/shot-charts.json", function(error, graph) {
+d3.json("../Data files/shot-charts.json", function(error, graph) {
     console.log(graph);
 
     // Constructs a new Sankey generator with the default settings.
