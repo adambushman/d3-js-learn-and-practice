@@ -251,7 +251,7 @@ function createVis() {
                         .append("line")
                         .attr("class", "median")
                         .attr("y1", d => yScale(d.team) + (boxadj / 2))
-                        .attr("y2", d => yScale(d.team) + (yScale.bandwidth() / 2) + (boxadj * 3 / 2))
+                        .attr("y2", d => yScale(d.team) + (yScale.bandwidth() / 2) + boxadj)
                         .style("stroke-width", `${line_width * 2}rem`)
                         .transition()
                         .duration(1500)
