@@ -106,7 +106,10 @@ d3.json("../Data files/shot-charts.json", function(error, graph) {
         .on("mousemove", mousemove)
         .on("mouseleave", mouseleave)
         .append("title")
-            .text(function(d) { return d.name + "\n" + "There is " + d.value + " stuff in this node"; });
+            .text(function(d) { 
+                const text = ["Center", "Power Forward", "Small Forward", "Point Guard", "Shooting Guard"].includes(d.name) ? "\nshots from " + d.name + "s" : "\n" + d.name + " shots";
+                return `There were ~${d3.format(".2s")(d.value)} ${text}`;
+             });
     
     // add in the title for the nodes
     node
