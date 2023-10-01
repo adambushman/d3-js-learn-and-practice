@@ -4,6 +4,79 @@ const state = {
     // e.g., user selection
 }
 
+const wrapText = (
+    text,
+    width,
+    dyAdjust = 0.5,
+    lineHeightEms = 1.5,
+    lineHeightSquishFactor = 1,
+    splitOnSlash = true,
+    centreVertically = true
+) => {
+    text.each(function () {
+      var text = d3.select(this),
+        x = text.attr("x"),
+        y = text.attr("y");
+      var words = [];
+      text
+        .text()
+        .split(/\s+/)
+        .forEach(function (w) {
+          if (splitOnSlash) {
+            var subWords = w.split("/");
+            for (var i = 0; i < subWords.length - 1; i++)
+              words.push(subWords[i] + "/");
+            words.push(subWords[subWords.length - 1] + " ");
+          } else {
+            words.push(w + " ");
+          }
+        });
+  
+      text.text(null); // Empty the text element
+  
+      // `tspan` is the tspan element that is currently being added to
+      var tspan = text.append("tspan");
+  
+      var line = ""; // The current value of the line
+      var prevLine = ""; // The value of the line before the last word (or sub-word) was added
+      var nWordsInLine = 0; // Number of words in the line
+      for (var i = 0; i < words.length; i++) {
+        var word = words[i];
+        prevLine = line;
+        line = line + word;
+        ++nWordsInLine;
+        tspan.text(line.trim());
+        if (tspan.node().getComputedTextLength() > width && nWordsInLine > 1) {
+          // The tspan is too long, and it contains more than one word.
+          // Remove the last word and add it to a new tspan.
+          tspan.text(prevLine.trim());
+          prevLine = "";
+          line = word;
+          nWordsInLine = 1;
+          tspan = text.append("tspan").text(word.trim());
+        }
+      }
+  
+      var tspans = text.selectAll("tspan");
+  
+      var h = lineHeightEms;
+      // Reduce the line height a bit if there are more than 2 lines.
+      if (tspans.size() > 2)
+        for (var i = 0; i < tspans.size(); i++) h *= lineHeightSquishFactor;
+  
+      tspans.each(function (d, i) {
+        // Calculate the y offset (dy) for each tspan so that the vertical centre
+        // of the tspans roughly aligns with the text element's y position.
+        var dy = i * h + dyAdjust;
+        if (centreVertically) dy -= ((tspans.size() - 1) * h) / 2;
+        d3.select(this)
+          .attr("y", y)
+          .attr("x", x)
+          .attr("dy", dy + "em");
+      });
+    });
+}
+
 function getFilters() {
     state.metric = document.getElementById("fg-perc-radio").checked ? "fg_perc" : "ts_perc";
 }
@@ -29,7 +102,7 @@ function createVis(selector) {
     }
     const margins = {
         top: 25, 
-        left: 175, 
+        left:125, 
         bottom: 25, 
         right: 25
     }
@@ -52,7 +125,7 @@ function createVis(selector) {
 
     let xAxis = d3.axisBottom().scale(xScale).ticks(5).tickFormat(x => d3.format(".0%")(x));
     let yAxis = d3.axisLeft().scale(yScale);
-    
+
     let g_xAxis = svg.append("g")
         .attr("class", "x-axis")
         .attr('transform', 'translate(0, ' + dims.height + ')');
@@ -75,10 +148,10 @@ function createVis(selector) {
             .ease(d3.easeSin)
             .call(xAxis);
 
-        g_yAxis.transition()
-            .duration(1200)
-            .ease(d3.easeSin)
-            .call(yAxis);
+        g_yAxis.call(yAxis);
+
+        g_yAxis.selectAll(".tick text").style("fill", "transparent").call(wrapText, 50)
+            .transition().duration(1200).ease(d3.easeSin).style("fill", "white");
 
         svg.selectAll("rect")
             .data(new_data)
