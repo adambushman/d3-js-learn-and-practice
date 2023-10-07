@@ -1,5 +1,4 @@
 // Global variables
-//let interval = setInterval("changeYear()", 2000);
 const state = {
     data: [], 
     selections: {
@@ -48,7 +47,6 @@ const mouseleave = (e,d) => {
 // Function to pull selections from UI
 function pullSelections() {
     state.selections.year = document.getElementById("year-range").value;
-    console.log(state);
 }
 
 // Filter the raw data according to user selection
@@ -170,8 +168,8 @@ function createVis() {
             d3.max(new_data, d => d.winter_medals) * 1.05
         ]);
 
-        g_xAxis.style("font-size", "0.9rem").transition().duration(1500).call(xAxis);
-        g_yAxis.style("font-size", "0.9rem").transition().duration(1500).call(yAxis);
+        g_xAxis.style("font-size", "0.9rem").transition().duration(750).call(xAxis);
+        g_yAxis.style("font-size", "0.9rem").transition().duration(750).call(yAxis);
 
         //xaxis_label.text(label_lookup[state.selections.x_metric]);
         //yaxis_label.text(label_lookup[state.selections.y_metric]);
@@ -191,7 +189,7 @@ function createVis() {
                         .on("mousemove", (e,d) => mousemove(e,d))
                         .on("mouseleave", (e,d) => mouseleave(e,d))
                         .transition()
-                        .duration(1500)
+                        .duration(750)
                         .attr("cx", d => xScale(d.summer_medals))
                         .attr("cy", d => yScale(d.winter_medals))
                         .attr("r", d => size(d.athlete_count));
@@ -199,7 +197,7 @@ function createVis() {
                 (update) => {
                     update
                         .transition()
-                        .duration(1500)
+                        .duration(750)
                         .attr("cx", d => xScale(d.summer_medals))
                         .attr("cy", d => yScale(d.winter_medals))
                         .attr("r", d => size(d.athlete_count));
@@ -218,14 +216,14 @@ function createVis() {
                         .style("font-size", "1rem")
                         .style("fill", "transparent")
                         .text(d => d.Team)
-                        .transition().duration(1500)
+                        .transition().duration(750)
                         .style("fill", "black")
                         .attr("x", d => xScale(d.summer_medals))
                         .attr("y", d => yScale(d.winter_medals) - size(d.athlete_count) - 15);
                 }, 
                 (update) => {
                     update
-                        .transition().duration(1500)
+                        .transition().duration(750)
                         .attr("x", d => xScale(d.summer_medals))
                         .attr("y", d => yScale(d.winter_medals) - size(d.athlete_count) - 15);
                 }, 
@@ -247,31 +245,30 @@ function updateApp() {
     // Generate new data from updated parameters
     const filtered = filterData();
     const new_data = wrangleData(filtered);
-    console.log(new_data);
+    
     // Update visualization
     vis(new_data);
 }
 
 const animate = () => {
-    document.getElementById("animate-viz").classList.toggle("visually-hidden");
-    document.getElementById("stop-animate-viz").classList.toggle("visually-hidden");
-    changeYear();
+    const animationInterval = setInterval(changeYear, 1500);
+    const startButton = document.getElementById("animate-viz");
+    startButton.disabled = true;
+
+    // Stop the animation after a certain duration
+    setTimeout(() => {
+        clearInterval(animationInterval); // Stop the animation
+        startButton.disabled = false; // Enable the button
+    }, (2016-state.selections.year)*1500); // Length
 }
 
 const changeYear = () => {
-    const yr = state.selections.year;
-    state.selections.year = yr;
-    document.getElementById("year-range").value = yr;
+    state.selections.year = parseInt(state.selections.year) + 1;
+    document.getElementById("year-range").value = state.selections.year;
     updateApp();
 }
-
-function exit() {
-    pause();
-    document.getElementById("animate-viz").classList.toggle("visually-hidden");
-    document.getElementById("stop-animate-viz").classList.toggle("visually-hidden");
-}
   
-// Initialize even handlers
+// Initialize event handlers
 const ui_elements = [
     "year-range"
 ];
@@ -283,8 +280,8 @@ ui_elements.forEach(e => {
     })
 })
 
-document.getElementById("animate-viz").addEventListener("click", changeYear);
-document.getElementById("stop-animate-viz").addEventListener("click", exit);
+document.getElementById("animate-viz").addEventListener("click", animate);
+//document.getElementById("stop-animate-viz").addEventListener("click", exit);
 
 
 // Load data files
