@@ -56,46 +56,6 @@ svg:hover {
     background-color: var(--prim-yellow-dark);
 }
 
-.Airplane {
-    fill: var(--prim-green-dark);
-}
-
-.Airplane-hovered {
-    fill: var(--prim-green);
-    stroke: var(--prim-green);
-    stroke-width: 0.3;
-}
-
-.Automobile {
-    fill: var(--prim-red-dark);
-}
-
-.Automobile-hovered {
-    fill: var(--prim-red);
-    stroke: var(--prim-red);
-    stroke-width: 0.3;
-}
-
-.Train {
-    fill: var(--prim-yellow-dark);
-}
-
-.Train-hovered {
-    fill: var(--prim-yellow);
-    stroke: var(--prim-yellow);
-    stroke-width: 0.3;
-}
-
-.Boat {
-    fill: var(--prim-blue-dark);
-}
-
-.Boat-hovered {
-    fill: var(--prim-blue);
-    stroke: var(--prim-blue);
-    stroke-width: 0.3;
-}
-
 .hidden {
     fill: transparent;
 }

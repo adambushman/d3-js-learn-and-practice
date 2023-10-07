@@ -9,6 +9,7 @@ const margins = {left: 10, top: 30, right: 10, bottom: 10}
 
 let xScale;
 let yScale;
+let colorScale;
 
 const createSVG = (element, svg_id) => {
     return d3.select(element)
@@ -35,13 +36,15 @@ function mouseover(d) {
     let classname = d.target.classList[1];
 
     d3.selectAll(`.${classname}`)
-        .classed(classname, false)
-        .classed(`${classname}-hovered`, true);
+        .transition().duration(500)
+        .style("opacity", 1);
 
     d3.selectAll(".title-rect")
-        .classed(classname, true);
+        .transition().duration(500)
+        .style("fill", colorScale(classname));
     
     d3.selectAll(`.${classname}-title-text`)
+        .transition().duration(500)
         .style("fill", "var(--prim-dark)");
 }
 
@@ -51,16 +54,17 @@ function mousemove(d) {
 
 function mouseleave(d) {
     let classname = d.target.classList[1];
-    let classtrunc = classname.replace('-hovered', '');
 
     d3.selectAll(`.${classname}`)
-        .classed(classname, false)
-        .classed(classtrunc, true);
+        .transition().duration(500)
+        .style("opacity", 0.8);
 
     d3.selectAll(".title-rect")
-        .classed(classtrunc, false);
-
-    d3.selectAll(`.${classtrunc}-title-text`)
+        .transition().duration(500)
+        .style("fill", "transparent");
+    
+    d3.selectAll(`.${classname}-title-text`)
+        .transition().duration(500)
         .style("fill", "transparent");
 }
 
@@ -96,8 +100,24 @@ function createVis() {
     let eu_svg = createSVG("#chart-2", "svg-europe");
     let af_svg = createSVG("#chart-3", "svg-africa");
 
+    const charts = [
+        {svg: na_svg, title: "North America"}, 
+        {svg: eu_svg, title: "Europe"}, 
+        {svg: af_svg, title: "Africa"}
+    ];
+
+    charts.forEach(d => {
+        d.svg.append("g").attr("class", "tiles");
+        d.svg.append("rect").attr("class", "title-rect default");
+        d.svg.append("text").attr("class", "title");
+        d.svg.append("g").attr("class", "labels");
+    });
+
     xScale = d3.scaleLinear().range([0, dims.width]);
     yScale = d3.scaleLinear().range([dims.height, 0]);
+    colorScale = d3.scaleOrdinal().range([
+        "#3ABA51", "#D81159", "#0496FF", "#FFBC42"
+    ]);
 
     let line = d3.line()
         .curve(d3.curveLinearClosed);
@@ -110,12 +130,7 @@ function createVis() {
 
         xScale.domain(ranges.x);
         yScale.domain(ranges.y);
-
-        const charts = [
-            {svg: na_svg, title: "North America"}, 
-            {svg: eu_svg, title: "Europe"}, 
-            {svg: af_svg, title: "Africa"}
-        ]
+        colorScale.domain([...new Set(d3.map(new_data, d => d.detail))]);
 
         console.log(altered);
 
@@ -124,8 +139,7 @@ function createVis() {
                 .filter(aq.escape(d => d.group.includes(crt.title)))
                 .objects()
 
-            crt.svg.append("g")
-                .attr("class", "tiles")
+            crt.svg.select("g .tiles")
                 .selectAll("path")
                 .data(
                     alt_filt, 
@@ -140,11 +154,12 @@ function createVis() {
                             .on("mouseover", mouseover)
                             .on("mousemove", mousemove)
                             .on("mouseleave", mouseleave)
-                            .attr("class", d => { return `poly ${d.detail}` });
+                            .attr("class", d => { return `poly ${d.detail}` })
+                            .style("fill", d => colorScale(d.detail))
+                            .style("opacity", 0.8);
                     }, 
                     (update) => {
-                        update
-                            .attr("class", d => { return `poly ${d.detail}` });
+                        update//.style("fill", d => colorScale(d.detail));
                     }, 
                     (exit) => exit.remove()
                 );
@@ -154,8 +169,7 @@ function createVis() {
                 .rollup({ perc: d => op.mean(d.value)})
                 .objects();
 
-            crt.svg.append("rect")
-                .attr("class", "title-rect default")
+            crt.svg.select("rect")
                 .attr("x", 0)
                 .attr("y", margins.top * -4 / 7)
                 .attr("height", 13)
@@ -163,7 +177,8 @@ function createVis() {
                 .text(crt.title)
                 .attr("rx", 3);
 
-            crt.svg.selectAll("text .perc")
+            crt.svg.select("g .labels")
+                .selectAll("text")
                 .data(
                     group_filt, 
                     d => d.id
@@ -187,8 +202,7 @@ function createVis() {
                     (exit) => exit.remove()
                 );
 
-            crt.svg.append("text")
-                .attr("class", "title")
+            crt.svg.select(".title")
                 .attr("x", 0)
                 .attr("y", margins.top * -5 / 7)
                 .text(crt.title)
