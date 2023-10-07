@@ -1,6 +1,7 @@
 // Global variables
 const state = {
     data: [], 
+    years: [], 
     selections: {
         year: 1926, 
         sex: "F"
@@ -61,6 +62,7 @@ function filterData() {
 // Wrangle data based on structure
 function wrangleData(filtered) {
     const wrangled = aq.from(filtered)
+        .derive({Team: d => op.match(d.Team, '^([^-]+)')[0]})
         .groupby("Team")
         .derive({athlete_count: d => op.distinct(d.ID)})
         .filter(d => d.Medal != "NA")
@@ -146,8 +148,16 @@ function createVis() {
 
     const circles = svg.append("g").attr("class", "circles");
     const labels = svg.append("g").attr("class", "labels");
+    const yearLabel = svg.append("text")
+        .attr("x", dims.width - margins.right)
+        .attr("y", margins.top)
+        .style("text-anchor", "end")
+        .style("font-size", "3.5rem")
+        .style("font-weight", "bold")
+        .style("opacity", 0.25);
 
     function update(new_data) {
+        console.log(new_data);
         // Joins data to elements, specifying enter, update, exit logic
         size.domain([
             d3.min(new_data, d => d.athlete_count), 
@@ -229,6 +239,10 @@ function createVis() {
                 }, 
                 (exit) => exit.remove()
             );
+
+        yearLabel
+            .transition().duration(750)
+            .text(state.selections.year);
     }
 
     // Return the update function to be called later
@@ -251,7 +265,7 @@ function updateApp() {
 }
 
 const animate = () => {
-    const animationInterval = setInterval(changeYear, 1500);
+    const animationInterval = setInterval(changeYear, 1000);
     const startButton = document.getElementById("animate-viz");
     startButton.disabled = true;
 
@@ -259,11 +273,12 @@ const animate = () => {
     setTimeout(() => {
         clearInterval(animationInterval); // Stop the animation
         startButton.disabled = false; // Enable the button
-    }, (2016-state.selections.year)*1500); // Length
+    }, (state.years.length - 1) * 1000); // Length
 }
 
 const changeYear = () => {
-    state.selections.year = parseInt(state.selections.year) + 1;
+    const indx = state.years.indexOf(parseInt(state.selections.year));
+    state.selections.year = parseInt(state.years[indx + 1]);
     document.getElementById("year-range").value = state.selections.year;
     updateApp();
 }
@@ -289,6 +304,7 @@ d3.csv("../../Data files/olympic_athlete_events.csv")
     .then((data) => {
         // load data, e.g., via d3.json and update app afterwards
         state.data = data;
+        state.years = [...new Set(d3.map(data, d => parseInt(d.Year)))].filter(d => d >= 1924).sort();
         updateApp();
     })
     .catch((error) => {
