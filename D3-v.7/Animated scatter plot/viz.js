@@ -185,7 +185,7 @@ function createVis() {
         //yaxis_label.text(label_lookup[state.selections.y_metric]);
 
         circles.selectAll("circle")
-            .data(new_data)
+            .data(new_data, d => d.Team.replace(" ", "-"))
             .join(
                 (enter) => {
                     enter
@@ -216,7 +216,7 @@ function createVis() {
             );
 
         labels.selectAll("text")
-            .data(new_data)
+            .data(new_data, d => d.Team.replace(" ", "-"))
             .join(
                 (enter) => {
                     enter
