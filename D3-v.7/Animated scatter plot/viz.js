@@ -7,7 +7,10 @@ const state = {
         sex: "F"
     }, 
     dims: {height: 700, width: 1000}, 
-    margins: {left: 75, bottom: 75, top: 50, right: 75}
+    margins: {left: 75, bottom: 75, top: 150, right: 75}, 
+    colors: {
+        circle_fill: "#05668D"
+    }
 }
 
 // Mouse events
@@ -123,35 +126,48 @@ function createVis() {
     const text_features = svg.append("g")
         .attr("class", "text-features");
 
-    const label_lookup = {
-        median_length: "Median Length", 
-        median_price: "Median Price in USD", 
-        total_boats: "Total Boats", 
-        median_width: "Median Width", 
-        total_views: "Total Views"
-    }
-
-    let xaxis_label = text_features.append("text")
+    // X-Axis Label
+    text_features.append("text")
         .attr("class", "x-label")
-        .attr("x", (dims.width - margins.left) / 2)
-        .attr("y", dims.height + margins.top)
-        .style("font-size", "1.5rem")
-        .text("");
+        .attr("x", dims.width / 2)
+        .attr("y", dims.height + (margins.bottom * 0.75))
+        .style("font-size", "1.75rem")
+        .style("text-anchor", "middle")
+        .text("# of Summer Medals");
 
-    let yaxis_label = text_features.append("text")
+    // Y-Axis Label
+    text_features.append("text")
         .attr("class", "y-label")
-        .attr("x", margins.left * -4 / 5)
-        .attr("y", margins.top * -1 / 2)
-        .style("text-anchor", "center")
-        .style("font-size", "1.5rem")
-        .text("");
+        .attr("x", 0)
+        .attr("y", 0)
+        .attr('transform', `translate(${margins.left * -0.75}, ${(dims.height / 2)}) rotate(-90)`)
+        .style("text-anchor", "middle")
+        .style("font-size", "1.75rem")
+        .text("# of Winter Medals");
+
+    const legend_circles = svg.append("g")
+        .attr("class", "legend-circles")
+        .selectAll("circle")
+        .data([10, 25, 40])
+        .join(
+            (enter) => {
+                enter
+                    .append("circle")
+                    .attr("cx", dims.width - 40)
+                    .attr("cy", d => (margins.top / -4) + (d * -1))
+                    .attr("r", d => d)
+                    .style("fill", "none")
+                    .style("stroke", "black")
+                    .style("stroke-opacity", 0.25)
+                    .style("stroke-width", 3)
+            }
+        );
 
     const circles = svg.append("g").attr("class", "circles");
     const labels = svg.append("g").attr("class", "labels");
     const yearLabel = svg.append("text")
-        .attr("x", dims.width - margins.right)
-        .attr("y", margins.top)
-        .style("text-anchor", "end")
+        .attr("x", 0)
+        .attr("y", (margins.top / -3))
         .style("font-size", "3.5rem")
         .style("font-weight", "bold")
         .style("opacity", 0.25);
@@ -191,10 +207,10 @@ function createVis() {
                     enter
                         .append("circle")
                         .attr("class", d => `${d.Team.replace(" ", "-")}-circle`)
-                        .style("fill", "#05668D")
-                        .style("stroke", "#05668D")
+                        .style("fill", state.colors.circle_fill)
+                        .style("stroke", state.colors.circle_fill)
                         .style("stroke-width", 2)
-                        .style("fill-opacity", 0.65)
+                        .style("fill-opacity", 0.5)
                         .on("mouseover", (e,d) => mouseover(e,d))
                         .on("mousemove", (e,d) => mousemove(e,d))
                         .on("mouseleave", (e,d) => mouseleave(e,d))
