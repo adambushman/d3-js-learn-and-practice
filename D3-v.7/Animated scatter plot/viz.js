@@ -64,8 +64,11 @@ function filterData() {
 
 // Wrangle data based on structure
 function wrangleData(filtered) {
+    console.log([...new Set(d3.map(filtered, d => d.Team))])
     const wrangled = aq.from(filtered)
         .derive({Team: d => op.match(d.Team, '^([^-]+)')[0]})
+        .derive({Team: d => op.includes(d.Team, "Germany") ? "Germany": d.Team })
+        .derive({Team: d => op.includes(["Unified Team", "Soviet Union"], d.Team) ? "Russia": d.Team })
         .groupby("Team")
         .derive({athlete_count: d => op.distinct(d.ID)})
         .filter(d => d.Medal != "NA")
