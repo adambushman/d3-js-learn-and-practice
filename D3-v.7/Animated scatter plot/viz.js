@@ -13,6 +13,79 @@ const state = {
     }
 }
 
+const wrapText = (
+    text,
+    width,
+    dyAdjust = 0.5,
+    lineHeightEms = 1,
+    lineHeightSquishFactor = 1,
+    splitOnSlash = true,
+    centreVertically = true
+) => {
+    text.each(function () {
+      var text = d3.select(this),
+        x = text.attr("x"),
+        y = text.attr("y");
+      var words = [];
+      text
+        .text()
+        .split(/\s+/)
+        .forEach(function (w) {
+          if (splitOnSlash) {
+            var subWords = w.split("/");
+            for (var i = 0; i < subWords.length - 1; i++)
+              words.push(subWords[i] + "/");
+            words.push(subWords[subWords.length - 1] + " ");
+          } else {
+            words.push(w + " ");
+          }
+        });
+  
+      text.text(null); // Empty the text element
+  
+      // `tspan` is the tspan element that is currently being added to
+      var tspan = text.append("tspan");
+  
+      var line = ""; // The current value of the line
+      var prevLine = ""; // The value of the line before the last word (or sub-word) was added
+      var nWordsInLine = 0; // Number of words in the line
+      for (var i = 0; i < words.length; i++) {
+        var word = words[i];
+        prevLine = line;
+        line = line + word;
+        ++nWordsInLine;
+        tspan.text(line.trim());
+        if (tspan.node().getComputedTextLength() > width && nWordsInLine > 1) {
+          // The tspan is too long, and it contains more than one word.
+          // Remove the last word and add it to a new tspan.
+          tspan.text(prevLine.trim());
+          prevLine = "";
+          line = word;
+          nWordsInLine = 1;
+          tspan = text.append("tspan").text(word.trim());
+        }
+      }
+  
+      var tspans = text.selectAll("tspan");
+  
+      var h = lineHeightEms;
+      // Reduce the line height a bit if there are more than 2 lines.
+      if (tspans.size() > 2)
+        for (var i = 0; i < tspans.size(); i++) h *= lineHeightSquishFactor;
+  
+      tspans.each(function (d, i) {
+        // Calculate the y offset (dy) for each tspan so that the vertical centre
+        // of the tspans roughly aligns with the text element's y position.
+        var dy = i * h + dyAdjust;
+        if (centreVertically) dy -= ((tspans.size() - 1) * h) / 2;
+        d3.select(this)
+          .attr("y", y)
+          .attr("x", x)
+          .attr("dy", dy + "em");
+      });
+    });
+}
+
 // Mouse events
 const mouseover = (e,d) => {
     d3.selectAll(`.circles circle`)
@@ -146,24 +219,43 @@ function createVis() {
         .style("text-anchor", "middle")
         .style("font-size", "1.75rem")
         .text("# of Winter Medals");
+        
+    // Legend 
+    svg.append("g")
+        .attr("class", "legend-title")
+        .append("text")
+        .attr("x", dims.width - 150)
+        .attr("y", margins.top / -2)
+        .style("font-size", "1.5rem")
+        .style("font-weight", "bold")
+        .style("opacity", 0.35)
+        .style("text-anchor", "end")
+        .text("Unique Athletes")
+        .call(wrapText, 50)
 
-    const legend_circles = svg.append("g")
+    const legend_data = [10, 25, 40];
+    svg.append("g")
         .attr("class", "legend-circles")
         .selectAll("circle")
-        .data([10, 25, 40])
+        .data(legend_data)
         .join(
             (enter) => {
                 enter
                     .append("circle")
                     .attr("cx", dims.width - 40)
                     .attr("cy", d => (margins.top / -4) + (d * -1))
-                    .attr("r", d => d)
                     .style("fill", "none")
                     .style("stroke", "black")
                     .style("stroke-opacity", 0.25)
                     .style("stroke-width", 3)
+                    .transition().duration(1000)
+                    .attr("r", d => d);
             }
         );
+
+
+    const legend_labels = svg.append("g")
+        .attr("class", "legend-labels");
 
     const circles = svg.append("g").attr("class", "circles");
     const labels = svg.append("g").attr("class", "labels");
@@ -177,10 +269,11 @@ function createVis() {
     function update(new_data) {
         console.log(new_data);
         // Joins data to elements, specifying enter, update, exit logic
-        size.domain([
+        const size_range = [
             d3.min(new_data, d => d.athlete_count), 
             d3.max(new_data, d => d.athlete_count)
-        ]);
+        ];
+        size.domain(size_range);
 
         color.domain(
             d3.map(new_data, d => d["Boat Type"]).keys()
@@ -199,8 +292,24 @@ function createVis() {
         g_xAxis.style("font-size", "0.9rem").transition().duration(750).call(xAxis);
         g_yAxis.style("font-size", "0.9rem").transition().duration(750).call(yAxis);
 
-        //xaxis_label.text(label_lookup[state.selections.x_metric]);
-        //yaxis_label.text(label_lookup[state.selections.y_metric]);
+        legend_labels.selectAll("text")
+            .data(d3.map(legend_data, d => { return size_range[0] * d / 5 }))
+            .join(
+                (enter) => {
+                    enter.append("text")
+                        .attr("x", dims.width - 100)
+                        .style("text-anchor", "end")
+                        .attr("y", (d,i) => ((margins.top / 4.5) * i * -1) + (margins.top / -4))
+                        .text(d => d)
+                        .style("fill", "transparent")
+                        .transition().duration(750)
+                        .style("fill", "black")
+                }, 
+                (update) => {
+                    update.transition().duration(750)
+                        .text(d => d3.format(".0s")(d));
+                }
+            );
 
         circles.selectAll("circle")
             .data(new_data, d => d.Team.replace(" ", "-"))
