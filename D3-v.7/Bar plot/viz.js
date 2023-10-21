@@ -1,6 +1,7 @@
 const state = {
     data: [], 
-    metric: "fg_perc"
+    metric: "fg_perc", 
+    first: true
     // e.g., user selection
 }
 
@@ -148,10 +149,12 @@ function createVis(selector) {
             .ease(d3.easeSin)
             .call(xAxis);
 
-        g_yAxis.call(yAxis);
-
-        g_yAxis.selectAll(".tick text").style("fill", "transparent").call(wrapText, 50)
-            .transition().duration(1200).ease(d3.easeSin).style("fill", "white");
+        // First load behavior
+        if(state.first) {
+            g_yAxis.call(yAxis);
+            g_yAxis.selectAll(".tick text").style("fill", "transparent").call(wrapText, 50)
+                .transition().duration(1200).ease(d3.easeSin).style("fill", "white");
+        }
 
         svg.selectAll("rect")
             .data(new_data)
@@ -163,8 +166,9 @@ function createVis(selector) {
                         .attr("height",  yScale.bandwidth() * 0.7)
                         .style("fill", "#684756")
                         .transition()
-                        .duration(1200)
+                        .duration(800)
                         .ease(d3.easeSin)
+                        .delay((d,i) => 150*i)
                         .attr("width", (d) => xScale(d[state.metric]));
                 }, 
                 (update) => {
@@ -176,6 +180,7 @@ function createVis(selector) {
                 (exit) => exit.remove()
             );
 
+        state.first = false; // Control behavior just for first load
         return update;
     }
 

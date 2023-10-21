@@ -6,7 +6,8 @@ const state = {
         perspective: "team"
     }, 
     dims: {height: 1500, width: 1000}, 
-    margins: {left: 125, bottom: 75, top: 75, right: 25}
+    margins: {left: 125, bottom: 75, top: 75, right: 25}, 
+    first: true
 }
 
 const wrapText = (
@@ -130,13 +131,16 @@ function createVis() {
         .scale(yScale);
 
     let g_xAxis1 = svg.append("g")
-        .attr("class", "x-axis");
+        .attr("class", "x-axis")
+        .style("font-size", "0.9rem");
 
     let g_xAxis2 = svg.append("g")
         .attr("class", "x-axis")
+        .style("font-size", "0.9rem")
         .attr('transform', 'translate(0, ' + dims.height + ')');
 
     let g_yAxis = svg.append("g")
+        .style("font-size", "0.9rem")
         .attr("class", "y-axis");
 
     const whisker = svg.append("g").attr("class", "whiskers");
@@ -175,11 +179,14 @@ function createVis() {
 
         yScale.domain([...new Set(d3.map(new_data, d => d.team))].sort().reverse());
 
-        g_xAxis1.style("font-size", "0.9rem").transition().duration(1500).call(xAxis1);
-        g_xAxis2.style("font-size", "0.9rem").transition().duration(1500).call(xAxis2);
-        g_yAxis.style("font-size", "0.9rem").call(yAxis);
-        g_yAxis.selectAll(".tick text")
-            .style("fill", "transparent").call(wrapText, 85).transition().duration(1500).style("fill", "black");
+        g_xAxis1.transition().duration(1500).call(xAxis1);
+        g_xAxis2.transition().duration(1500).call(xAxis2);
+        console.log(state.first);
+        if(state.first) {
+            g_yAxis.call(yAxis);
+            g_yAxis.selectAll(".tick text")
+                .style("fill", "transparent").call(wrapText, 85).transition().duration(1500).style("fill", "black");   
+        }
 
         const line_width = "0.1";
         const line_col = "#17408b";
@@ -309,6 +316,8 @@ function createVis() {
                 }, 
                 (exit) => exit.remove()
             );
+            
+        state.first = false; // Control starting behavior
     }
 
     // Return the update function to be called later
