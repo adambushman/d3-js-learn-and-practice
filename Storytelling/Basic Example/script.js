@@ -1,9 +1,9 @@
 const data = [
     {x: 1, y: 12, z: 7, a: 1},
     {x: 2, y: 10, z: 9, a: 2},
-    {x: 3, y: 5, z: 11, a: 4},
+    {x: 3, y: 5, z: 8, a: 4},
     {x: 4, y: 4, z: 5, a: 5},
-    {x: 5, y: 2, z: 2, a: 10},
+    {x: 5, y: 2, z: 6, a: 10},
     {x: 6, y: 1, z: 4, a: 12},
 ];
 
@@ -72,7 +72,7 @@ const updateChart2 = (data) => {
     data.forEach(d => {
         transformed.push({id: d.x, val: d[chosen]});
     });
-    console.log(pie(transformed));
+
     svg2.selectAll(".slice")
     .data(pie(transformed))
     .join(
@@ -80,6 +80,7 @@ const updateChart2 = (data) => {
             enter.append("path")
                 .attr("class", ".slice")
                 .style("fill", d => color(d.data.id))
+                .transition().duration(500).delay((d,i) => i * 250)
                 .attr("d", d3.arc()
                     .innerRadius(radius / 2)
                     .outerRadius(radius)
@@ -87,7 +88,7 @@ const updateChart2 = (data) => {
 
         }, 
         (update) => {
-            update.transition().duration(1000)
+            update.transition().duration(500)
                 .attr("d", d3.arc()
                     .innerRadius(0)
                     .outerRadius(radius)
@@ -131,6 +132,12 @@ const tileObserver = new IntersectionObserver(entries => {
         // Chart 2, Transition 1
         if(entry.target.id == "c2-t1" & intersecting) {
             chosen = "a";
+            updateChart2(data);
+        }
+
+        // Chart 2, Transition 2
+        if(entry.target.id == "c2-t2" & intersecting) {
+            chosen = "z";
             updateChart2(data);
         }
     });
