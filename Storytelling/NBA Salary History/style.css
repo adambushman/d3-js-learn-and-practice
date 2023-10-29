@@ -1,0 +1,13 @@
+:root {
+    --nba-blue: #17408B;
+    --nba-red: #C9082A;
+}
+
+.story-tile {
+    min-height: 100vh;
+}
+
+.text-bg-red {
+    background-color: var(--nba-red);
+    color: white;
+}
