@@ -3,7 +3,7 @@ const dims = {
     top: 10, left: 10, right: 10, bottom: 10
 }
 
-let [red, yellow, green, blue] = ["red", "yellow", "green", "blue"];
+let [red, yellow, green, blue, orange] = ["red", "yellow", "green", "blue", "orange"];
 
 const svg = d3.select("#chart")
     .append("svg")
@@ -18,6 +18,7 @@ const data = [
         {size: 7, color: yellow},
         {size: 9, color: green},
         {size: 11, color: blue},
+        {size: 4, color: orange},
     ]},
     {x: 150, y: 125, label: "Carlsbad", points: [
         {size: 3, color: red},
@@ -46,19 +47,23 @@ svg.append("g")
     .join(
         (enter) => {
             enter.append("circle")
-                .attr("r", 30)
                 .style("stroke", "gray")
-                .style("stroke-width", 1)
                 .style("fill", "white")
+                .style("stroke-width", 1)
                 .attr("cx", d => d.x)
-                .attr("cy", d => d.y);
+                .attr("cy", d => d.y)
+                .transition().duration(750)
+                .attr("r", 30);
 
             enter.append("text")
                 .style("text-anchor", "middle")
                 .style("font-size", "0.5rem")
                 .attr("x", d => d.x)
                 .attr("y", d => d.y - 35)
-                .text(d => d.label);
+                .style("opacity", 0)
+                .text(d => d.label)
+                .transition().duration(1000)
+                .style("opacity", 1);
 
             const pack = d3.pack().size([60,60]).padding(2);
 
@@ -78,8 +83,9 @@ svg.append("g")
             nodes.append("circle")
                 .style("stroke", "gray")
                 .style("stroke-width", 0.5)
-                .attr("r", dd => dd.r)
-                .style("fill", dd => dd.data.color);
+                .style("fill", dd => dd.data.color)
+                .transition().duration(750)
+                .attr("r", dd => dd.r);
 
         }, 
         (update) => update, 
