@@ -8,23 +8,20 @@
     
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
-    <style>
-        .story-tile {
-            min-height: 100vh;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 
     <script src="https://cdn.jsdelivr.net/npm/d3@7" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/arquero@latest" defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
     <script src="script.js" defer></script>
+    <script src="viz.js" defer></script>
 </head>
 <body class="min-vh-100 d-flex flex-column">
     <div class="container my-auto">
         <div class="row">
             <div class="story-tile col-12 align-items-center justify-content-center d-flex flex-column">
-                <h1 class="mb-3">Let's learn about something</h1>
-                <p><span class="text-bg-dark px-3 py-1 rounded-pill d-inline-flex align-items-center">Scroll<i class="bi bi-caret-down-fill ps-2"></i></span></p>
+                <h1 class="mb-3">A history of NBA salaries</h1>
+                <p><span class="text-bg-red px-3 py-1 rounded-pill d-inline-flex align-items-center">Scroll<i class="bi bi-caret-down-fill ps-2"></i></span></p>
             </div>
             <div id="c1-t1" class="story-tile col-6 align-items-center justify-content-start d-flex">
                 <div>
@@ -32,8 +29,8 @@
                     <p>We can observe some interesting things about this chart, like how the very first bar is the tallest and the very last is the shortest.</p>
                 </div>
             </div>
-            <div class="sticky-top col-6 story-tile align-items-center justify-content-end d-flex">
-                <div class="w-100" id="chart-1">
+            <div class="story-tile sticky-top col-6 align-items-center justify-content-center d-flex flex-column">
+                <div class="w-100" id="chart-test">
                     <!-- Chart dynamically added here by viz.js -->
                 </div>
             </div>
