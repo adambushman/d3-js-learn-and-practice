@@ -4,14 +4,18 @@ const state = {
     shooting_data: [], 
     dims: {
         width: 500, height: 500, 
-        top: 10, left: 10, right: 10, bottom: 10
+        top: 0, left: 0, right: 0, bottom: 0
     }, 
     locations: ["Rim", "Midrange", "Corner3", "AboveBreak3"]
 }
 
+let xScale, yScale, colorScale, r_size;
+
 function mouseover(d) {
+    Tooltip.classed("visually-hidden", false)
+        .style("opacity", 1);
+
     const target = d.target.parentElement.parentElement;
-    console.dir(target);
     d3.select(target)
         .transition().duration(250)
         .style("fill-opacity", 0.9);
@@ -22,7 +26,26 @@ function mouseover(d) {
         .style("fill-opacity", 0.3);
 }
 
+function mousemove(d) {
+    const target = d.target.parentElement.parentElement.__data__;
+    
+    let html = `<h5>${target.FullName}</h5>`;
+    target.data.forEach(d => {
+        html += `<p class='m-0 mt-1 px-2 py-1 rounded fw-bold' style='opacity: 0.9; background-color:${colorScale(d.loc)}'>${d.loc}: ${d3.format(".0%")(d.val)}</p>`
+    });
+    Tooltip.html(html);
+
+    const [new_x, new_y] = tooltipPosition(xScale(target.center_x), yScale(target.center_y));
+
+    Tooltip
+        .style("top", new_y)
+        .style("left", new_x);
+}
+
 function mouseleave(d) {
+    Tooltip.classed("visually-hidden", true)
+        .style("opacity", 0);
+
     d3.selectAll(".packed-circle")
         .transition().duration(250)
         .style("fill-opacity", 0.6);
@@ -72,16 +95,16 @@ function createVis() {
         .append("g")
         .attr("transform", `translate(${state.dims.left},${state.dims.top})`);
 
-    const colorScale = d3.scaleOrdinal()
+    colorScale = d3.scaleOrdinal()
         .domain(["Rim", "Midrange", "Corner3", "AboveBreak3"])
         .range(["#ECC30B", "#3C91E6", "#FF7F11", "#8FC93A"]);
 
     const legend = svg.append("g")
         .attr("class", "legend");
 
-    const xScale = d3.scaleLinear();
+    xScale = d3.scaleLinear();
         
-    const yScale = d3.scaleLinear();
+    yScale = d3.scaleLinear();
     
     legend.selectAll()
         .data(state.locations)
@@ -110,7 +133,7 @@ function createVis() {
 
     function update(new_data) {
     // Joins data to elements, specifying enter, update, exit logic
-        const r_size = 14;
+        r_size = 14;
     
         let domains = [
             [d3.min(new_data, d => { return d.center_x }) - r_size, d3.max(new_data, d => { return d.center_x }) + r_size], 
@@ -144,6 +167,7 @@ function createVis() {
                         .style("fill-opacity", 0.6)
                         .attr("transform", d => `translate(${xScale(d.center_x) - (r_size * 1.5)},${yScale(d.center_y) - (r_size * 1.5)})`)
                         .on("mouseover", mouseover)
+                        .on("mousemove", mousemove)
                         .on("mouseleave", mouseleave);
                     
                     const nodes = circle_pack.selectAll()
@@ -223,3 +247,52 @@ d3.csv('../../../Data files/nba-team-shooting.csv')
     .catch((error) => {
         console.error('Error loading shooting file', error);
     });
+
+
+
+// Tooltip definition
+let Tooltip = d3.select("#viz")
+    .append("div")
+    .attr("id", "tt")
+    .attr("class", "tooltip visually-hidden")
+    .style("opacity", 0)
+    .style("color", "#424041")
+    .style("background-color", "#FFFFFF")
+    .style("border", "solid")
+    .style("border-width", "1px")
+    .style("border-radius", "5px")
+    .style("border-color", "gray")
+    .style("padding", "8px 10px")
+    .style("box-shadow", "0px 0px 5px 0.5px #D6D6D6")
+    .style("position", "absolute")
+    .style("left", "0px")
+    .style("top", "0px");
+
+
+// Getting tooltip position, accounting for dynamic screens
+
+function tooltipPosition(val_x, val_y) {
+    // Variables to use in the calculation
+    let offset = document.getElementById("viz");
+    let tt = document.getElementById("tt").getBoundingClientRect();
+    let vbSize = document.getElementById("viz-svg").getBoundingClientRect();
+    let vbScale = {
+        x: vbSize.width / (state.dims.width + state.dims.left + state.dims.right), 
+        y: vbSize.height / (state.dims.height + state.dims.top + state.dims.bottom)
+    };
+
+    return([
+        // X coordinate
+        (val_x * vbScale.x) // Adjusted for viewbox scale
+        +  offset.offsetLeft // SVG offset from edge of screen
+        + (vbScale.x * state.dims.left) // Left margin adjusted for viewbox scale
+        - (tt.width / 2) // Center align tooltip to point
+        , 
+        // Y coordinate
+        (val_y * vbScale.y) // Adjusted for viewbox scale
+        + offset.offsetTop // SVG offset from top of screen
+        + (vbScale.y * state.dims.top) // Top margin adjusted for viewbox scale
+        - (r_size * 2.5 * vbScale.y)
+        - tt.height // Align tooltip above the point
+    ])
+}
