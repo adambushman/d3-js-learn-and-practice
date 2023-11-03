@@ -31,7 +31,9 @@ function mousemove(d) {
     
     let html = `<h5>${target.FullName}</h5>`;
     target.data.forEach(d => {
-        html += `<p class='m-0 mt-1 px-2 py-1 rounded fw-bold' style='opacity: 0.9; background-color:${colorScale(d.loc)}'>${d.loc}: ${d3.format(".0%")(d.val)}</p>`
+        html += `<p class='m-0 mt-1 px-2 py-1 rounded fw-bold' style='opacity: 0.9; background-color:${colorScale(d.loc)}'>
+            ${d.loc}: <span class='ms-2 float-end'>${d3.format(".0%")(d.val)}</span>
+        </p>`
     });
     Tooltip.html(html);
 
