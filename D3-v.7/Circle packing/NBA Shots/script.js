@@ -13,6 +13,7 @@ let xScale, yScale, colorScale, r_size;
 
 function mouseover(d) {
     Tooltip.classed("visually-hidden", false)
+        .transition().duration(250)
         .style("opacity", 1);
 
     const target = d.target.parentElement.parentElement;
@@ -45,8 +46,11 @@ function mousemove(d) {
 }
 
 function mouseleave(d) {
-    Tooltip.classed("visually-hidden", true)
+    Tooltip
+        .transition().duration(250)
         .style("opacity", 0);
+
+    Tooltip.classed("visually-hidden", true);
 
     d3.selectAll(".packed-circle")
         .transition().duration(250)
