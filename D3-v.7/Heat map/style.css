@@ -1,0 +1,40 @@
+body {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.x-axis .tick line, .y-axis .tick line {
+    display: none;
+}
+
+.x-axis path, .y-axis path {
+    display: none;
+}
+
+#chart {
+    position: relative;
+}
+
+.tt-h {
+    margin-bottom: 0.25rem;
+    font-weight: bold;
+    font-size: 0.75rem;
+}
+
+.table {
+    margin: 0;
+    font-size: 0.65rem;
+}
+
+.table td {
+    text-align: end;
+}
+
+.table th, .table td {
+    padding: 3px 2px;
+}
+
+.yellow-background {
+    background-color: #f6ee26;
+}
