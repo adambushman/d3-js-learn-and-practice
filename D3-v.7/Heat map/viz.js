@@ -4,6 +4,8 @@ const state = {
     value: 100
 }
 
+const ww = window.innerWidth;
+
 const playerLast = (name) => {
     const name_split = name.split(" ");
 
@@ -15,8 +17,8 @@ let xScale, yScale, dims, margins;
 const wrapText = (
     text,
     width,
-    dyAdjust = 0.4,
-    lineHeightEms = 1,
+    dyAdjust = 0.5,
+    lineHeightEms = 1.3,
     lineHeightSquishFactor = 1,
     splitOnSlash = true,
     centreVertically = true
@@ -130,11 +132,16 @@ function showhide(d) {
                     <tr><th>Point diff per 100 poss</th><td>${d3.format("+.3s")(data.pm)}</td></tr>
                 </table>
             `);
-        const tt_size = document.getElementById("tooltip").getBoundingClientRect();
+
         // Tooltip position
         const thisrect = d3.select(this);
         const [x,y] = alterPosition(thisrect.attr("x"), thisrect.attr("y"));
-        tt.style("top", `${y - tt_size.height - 12}px`).style("left", `${x  + 35 - (tt_size.width / 2)}px`);
+        const tt_size = document.getElementById("tooltip").getBoundingClientRect();
+        const [ny, nx] = [y - tt_size.height - 20, x  + 25 - (tt_size.width / 2)];
+        
+        console.log(ww - tt_size.width + nx, ww)
+
+        tt.style("top", `${ny}px`).style("left", `${nx < 0 ? 20 : (tt_size.width + nx) > ww ? ww - tt_size.width - 20 : nx}px`);
     }
 }
 
@@ -190,11 +197,12 @@ function createVis(selector) {
         .attr("transform", `translate(${margins.left},${margins.top})`);
 
 
-    const legend = svg.append("g").attr("class", "legend")
+    const legend = svg.append("g").attr("class", "legend").style("opacity", 0)
         .attr("transform", `translate(${(margins.left / -2) + (margins.left)},${dims.height + (margins.bottom / 2)})`);
 
     legend.append("text").attr("x", dims.width / 3).attr("y", -12)
-        .style("text-anchor", "middle").style("font-size", "1.3rem").text("Lineup differential per 100 possessions");
+        .style("text-anchor", "middle").style("font-size", "1.3rem")
+        .text(`Point differential per 100 possessions`);
 
     legend.append("rect")
         .attr("x", 0)
@@ -264,7 +272,9 @@ function createVis(selector) {
                 }, 
                 (update) => update.text(d => d3.format("+.2s")(d)), 
                 (exit) => exit.remove()
-            )
+            );
+
+        legend.transition().duration(1200).style("opacity", 1);
 
         squares.selectAll("rect")
             .data(new_data)
