@@ -122,6 +122,7 @@ function showhide(d) {
  
         // Tooltip content
         const data = d.target.__data__;
+        const plus_minus = data.pm < 1 | data.pm > -1 ? d3.format("+.3")(data.pm) : d3.format("+.3s")(data.pm);
         tt.selectAll("text").remove();
         tt.append("text")
             .html(`
@@ -129,7 +130,7 @@ function showhide(d) {
                 <table class="table">
                     <tr><th>Minutes</th><td>${d3.format(",")(data.mins)}</td></tr>
                     <tr><th>Possessions</th><td>${d3.format(",")(data.poss)}</td></tr>
-                    <tr><th>Point diff per 100 poss</th><td>${d3.format("+.3s")(data.pm)}</td></tr>
+                    <tr><th>Point diff per 100 poss</th><td>${plus_minus}</td></tr>
                 </table>
             `);
 
@@ -138,8 +139,6 @@ function showhide(d) {
         const [x,y] = alterPosition(thisrect.attr("x"), thisrect.attr("y"));
         const tt_size = document.getElementById("tooltip").getBoundingClientRect();
         const [ny, nx] = [y - tt_size.height - 20, x  + 25 - (tt_size.width / 2)];
-        
-        console.log(ww - tt_size.width + nx, ww)
 
         tt.style("top", `${ny}px`).style("left", `${nx < 0 ? 20 : (tt_size.width + nx) > ww ? ww - tt_size.width - 20 : nx}px`);
     }
@@ -325,7 +324,6 @@ function updateApp() {
     // updates the application
     const filtered = filterData();
     const new_data = wrangleData(filtered);
-    console.log(new_data);
 
     // update visualization
     vis(new_data);
