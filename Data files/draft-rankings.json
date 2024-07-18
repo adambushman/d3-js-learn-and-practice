@@ -1,0 +1,12 @@
+{
+    "tiers": ["Out-of-leauge", "Two-way", "Deep Bench", "Rotation", "6-Man", "Starter", "Top-75", "All-Star", "All-NBA", "MVP", "Hall of Fame"], 
+    "rankings": [
+        {"name": "Johnny Furphy", "low": "Deep Bench", "mid": "Rotation", "high": "Starter"}, 
+        {"name": "Carlton Carrington", "low": "Rotation", "mid": "Starter", "high": "Top-75"}, 
+        {"name": "Alex Sarr", "low": "Rotation", "mid": "Starter", "high": "All-Star"}, 
+        {"name": "Tidjaun Salaun", "low": "Deep Bench", "mid": "Starter", "high": "Top-75"}, 
+        {"name": "Dalton Knecht", "low": "Rotation", "mid": "6-Man", "high": "Starter"}, 
+        {"name": "DaRon Holmes II", "low": "Deep Bench", "mid": "Rotation", "high": "Starter"}, 
+        {"name": "Reed Sheppard", "low": "6-Man", "mid": "Starter", "high": "Top-75"}
+    ]
+}

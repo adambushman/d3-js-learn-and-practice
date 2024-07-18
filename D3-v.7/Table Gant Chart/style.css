@@ -1,0 +1,11 @@
+td {
+    padding: 1.25rem 0rem;
+}
+
+thead {
+    position: sticky;
+}
+
+th {
+    vertical-align: middle;
+}
