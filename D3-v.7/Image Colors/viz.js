@@ -10,7 +10,7 @@ function extractPixelColors(imagePath) {
       context.drawImage(image, 0, 0, image.width, image.height);
   
       const pixelData = context.getImageData(0, 0, image.width, image.height).data;
-  
+        const test = [];
       const pixelColors = {yellow: 0, green: 0, brown: 0, total: 0};
       for (let i = 0; i < pixelData.length; i += 4) {
         const red = pixelData[i];
@@ -19,19 +19,24 @@ function extractPixelColors(imagePath) {
         const alpha = pixelData[i + 3];
         const hsl = d3.hsl(`rgba(${red}, ${green}, ${blue}, ${alpha})`);
         
-        if((hsl.h >= 0 & hsl.h <= 60) & (hsl.s >= 0.5) & (hsl.l >= 0.2 & hsl.l <= 0.6)) {
+        if((hsl.h >= 0 & hsl.h <= 40) & (hsl.s >= 0.5) & (hsl.l >= 0.2 & hsl.l <= 0.6)) {
             // Brown
             pixelColors.brown += 1;
-        } else if((hsl.h >= 61 & hsl.h <= 120) & (hsl.s >= 0.5) & (hsl.l >= 0.2 & hsl.l <= 0.7)) {
+        } else if((hsl.h >= 41 & hsl.h <= 120) & (hsl.s >= 0.5) & (hsl.l >= 0.2 & hsl.l <= 0.7)) {
             // Yellow
             pixelColors.yellow += 1;
         } else if((hsl.h >= 121 & hsl.h <= 80) & (hsl.s >= 0.5) & (hsl.l >= 0.2 & hsl.l <= 0.8)) {
             // Green
             pixelColors.green += 1;
         }
-
-        pixelColors.total += 1;
+        if(hsl.opacity != 0) {
+            pixelColors.total += 1;
+        }
       }
+      pixelColors.brown /= pixelColors.total;
+      pixelColors.yellow /= pixelColors.total;
+      pixelColors.green /= pixelColors.total;
+      pixelColors.total /= pixelColors.total;
   
       console.log(pixelColors);
     };
