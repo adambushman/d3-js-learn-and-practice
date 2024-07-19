@@ -1,54 +1,86 @@
 [
     {
         "abbrev": "UT", 
-        "image": "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"
+        "adj": [0,2], 
+        "badges": {"visit": true, "stay": true, "tour": true, "live": true}, 
+        "image": "img/utah_family-photo.jpg"
     },
     {
         "abbrev": "NE", 
-        "image": "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"
+        "adj": [0,0], 
+        "badges": {"visit": true, "stay": true, "tour": false, "live": false}, 
+        "image": "img/nebraska_family-photo.jpg"
     },
     {
         "abbrev": "WY", 
-        "image": "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"
+        "adj": [0,0], 
+        "badges": {"visit": true, "stay": true, "tour": false, "live": false}, 
+        "image": "img/wyoming_family-photo.jpg"
     },
     {
         "abbrev": "MO", 
-        "image": "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"
+        "adj": [0,0], 
+        "badges": {"visit": true, "stay": true, "tour": false, "live": false}, 
+        "image": "img/missouri_family-photo.jpg"
     },
     {
         "abbrev": "ID", 
-        "image": "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"
+        "adj": [0,0], 
+        "badges": {"visit": true, "stay": true, "tour": false, "live": false}, 
+        "image": "img/idaho_family-photo.jpg"
     },
     {
         "abbrev": "AZ", 
-        "image": "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"
+        "adj": [0,0], 
+        "badges": {"visit": true, "stay": true, "tour": false, "live": false}, 
+        "image": "img/arizona_family-photo.jpg"
     },
     {
         "abbrev": "CA", 
-        "image": "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"
+        "adj": [0,0], 
+        "badges": {"visit": true, "stay": true, "tour": false, "live": false}, 
+        "image": "img/california_family-photo.jpg"
     },
     {
         "abbrev": "FL", 
-        "image": "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"
+        "adj": [0,0], 
+        "badges": {"visit": true, "stay": true, "tour": false, "live": false}, 
+        "image": "img/florida_family-photo.jpg"
     },
     {
         "abbrev": "GA", 
-        "image": "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"
+        "adj": [3,0], 
+        "badges": {"visit": true, "stay": false, "tour": false, "live": false}, 
+        "image": "img/georgia_family-photo.jpg"
     },
     {
         "abbrev": "SC", 
-        "image": "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"
+        "adj": [3,0], 
+        "badges": {"visit": true, "stay": true, "tour": false, "live": false}, 
+        "image": "img/south-carolina_family-photo.jpg"
     },
     {
         "abbrev": "NC", 
-        "image": "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"
+        "adj": [0,0], 
+        "badges": {"visit": true, "stay": true, "tour": false, "live": false}, 
+        "image": "img/north-carolina_family-photo.jpg"
     },
     {
         "abbrev": "VA", 
-        "image": "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"
+        "adj": [0,0], 
+        "badges": {"visit": true, "stay": true, "tour": false, "live": false}, 
+        "image": "img/virginia_family-photo.jpg"
+    },
+    {
+        "abbrev": "MD", 
+        "adj": [0,0], 
+        "badges": {"visit": false, "stay": true, "tour": false, "live": false}, 
+        "image": "img/maryland_family-photo.jpg"
     },
     {
         "abbrev": "DC", 
-        "image": "https://letsenhance.io/static/8f5e523ee6b2479e26ecc91b9c25261e/1015f/MainAfter.jpg"
+        "adj": [0,0], 
+        "badges": {"visit": true, "stay": true, "tour": true, "live": false}, 
+        "image": "img/dc_family-photo.jpg"
     }
 ]
