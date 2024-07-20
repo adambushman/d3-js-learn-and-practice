@@ -111,10 +111,11 @@ const svg = svg_wrapper.append('g')
     .attr("transform", `translate(${dims.m / 2}, ${dims.m * 1.5})`);
 
 svg.append("text")
+    .attr("id", "title-text")
     .attr("x", (dims.m / 2) + (dims.w / 2))
     .attr("y", dims.m * -1)
     .attr("text-anchor", "middle")
-    .attr("font-size", 22)
+    .attr("font-size", 25)
     .text("Bushman Family Travel Log");
 
 let xScale;
