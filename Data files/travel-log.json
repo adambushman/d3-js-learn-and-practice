@@ -37,14 +37,14 @@
     },
     {
         "abbrev": "CA", 
-        "adj": [0,0], 
+        "adj": [3,0], 
         "badges": {"visit": true, "stay": true, "tour": false, "live": false}, 
         "image": "img/california_family-photo.jpg"
     },
     {
         "abbrev": "FL", 
         "adj": [0,0], 
-        "badges": {"visit": true, "stay": true, "tour": false, "live": false}, 
+        "badges": {"visit": true, "stay": true, "tour": false, "live": true}, 
         "image": "img/florida_family-photo.jpg"
     },
     {
