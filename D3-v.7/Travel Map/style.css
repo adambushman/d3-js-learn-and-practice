@@ -1,3 +1,8 @@
 body {
     background-color: #f0eeee;
 }
+
+.img-container {
+    height: 20rem;
+    overflow: hidden;
+}
