@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SVG Gradients</title>
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/d3@7" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/arquero@latest" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" defer></script>
+    <script src="viz.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center mt-3">
+            <div class="col-12 col-md-10 col-xl-8">
+                <h1>SVG Gradients</h1>
+                <h5 class="fw-normal">SVG's gradients can be tricky. This is a little generator designed to demonstrate the components and ultimately arrive at a workable gradient.</h5>
+            </div>
+        </div>
+        <div class="row justify-content-center mt-3">
+            <div class="col-12 col-md-10 col-xl-8">
+                <div class="row">
+                    <div class="col-2">
+                        <h5>Gradient</h5>
+                        <hr class="my-2">
+                        <div>
+                            <label for="widthIn" class="form-label">Width</label>
+                            <input type="number" class="form-control" id="widthIn" value="800" min="0" max="800" step="100">
+                        </div>
+                        <div class="mt-2">
+                            <label for="heightIn" class="form-label">Height</label>
+                            <input type="number" class="form-control" id="heightIn" value="400" min="0" max="400" step="100">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <h5 class="opacity-0">Gradient</h5>
+                        <hr class="my-2">
+                        <div>
+                            <label for="typeIn" class="form-label">Type</label>
+                            <select id="typeIn" class="form-select" aria-label="Default select example">
+                                <option value="linearGradient" selected>linearGradient</option>
+                                <option value="radialGradient">radialGradient</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <h5 class="opacity-0">Gradient</h5>
+                        <hr class="my-2 opacity-0">
+                        <div>
+                            <label for="x1In" class="form-label">x1</label>
+                            <input type="number" class="form-control" id="x1In" value="0" min="0" max="1" step="0.01">
+                        </div>
+                        <div class="mt-2">
+                            <label for="x2In" class="form-label">x2</label>
+                            <input type="number" class="form-control" id="x2In" value="1" min="0" max="1" step="0.01">
+                        </div>
+                    </div>
+                    <div class="col-2">
+                        <h5 class="opacity-0">Gradient</h5>
+                        <hr class="my-2 opacity-0">
+                        <div>
+                            <label for="y1In" class="form-label">y1</label>
+                            <input type="number" class="form-control" id="y1In" value="0" min="0" max="1" step="0.01">
+                        </div>
+                        <div class="mt-2">
+                            <label for="y2In" class="form-label">y2</label>
+                            <input type="number" class="form-control" id="y2In" value="0" min="0" max="1" step="0.01">
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <h5 class="opacity-0">Gradient</h5>
+                        <hr class="my-2 opacity-0">
+                        <div>
+                            <label for="locsIn" class="form-label">Stop Locations</label>
+                            <input type="text" class="form-control" id="locsIn" value="0,1">
+                        </div>
+                        <div class="mt-2">
+                            <label for="colorsIn" class="form-label">Stop Colors</label>
+                            <input type="text" class="form-control" id="colorsIn" value="blue,orange">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center my-5">
+            <div class="col-12 col-md-10 col-xl-8">
+                <div id="gradient"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
