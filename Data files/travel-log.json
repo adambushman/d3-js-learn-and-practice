@@ -1,0 +1,86 @@
+[
+    {
+        "abbrev": "UT", 
+        "adj": [0,2], 
+        "badges": {"visit": true, "stay": true, "tour": true, "live": true}, 
+        "image": "img/utah_family-photo copy.webp"
+    },
+    {
+        "abbrev": "NE", 
+        "adj": [0,0], 
+        "badges": {"visit": true, "stay": true, "tour": false, "live": false}, 
+        "image": "img/nebraska_family-photo copy.webp"
+    },
+    {
+        "abbrev": "WY", 
+        "adj": [0,0], 
+        "badges": {"visit": true, "stay": true, "tour": false, "live": false}, 
+        "image": "img/wyoming_family-photo copy.webp"
+    },
+    {
+        "abbrev": "MO", 
+        "adj": [0,0], 
+        "badges": {"visit": true, "stay": true, "tour": false, "live": false}, 
+        "image": "img/missouri_family-photo copy.webp"
+    },
+    {
+        "abbrev": "ID", 
+        "adj": [0,0], 
+        "badges": {"visit": true, "stay": true, "tour": false, "live": false}, 
+        "image": "img/idaho_family-photo copy.webp"
+    },
+    {
+        "abbrev": "AZ", 
+        "adj": [0,0], 
+        "badges": {"visit": true, "stay": true, "tour": false, "live": false}, 
+        "image": "img/arizona_family-photo copy.webp"
+    },
+    {
+        "abbrev": "CA", 
+        "adj": [3,0], 
+        "badges": {"visit": true, "stay": true, "tour": false, "live": false}, 
+        "image": "img/california_family-photo copy.webp"
+    },
+    {
+        "abbrev": "FL", 
+        "adj": [0,0], 
+        "badges": {"visit": true, "stay": true, "tour": false, "live": true}, 
+        "image": "img/florida_family-photo copy.webp"
+    },
+    {
+        "abbrev": "GA", 
+        "adj": [3,0], 
+        "badges": {"visit": true, "stay": false, "tour": false, "live": false}, 
+        "image": "img/georgia_family-photo copy.webp"
+    },
+    {
+        "abbrev": "SC", 
+        "adj": [3,0], 
+        "badges": {"visit": true, "stay": true, "tour": false, "live": false}, 
+        "image": "img/south-carolina_family-photo copy.webp"
+    },
+    {
+        "abbrev": "NC", 
+        "adj": [0,0], 
+        "badges": {"visit": true, "stay": true, "tour": false, "live": false}, 
+        "image": "img/north-carolina_family-photo copy.webp"
+    },
+    {
+        "abbrev": "VA", 
+        "adj": [0,0], 
+        "badges": {"visit": true, "stay": true, "tour": false, "live": false}, 
+        "image": "img/virginia_family-photo copy.webp"
+    },
+    {
+        "abbrev": "MD", 
+        "adj": [0,0], 
+        "badges": {"visit": false, "stay": true, "tour": false, "live": false}, 
+        "image": "img/maryland_family-photo copy.webp"
+    },
+    {
+        "abbrev": "DC", 
+        "adj": [0,0], 
+        "badges": {"visit": true, "stay": true, "tour": true, "live": false}, 
+        "image": "img/dc_family-photo copy.webp"
+    }
+]

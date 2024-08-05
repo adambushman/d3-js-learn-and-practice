@@ -1,0 +1,72 @@
+[
+    {
+        "month": "November", 
+        "year": 2023, 
+        "type": "Variable", 
+        "category": "Auto Gas", 
+        "total": 209.31
+    },
+    {
+        "month": "October", 
+        "year": 2023, 
+        "type": "Variable", 
+        "category": "Auto Gas", 
+        "total": 187.07
+    },
+    {
+        "month": "September", 
+        "year": 2023, 
+        "type": "Variable", 
+        "category": "Auto Gas", 
+        "total": 287.11
+    }, 
+    {
+        "month": "July", 
+        "year": 2023, 
+        "type": "Variable", 
+        "category": "Auto Gas", 
+        "total": 322.19
+    },
+    {
+        "month": "June", 
+        "year": 2023, 
+        "type": "Variable", 
+        "category": "Auto Gas", 
+        "total": 401.91
+    },
+    {
+        "month": "April", 
+        "year": 2023, 
+        "type": "Variable", 
+        "category": "Auto Gas", 
+        "total": 265.89
+    },
+    {
+        "month": "March", 
+        "year": 2023, 
+        "type": "Variable", 
+        "category": "Auto Gas", 
+        "total": 255.47
+    },
+    {
+        "month": "February", 
+        "year": 2023, 
+        "type": "Variable", 
+        "category": "Auto Gas", 
+        "total": 312.98
+    },
+    {
+        "month": "January", 
+        "year": 2023, 
+        "type": "Variable", 
+        "category": "Auto Gas", 
+        "total": 310.19
+    },
+    {
+        "month": "December", 
+        "year": 2022, 
+        "type": "Variable", 
+        "category": "Auto Gas", 
+        "total": 287.60
+    }
+]

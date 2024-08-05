@@ -1,0 +1,52 @@
+"abbrev","full_name","x","y"
+"HI","Hawaii",0,0
+"FL","Florida",171.4730299,0
+"GA","Georgia",161.9467505,16.5
+"TX","Texas",85.736515,16.5
+"OK","Oklahoma",76.2102355,33
+"LA","Louisiana",95.2627944,33
+"AL","Alabama",133.3679122,33
+"SC","South Carolina",152.4204711,33
+"NC","North Carolina",171.4730299,33
+"DC","Washington DC",180.9993094,49.5
+"VA","Virginia",161.9467505,49.5
+"TN","Tennessee",142.8941916,49.5
+"MS","Mississippi",123.8416327,49.5
+"AR","Arkansas",104.7890739,49.5
+"KS","Kansas",85.736515,49.5
+"NM","New Mexico",66.6839561,49.5
+"AZ","Arizona",47.6313972,49.5
+"CA","California",19.0525589,66
+"NV","Nevada",38.1051178,66
+"UT","Utah",57.1576766,66
+"CO","Colorado",76.2102355,66
+"NE","Nebraska",95.2627944,66
+"MO","Missouri",114.3153533,66
+"KY","Kentucky",133.3679122,66
+"WV","West Virginia",152.4204711,66
+"MD","Maryland",171.4730299,66
+"DE","Delaware",190.5255888,66
+"CT","Conneticut",219.1044272,82.5
+"NJ","New Jersey",200.0518683,82.5
+"PA","Pennsylvania",180.9993094,82.5
+"OH","Ohio",161.9467505,82.5
+"IN","Indiana",142.8941916,82.5
+"IL","Illinois",123.8416327,82.5
+"IA","Iowa",104.7890739,82.5
+"SD","South Dakota",85.736515,82.5
+"WY","Wyoming",66.6839561,82.5
+"ID","Idaho",47.6313972,82.5
+"OR","Oregon",28.5788383,82.5
+"WA","Washington",38.1051178,99
+"MT","Montana",57.1576766,99
+"ND","North Dakota",76.2102355,99
+"MN","Minnesota",95.2627944,99
+"WI","Wisconsin",114.3153533,99
+"MI","Michigan",152.4204711,99
+"NY","New York",190.5255888,99
+"MA","Massachusetts",209.5781477,99
+"RI","Rhode Island",228.6307066,99
+"NH","New Hampshire",238.156986,115.5
+"VT","Vermont",219.1044272,115.5
+"AK","Alaska",0,132
+"ME","Maine",228.6307066,132
